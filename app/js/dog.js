@@ -35,7 +35,7 @@ export const stageOf = (lv) => { const st = stageOfRaw(lv); return { ...st, name
 const imgCache = {};
 async function hasImg(name) {
   if (name in imgCache) return imgCache[name];
-  try { imgCache[name] = (await fetch(`data/dog/${name}.png`, { method: "HEAD" })).ok; } // name は "<breed>/stageN"
+  try { imgCache[name] = (await fetch(`data/dog/${name}.webp`, { method: "HEAD" })).ok; } // name は "<breed>/stageN"
   catch { imgCache[name] = false; }
   return imgCache[name];
 }
@@ -71,7 +71,7 @@ export async function renderDog(el, { happy = false, breed = breedOf().id, stage
   const st = stage || stageOf(levelInfo().lv);
   const name = `${breed}/${happy ? `${st.img}_happy` : st.img}`;
   const inner = (await hasImg(name))
-    ? `<div style="width:100%;height:100%;transform:scale(${st.scale});transform-origin:50% 100%"><img src="data/dog/${name}.png" alt="${st.name}"></div>`
+    ? `<div style="width:100%;height:100%;transform:scale(${st.scale});transform-origin:50% 100%"><img src="data/dog/${name}.webp" alt="${st.name}"></div>`
     : dogSVG(happy, st.scale);
   el.innerHTML = inner;
 }

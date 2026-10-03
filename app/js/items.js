@@ -5,9 +5,9 @@
 export const ITEMS = [
   { id: "boro", emoji: "🍪", kind: "food", name: "たまごボーロ", price: 30, exp: 10, img: "boro", desc: "小さなごほうび" },
   { id: "jerky", emoji: "🍖", kind: "food", name: "ささみジャーキー", price: 80, exp: 30, img: "jerky", desc: "みんなの大好物" },
-  { id: "bowl", emoji: "🥣", kind: "room", name: "ごはん皿セット", price: 120, exp: 50, img: "bowl", desc: "まずはここから", place: { x: 84, bottom: 3, w: 22, z: 6 } },
+  { id: "bowl", emoji: "🥣", kind: "room", name: "ごはん皿セット", price: 120, exp: 50, img: "bowl", desc: "まずはここから", place: { x: 84, bottom: 2, w: 27, z: 6 } },
   { id: "ball", emoji: "🎾", kind: "room", name: "テニスボール", price: 200, exp: 80, img: "ball", desc: "おさんぽのおとも", place: { x: 33, bottom: 4, w: 10, z: 7 } },
-  { id: "cushion", emoji: "🛋️", kind: "room", name: "ミニソファ", price: 320, exp: 130, img: "cushion", desc: "お昼寝スポット", place: { x: 15, bottom: 6, w: 26, z: 5 } },
+  { id: "cushion", emoji: "🛏️", kind: "room", name: "ふわふわクッション", price: 320, exp: 130, img: "cushion", desc: "お昼寝スポット", place: { x: 15, bottom: 6, w: 26, z: 5 } },
   { id: "plant", emoji: "🪴", kind: "room", name: "観葉植物", price: 450, exp: 180, img: "plant", desc: "お部屋に緑を", place: { x: 92, bottom: 34, w: 15, z: 2 } },
   { id: "clock", emoji: "🕰️", kind: "room", name: "かべかけ時計", price: 600, exp: 240, img: "clock", desc: "勉強時間を見守る", place: { x: 80, top: 7, w: 14, z: 1 } },
   { id: "shelf", emoji: "📚", kind: "room", name: "参考書の本棚", price: 800, exp: 320, img: "shelf", desc: "知識がつまってる", place: { x: 12, bottom: 33, w: 22, z: 2 } },
@@ -15,11 +15,11 @@ export const ITEMS = [
   { id: "cake", emoji: "🎂", kind: "food", name: "わんこケーキ", price: 1200, exp: 520, img: "cake", desc: "とくべつな日に" },
   { id: "curtain", emoji: "🪟", kind: "room", name: "レースのカーテン", price: 1400, exp: 560, look: "curtain", desc: "窓がおしゃれに" },
   { id: "wallpaper", emoji: "✨", kind: "room", name: "星柄の壁紙", price: 1800, exp: 720, look: "wallpaper", desc: "お部屋がきらきら" },
-  { id: "bed", emoji: "🛏️", kind: "room", name: "ふかふかベッド", price: 2500, exp: 1000, img: "bed", desc: "王さまの寝ごこち", place: { x: 70, bottom: 30, w: 30, z: 3 } },
-  { id: "chandelier", emoji: "💡", kind: "room", name: "おしゃれなライト", price: 4000, exp: 1700, img: "chandelier", desc: "お部屋をあかるく", place: { x: 50, top: -3, w: 22, z: 1 } },
+  { id: "bed", emoji: "🛏️", kind: "room", name: "天蓋つきベッド", price: 2500, exp: 1000, img: "bed", desc: "王さまの寝ごこち", place: { x: 70, bottom: 29, w: 33, z: 3 } },
+  { id: "chandelier", emoji: "💡", kind: "room", name: "シャンデリア", price: 4000, exp: 1700, img: "chandelier", desc: "ごうかな明かり", place: { x: 50, top: -3, w: 22, z: 1 } },
   { id: "trophy", emoji: "🏆", kind: "room", name: "合格トロフィー", price: 6000, exp: 3000, img: "trophy", desc: "がんばりの証", place: { x: 12, bottom: 55, w: 11, z: 3 } },
 ];
-export const itemImg = (it) => `data/items/${it.img}.png`;
+export const itemImg = (it) => `data/items/${it.img}.webp`;
 
 // 画像（data/items/<img>.png）があれば画像、無ければ絵文字で表示する
 const imgOk = {};

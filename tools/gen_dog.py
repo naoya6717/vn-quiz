@@ -1,6 +1,6 @@
 """Gemini の画像生成でトイプードル「もこ」の成長段階画像を作る。
 使い方: tools/.venv/bin/python tools/gen_dog.py [--models] [--breed=poodle|shiba|pome|dachs] [stage1 stage1_happy ...]
-.env の GEMINI_API_KEY を使う。出力: app/data/dog/<breed>/<name>.png（背景透過）
+.env の GEMINI_API_KEY を使う。出力: app/data/dog/<breed>/<name>.png（背景透過）→ 生成後に tools/optimize_images.py で WebP 化する
 キャラの一貫性のため、stage1 を最初に作り、以降は stage1 を参照画像として渡す。
 """
 import base64, io, json, os, sys, urllib.request
@@ -71,7 +71,7 @@ def chroma(png: bytes) -> Image.Image:
     alpha = np.clip((dist - 40) / (110 - 40), 0, 1)  # 40未満は完全透明、110以上は不透明
     # 縁の緑かぶりを抑える：半透明部分の緑を赤・青の大きい方まで下げる
     g_excess = a[..., 1] - np.maximum(a[..., 0], a[..., 2])
-    edge = (alpha < 1) & (g_excess > 0)
+    edge = (alpha < 1) & (g_excess > 0) & (bg[1] > max(bg[0], bg[2]))  # 背景が緑のときだけ緑かぶりを抑える
     a[..., 1] = np.where(edge, np.maximum(a[..., 0], a[..., 2]), a[..., 1])
     rgba = np.dstack([a, alpha * 255]).astype(np.uint8)
     out = Image.fromarray(rgba)
