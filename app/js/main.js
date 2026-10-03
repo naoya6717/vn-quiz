@@ -148,13 +148,13 @@ routes.unlock = async () => {
     <h1>合言葉を入力</h1>
     <div class="card">
       <p>過去問データは著作権に配慮して暗号化しています。最初の1回だけ合言葉を入力してください（この端末に保存されます）。</p>
-      <input type="password" id="pass" autocomplete="off" placeholder="合言葉">
+      <input type="text" id="pass" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="合言葉（ひらがなで入力できます）">
       <p class="muted" id="err"></p>
       <button class="btn" id="ok">ひらく</button>
     </div>`;
   $("#ok").onclick = async () => {
     $("#err").textContent = "確認中…";
-    try { await unlock($("#pass").value.trim()); toast("データをひらきました"); go("#/quiz"); }
+    try { await unlock($("#pass").value.normalize("NFC").replace(/[\s\u3000]/g, "")); toast("データをひらきました"); go("#/quiz"); }
     catch { $("#err").textContent = "合言葉がちがうようです。"; }
   };
 };
