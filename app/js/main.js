@@ -406,7 +406,7 @@ routes.stats = async () => {
   const rows = Object.entries(d.genres).map(([k, name]) => ({ k, name, ...(gs[k] || { c: 0, n: 0 }) }));
   const rated = rows.filter((r) => r.n >= 5).sort((a, b) => b.c / b.n - a.c / a.n);
   const strong = rated.slice(0, 3).filter((r) => r.c / r.n >= .7), weak = rated.slice(-3).reverse().filter((r) => r.c / r.n < .7);
-  view.innerHTML = `<h1>📊 学習の記録</h1>
+  view.innerHTML = `<h1 id="statsTitle">📊 学習の記録</h1>
     <div class="grid2">
       <div class="card score"><div class="muted">累計回答</div><div class="big" style="font-size:36px">${n}</div></div>
       <div class="card score"><div class="muted">正答率</div><div class="big" style="font-size:36px">${n ? Math.round(c / n * 100) : 0}<span style="font-size:18px">%</span></div></div>
@@ -431,6 +431,18 @@ routes.stats = async () => {
       <button class="btn ghost small" id="guide" style="width:100%;margin-top:10px">ホーム画面への追加方法</button>
       <p class="muted" style="margin-top:12px">過去問：一般財団法人動物看護師統一認定機構が公表した問題・正答を、個人の学習目的でのみ利用しています。図や写真を使う問題は除外しています。</p>
     </div>`;
+  // テスト用の隠し機能：タイトルを5回続けてタップするとポイントを追加できる
+  let taps = 0, tapTimer = null;
+  $("#statsTitle").onclick = () => {
+    taps++; clearTimeout(tapTimer); tapTimer = setTimeout(() => (taps = 0), 1500);
+    if (taps < 5) return;
+    taps = 0;
+    const n = parseInt(prompt("テスト用：追加するポイント数（減らすときはマイナス）", "1000") || "", 10);
+    if (Number.isFinite(n) && n !== 0) {
+      store.update((st) => { st.points = Math.max(0, st.points + n); });
+      toast(`${n > 0 ? "+" : ""}${n}pt（テスト用）`);
+    }
+  };
   $("#voice").onchange = (e) => store.update((st) => { st.settings.voice = e.target.checked; });
   $("#guide").onclick = () => go("#/install");
   $("#exp").onclick = async () => {
