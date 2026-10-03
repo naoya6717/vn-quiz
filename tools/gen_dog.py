@@ -32,13 +32,15 @@ BREEDS = {
     "dachs": "a miniature dachshund with smooth chocolate-and-tan short coat, long body, short legs and long floppy ears",
 }
 BREED = "poodle"
+MAGENTA_BG = {"shiba"}  # 白い毛が緑背景と混ざりやすい犬種はマゼンタ背景で作る
 
 
 def base():
     return ("A cute 3D-rendered character in a soft, high-quality animated-film style: " + BREEDS[BREED] +
             ", big round shiny dark eyes, small black nose, rosy cheeks, friendly expression. Full body, front-facing, "
             "centered, standing on nothing, soft studio lighting, no text, no logo, no shadow on the ground. "
-            "Background: perfectly flat solid pure green (#00FF00) chroma-key color filling the entire background.")
+            "Background: perfectly flat solid pure " + ("magenta (#FF00FF)" if BREED in MAGENTA_BG else "green (#00FF00)") +
+            " chroma-key color filling the entire background.")
 STAGES = {
     "stage1": "Stage: tiny puppy, very small and round, oversized head, sitting, innocent look.",
     "stage2": "Stage: young playful dog, a bit bigger than a puppy, energetic pose with one paw raised.",
@@ -61,10 +63,11 @@ def call(model, parts):
     raise RuntimeError(json.dumps(d)[:500])
 
 
-def chroma(png: bytes, flood: bool = False) -> Image.Image:
+def chroma(png: bytes, flood: bool = False, nogreen: bool = False) -> Image.Image:
     """背景色を画像の外周から推定して透過する。
     flood=True: 外周とつながった背景色の領域だけを透明にし、物の内側は色に関係なく不透明にする
-    （淡いパステル色の物が半透明になるのを防ぐ。アイテム画像用）。"""
+    （淡いパステル色の物が半透明になるのを防ぐ。アイテム画像用）。
+    nogreen=True: 緑色を含まない被写体（犬）向け。緑っぽい影はすべて背景扱いにし、画像全体の緑かぶりも取り除く。"""
     im = Image.open(io.BytesIO(png)).convert("RGB")
     a = np.array(im).astype(np.float32)
     border = np.concatenate([a[:8].reshape(-1, 3), a[-8:].reshape(-1, 3), a[:, :8].reshape(-1, 3), a[:, -8:].reshape(-1, 3)])
@@ -79,7 +82,10 @@ def chroma(png: bytes, flood: bool = False) -> Image.Image:
         else:
             tint = (np.minimum(r_, b_) - g_) > 25
         darker = a.mean(axis=2) < bg.mean() + 15  # 影は背景と同じか暗い。明るいミント色などは物の色として残す
-        near = (dist < 38) | (tint & darker & (dist < 95))
+        if nogreen:  # 明るい白い毛（柴犬の胸など）は影ではないので背景扱いしない
+            near = (dist < 38) | (tint & (dist < 110) & (a.mean(axis=2) < bg.mean() + 35))
+        else:
+            near = (dist < 38) | (tint & darker & (dist < 95))
         lab, _ = ndimage.label(near)
         edge_labels = np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))
         bgmask = np.isin(lab, edge_labels[edge_labels > 0])
@@ -99,8 +105,13 @@ def chroma(png: bytes, flood: bool = False) -> Image.Image:
     # 縁の色かぶりを抑える：半透明部分で背景色の成分が強いときだけ（緑背景＝緑、マゼンタ背景＝赤青）
     if bg[1] > max(bg[0], bg[2]):
         g_excess = a[..., 1] - np.maximum(a[..., 0], a[..., 2])
-        edge = (alpha < 1) & (g_excess > 0)
+        edge = (g_excess > 0) if nogreen else (alpha < 1) & (g_excess > 0)
         a[..., 1] = np.where(edge, np.maximum(a[..., 0], a[..., 2]), a[..., 1])
+        if nogreen:  # 緑が映り込んだ明るい白は、暖かみのある白（クリーム）に置き換える
+            lum = a.mean(axis=2)
+            white = (g_excess > 4) & (lum > 150)
+            for ch, k in ((0, 1.0), (1, .97), (2, .9)):
+                a[..., ch] = np.where(white, np.clip(lum * k + 12, 0, 255), a[..., ch])
     rgba = np.dstack([a, alpha * 255]).astype(np.uint8)
     out = Image.fromarray(rgba)
     bbox = out.getbbox()
@@ -141,7 +152,7 @@ def main():
             except Exception as err:  # 一時的な失敗は再試行
                 print("retry", name, err)
         (raw / f"{name}.png").write_bytes(png)
-        chroma(png).save(out / f"{name}.png", optimize=True)
+        chroma(png, flood=True, nogreen=True).save(out / f"{name}.png", optimize=True)
         print("ok", name)
 
 

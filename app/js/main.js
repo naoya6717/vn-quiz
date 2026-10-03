@@ -184,7 +184,7 @@ routes.install = async () => {
         <li>画面下の <span class="kbd">共有ボタン（□に↑）</span> をタップ</li>
         <li>メニューを下にスクロールして <span class="kbd">ホーム画面に追加</span> をタップ</li>
         <li>右上の <span class="kbd">追加</span> をタップ</li>
-        <li>ホーム画面にできた「もこ先生」のアイコンから開きます</li>
+        <li>ホーム画面にできた「VN PASS」のアイコンから開きます</li>
       </ol></div>` : `
     <div class="card"><h2 style="margin-top:0">Android（Chrome）の場合</h2>
       ${deferredPrompt ? `<button class="btn" id="installBtn">ホーム画面に追加する</button><p class="muted">ボタンが動かない場合は下の手順で追加できます。</p>` : ""}
