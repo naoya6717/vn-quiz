@@ -44,7 +44,7 @@ def main():
             except Exception as err:
                 print("retry", iid, str(err)[:120])
         (RAW / f"{iid}.png").write_bytes(png)
-        gen_dog.chroma(png).save(OUT / f"{iid}.png", optimize=True)
+        gen_dog.chroma(png, flood=True).save(OUT / f"{iid}.png", optimize=True)
         print("ok", iid)
 
 

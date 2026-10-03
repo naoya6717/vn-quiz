@@ -7,7 +7,7 @@ import base64, io, json, os, sys, urllib.request
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "app" / "data" / "dog"
@@ -61,18 +61,46 @@ def call(model, parts):
     raise RuntimeError(json.dumps(d)[:500])
 
 
-def chroma(png: bytes) -> Image.Image:
-    """背景色を画像の外周から推定し、その色からの距離で透明度を決める（くすんだ緑でも抜ける）。"""
+def chroma(png: bytes, flood: bool = False) -> Image.Image:
+    """背景色を画像の外周から推定して透過する。
+    flood=True: 外周とつながった背景色の領域だけを透明にし、物の内側は色に関係なく不透明にする
+    （淡いパステル色の物が半透明になるのを防ぐ。アイテム画像用）。"""
     im = Image.open(io.BytesIO(png)).convert("RGB")
     a = np.array(im).astype(np.float32)
     border = np.concatenate([a[:8].reshape(-1, 3), a[-8:].reshape(-1, 3), a[:, :8].reshape(-1, 3), a[:, -8:].reshape(-1, 3)])
     bg = np.median(border, axis=0)
     dist = np.sqrt(((a - bg) ** 2).sum(axis=2))
-    alpha = np.clip((dist - 40) / (110 - 40), 0, 1)  # 40未満は完全透明、110以上は不透明
-    # 縁の緑かぶりを抑える：半透明部分の緑を赤・青の大きい方まで下げる
-    g_excess = a[..., 1] - np.maximum(a[..., 0], a[..., 2])
-    edge = (alpha < 1) & (g_excess > 0) & (bg[1] > max(bg[0], bg[2]))  # 背景が緑のときだけ緑かぶりを抑える
-    a[..., 1] = np.where(edge, np.maximum(a[..., 0], a[..., 2]), a[..., 1])
+    if flood:
+        from scipy import ndimage
+        # 背景色に近い色、または背景と同じ色味の影（緑背景なら緑っぽい影）を背景候補にする
+        r_, g_, b_ = a[..., 0], a[..., 1], a[..., 2]
+        if bg[1] > max(bg[0], bg[2]):
+            tint = (g_ - np.maximum(r_, b_)) > 10
+        else:
+            tint = (np.minimum(r_, b_) - g_) > 25
+        darker = a.mean(axis=2) < bg.mean() + 15  # 影は背景と同じか暗い。明るいミント色などは物の色として残す
+        near = (dist < 38) | (tint & darker & (dist < 95))
+        lab, _ = ndimage.label(near)
+        edge_labels = np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))
+        bgmask = np.isin(lab, edge_labels[edge_labels > 0])
+        bgmask = ndimage.binary_opening(bgmask, iterations=1)
+        obj = ~bgmask
+        # 本体から離れた小さな点（ゴミ）を取り除く：最大の塊の2%未満の塊は背景にする
+        olab, n = ndimage.label(obj)
+        if n > 1:
+            sizes = ndimage.sum(obj, olab, range(1, n + 1))
+            keep = np.isin(olab, np.where(sizes >= sizes.max() * 0.02)[0] + 1)
+            obj = keep
+        obj = ndimage.binary_fill_holes(obj)
+        alpha = obj.astype(np.float32)
+        alpha = np.array(Image.fromarray((alpha * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.8))) / 255.0
+    else:
+        alpha = np.clip((dist - 40) / (110 - 40), 0, 1)  # 40未満は完全透明、110以上は不透明
+    # 縁の色かぶりを抑える：半透明部分で背景色の成分が強いときだけ（緑背景＝緑、マゼンタ背景＝赤青）
+    if bg[1] > max(bg[0], bg[2]):
+        g_excess = a[..., 1] - np.maximum(a[..., 0], a[..., 2])
+        edge = (alpha < 1) & (g_excess > 0)
+        a[..., 1] = np.where(edge, np.maximum(a[..., 0], a[..., 2]), a[..., 1])
     rgba = np.dstack([a, alpha * 255]).astype(np.uint8)
     out = Image.fromarray(rgba)
     bbox = out.getbbox()

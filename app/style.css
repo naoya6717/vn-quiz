@@ -305,7 +305,6 @@ body.home-fixed .stage { flex: 1 1 auto; min-height: 0; display: flex; flex-dire
 
 body.home-fixed .menu { flex: none; }
 @media (max-height: 700px) {
-  body.home-fixed .bubble { font-size: 13.5px; padding: 8px 12px; min-height: 0; }
   body.home-fixed .menu a.t-quiz { min-height: 78px; }
   body.home-fixed .menu a:not(.t-quiz) { min-height: 88px; }
   body.home-fixed .menu a .ico { font-size: 24px; }
@@ -354,8 +353,30 @@ body.home-fixed .menu { flex: none; }
 .room .ritem .emo { font-size: calc(var(--w) * 1cqw * .82); line-height: 1; filter: drop-shadow(0 4px 3px rgba(90, 50, 30, .25)); }
 .room .dog { position: absolute; left: 50%; bottom: 4%; width: auto; height: 60%; aspect-ratio: 1; margin: 0; transform: translateX(-50%); z-index: 4; }
 .room .sparkle { z-index: 8; color: #fff; }
-body.home-fixed .room { width: min(100%, calc(42dvh * 4 / 3)); flex: none; }
+
 body.home-fixed .stage .dog { width: auto; height: 60%; min-height: 0; }
 .item .e .emo { font-size: 44px; }
 .item .e img { width: 64px; height: 64px; object-fit: contain; }
 .item .kind { position: absolute; right: 8px; top: 8px; font-size: 10px; font-weight: 800; color: var(--sub); background: #f6eef3; border-radius: 6px; padding: 1px 6px; z-index: 1; }
+
+/* ホームの吹き出し：部屋より手前に出し、2行分の高さを確保して文字送りでレイアウトがずれないようにする */
+.stage .bubble {
+  z-index: 6; display: block; width: 100%; max-width: 100%; box-sizing: border-box;
+  min-height: calc(2 * 1.5em + 20px); margin: 0 0 10px; padding: 10px 14px;
+  font-size: 14px; line-height: 1.5;
+}
+.stage .bubble::after { z-index: 6; }
+.stage .room { margin-top: 2px; }
+
+@media (max-height: 740px) {
+  body.home-fixed .stage { padding: 8px 10px; }
+  body.home-fixed .stage .bubble { font-size: 13px; padding: 8px 12px; min-height: calc(2 * 1.5em + 16px); margin-bottom: 8px; }
+  body.home-fixed .expbar { margin: 6px auto 2px; }
+}
+@media (max-height: 700px) {
+  body.home-fixed .stage > .muted { display: none; }
+}
+body.home-fixed .stage > * { flex-shrink: 0; }
+/* ホームの部屋は、吹き出し・名前・EXPバーを置いた残りの高さいっぱいに広がる（幅は4:3で決まる） */
+body.home-fixed .stage { justify-content: flex-start; }
+body.home-fixed .stage > .room { flex: 1 1 0; min-height: 0; height: auto; width: auto; max-width: 100%; aspect-ratio: 4 / 3; margin: 0 auto 8px; }
