@@ -30,7 +30,9 @@ function confetti() {
 function refreshTop() {
   const s = store.get();
   $("#ptsVal").textContent = s.points.toLocaleString();
-  $("#lvBadge").textContent = `Lv.${levelInfo().lv}`;
+  const li = levelInfo();
+  $("#lvBadge").textContent = `Lv.${li.lv}`;
+  $("#lvExp").style.width = `${li.pct}%`;
 }
 store.onChange(refreshTop);
 
@@ -63,6 +65,7 @@ async function render() {
   const [, name = "home", arg] = location.hash.split("/");
   document.querySelectorAll(".tabbar a").forEach((a) => a.classList.toggle("on", a.dataset.tab === (TAB_OF[name] || name)));
   window.scrollTo(0, 0);
+  document.body.classList.toggle("home-fixed", !routes[name] || name === "home"); // ホームは画面に固定（スクロールしない）
   const fn = routes[name] || routes.home;
   await fn(arg);
 }
@@ -88,17 +91,19 @@ routes.home = async () => {
   const lessonDone = !!s.lessons[today()];
   view.innerHTML = `
     <div class="stage">
+      <span class="sparkle" style="left:12%;top:40%">✦</span><span class="sparkle" style="right:14%;top:30%;animation-delay:.8s">✦</span><span class="sparkle" style="right:22%;top:62%;animation-delay:1.6s">✧</span>
       <div class="bubble" id="bubble"></div>
       <div class="dog" id="dog" title="なでる"></div>
-      <div class="stagename">${h(st.name)} <span class="muted">Lv.${li.lv}</span></div>
+      <div class="pedestal"></div>
+      <div class="namebar"><b>${h(st.name)}</b><span class="lvchip">Lv.${li.lv}</span></div>
       <div class="expbar"><i style="width:${li.pct}%"></i></div>
-      <div class="muted">つぎのレベルまで あと ${li.toNext} EXP（ショップのアイテムで育つよ）</div>
+      <div class="muted">つぎのレベルまで あと <b>${li.toNext}</b> EXP</div>
     </div>
     <div class="menu">
-      <a href="#/quiz"><span class="ico">📝</span><b>過去問クイズ</b><span class="muted">10問で1セット</span></a>
-      <a href="#/lesson" class="${lessonDone ? "done" : ""}"><span class="ico">💡</span><b>今日のワンポイント${lessonDone ? "" : '<span class="badge">NEW</span>'}</b><span class="muted">${lessonDone ? "今日はクリア済み" : "1日1回 +50pt"}</span></a>
-      <a href="#/shop"><span class="ico">🛍️</span><b>ショップ</b><span class="muted">もこにプレゼント</span></a>
-      <a href="#/videos"><span class="ico">▶️</span><b>おすすめ動画</b><span class="muted">見終わると +30pt</span></a>
+      <a href="#/quiz" class="t-quiz"><span class="ico">✏️</span><span><b>過去問クイズ</b><br><span class="muted">10問で1セット！</span></span><span class="go">START</span></a>
+      <a href="#/lesson" class="t-lesson ${lessonDone ? "done" : ""}"><span class="ico">💡</span><b>ワンポイント${lessonDone ? "" : '<span class="badge">NEW</span>'}</b><span class="muted">${lessonDone ? "今日はクリア済み" : "1日1回 +50pt"}</span></a>
+      <a href="#/shop" class="t-shop"><span class="ico">🎁</span><b>ショップ</b><span class="muted">もこにプレゼント</span></a>
+      <a href="#/videos" class="t-video"><span class="ico">🎬</span><b>動画</b><span class="muted">見終わると +30pt</span></a>
     </div>`;
   const dog = $("#dog");
   await renderDog(dog);
@@ -250,7 +255,7 @@ function renderExplanation(q) {
 
 function questionHTML(q, idx, total) {
   return `
-    <div class="qmeta"><span class="tag">${h(db().genres[q.genre])}</span><span class="tag">${LEVELS[q.level]}</span><span>${h(q.examName)} ${h(q.section)} 問${q.no}</span></div>
+    <div class="qmeta"><span class="tag">${h(db().genres[q.genre])}</span><span class="tag lv${q.level}">${LEVELS[q.level]}</span><span>${h(q.examName)} ${h(q.section)} 問${q.no}</span></div>
     <p class="stem">${idx != null ? `Q${idx + 1}. ` : ""}${h(q.stem).replace(/([ａｂｃｄｅ])[：:]/g, "\n$1：")}</p>
     <div class="opts">${q.choices.map((c, i) => `<button class="opt" data-n="${i + 1}" data-i="${i + 1}">${h(c)}</button>`).join("")}</div>
     <div id="after"></div>`;
@@ -270,7 +275,7 @@ function bindAnswer(root, q, onAnswered) {
       ok ? a.c++ : a.w++; a.last = ok ? 1 : 0; a.at = Date.now();
     });
     const multi = q.answer.length > 1 ? `<p class="muted">※ この問題は公式発表で複数の選択肢（${q.answer.map((n) => NUM[n - 1]).join("・")}）が正解とされています。</p>` : "";
-    onAnswered(ok, `<div class="verdict ${ok ? "ok" : "ng"}">${ok ? "⭕ 正解！" : "❌ ざんねん…"}</div>
+    onAnswered(ok, `<div class="verdict ${ok ? "ok" : "ng"}">${ok ? "GREAT! ⭕" : "ざんねん…"}<small>${ok ? "正解！この調子！" : "解説を読んで覚えちゃおう"}</small></div>
       <p style="text-align:center">正答：<b>${q.answer.map((n) => NUM[n - 1]).join("・")}</b></p>${multi}${renderExplanation(q)}`);
   });
 }
@@ -321,9 +326,10 @@ routes.result = async () => {
       : "まだ伸びしろがたっぷりあります。まずは初級（必須問題）で基本用語を固めるのがおすすめです。";
   view.innerHTML = `
     <div class="card score">
-      <div class="muted">今回の結果</div>
+      <div class="muted">RESULT</div>
+      <div class="stars">${[1, 2, 3].map((k) => `<i class="${summary.correct >= [4, 7, 10][k - 1] ? "on" : ""}">★</i>`).join("")}</div>
       <div class="big">${summary.correct}<span style="font-size:24px">/${qs.length}</span></div>
-      <p>獲得ポイント <b style="color:var(--accent);font-size:20px">+${summary.pts}pt</b>${summary.perfect ? '<br><span class="badge">全問正解ボーナス +50</span>' : ""}</p>
+      <p style="margin:10px 0 0"><span class="reward">🦴 +${summary.pts}pt GET!</span>${summary.perfect ? '<br><span class="badge" style="margin-top:8px">全問正解ボーナス +50</span>' : ""}</p>
     </div>
     <div class="card">
       <h2 style="margin-top:0">総評</h2>
@@ -376,14 +382,15 @@ routes.lesson = async () => {
 routes.shop = async () => {
   const s = store.get();
   view.innerHTML = `<h1>🛍️ ショップ</h1>
-    <div class="row card" style="padding:10px 14px"><div class="dog" id="sDog" style="width:80px;height:80px;flex:none"></div><div class="bubble" id="sBubble" style="margin:0">なにを買ってくれるの？わくわく…！</div></div>
+    <div class="shophead"><div class="dog" id="sDog" style="width:80px;height:80px;flex:none"></div><div class="bubble" id="sBubble" style="margin:0">なにを買ってくれるの？わくわく…！</div></div>
     <p class="muted">アイテムをプレゼントすると、もこが成長します（EXPアップ）。</p>
     <div class="items">${ITEMS.map((it) => {
       const owned = s.items[it.id] || 0, soldout = it.once && owned;
-      return `<div class="item"><div class="e">${it.emoji}</div><b>${h(it.name)}</b>
+      const rar = it.price >= 3000 ? "SSR" : it.price >= 900 ? "SR" : it.price >= 250 ? "R" : "N";
+      return `<div class="item r-${rar}"><span class="rar">${rar}</span><div class="e">${it.emoji}</div><b>${h(it.name)}</b>
         <div class="muted">${h(it.desc)}</div><div class="muted">EXP +${it.exp}</div>
         ${owned ? `<div class="owned">${it.once ? "プレゼント済み" : `これまで ${owned}こ`}</div>` : ""}
-        <button class="btn small" data-buy="${it.id}" ${soldout || s.points < it.price ? "disabled" : ""} style="margin-top:6px">${soldout ? "済" : `🦴 ${it.price}pt`}</button></div>`;
+        <button class="btn small" data-buy="${it.id}" ${soldout || s.points < it.price ? "disabled" : ""} >${soldout ? "GET済み" : `🦴 ${it.price.toLocaleString()}`}</button></div>`;
     }).join("")}</div>`;
   await renderDog($("#sDog"));
   view.querySelector(".items").onclick = async (e) => {
@@ -408,8 +415,8 @@ routes.stats = async () => {
   const strong = rated.slice(0, 3).filter((r) => r.c / r.n >= .7), weak = rated.slice(-3).reverse().filter((r) => r.c / r.n < .7);
   view.innerHTML = `<h1 id="statsTitle">📊 学習の記録</h1>
     <div class="grid2">
-      <div class="card score"><div class="muted">累計回答</div><div class="big" style="font-size:36px">${n}</div></div>
-      <div class="card score"><div class="muted">正答率</div><div class="big" style="font-size:36px">${n ? Math.round(c / n * 100) : 0}<span style="font-size:18px">%</span></div></div>
+      <div class="card score"><div class="muted">累計回答</div><div class="big" style="font-size:40px">${n}</div></div>
+      <div class="card score"><div class="muted">正答率</div><div class="big" style="font-size:40px">${n ? Math.round(c / n * 100) : 0}<span style="font-size:18px">%</span></div></div>
     </div>
     <div class="card">
       <h2 style="margin-top:0">得意・苦手</h2>
@@ -475,6 +482,16 @@ routes.books = async () => {
       <p style="font-size:14px;margin:6px 0">${h(b.note)}</p>
       ${b.url ? `<a href="${h(b.url)}" target="_blank" rel="noopener" style="font-size:13px">出版社ページ・書誌情報</a>` : ""}</div></div>`).join("") || '<div class="card muted">準備中です</div>'}`;
 };
+
+// ---------- 拡大の防止（ピンチ・ダブルタップ） ----------
+["gesturestart", "gesturechange"].forEach((t) => document.addEventListener(t, (e) => e.preventDefault(), { passive: false }));
+document.addEventListener("touchmove", (e) => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+let lastTouch = 0;
+document.addEventListener("touchend", (e) => {
+  const now = Date.now();
+  if (now - lastTouch < 300 && !e.target.closest("input, textarea, select")) e.preventDefault();
+  lastTouch = now;
+}, { passive: false });
 
 // ---------- 起動 ----------
 refreshTop();

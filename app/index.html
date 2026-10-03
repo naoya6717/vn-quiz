@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fff4ec">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light only">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -13,18 +14,21 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/icon-180.png">
   <link rel="icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <div class="pts" id="pts">🦴 <b id="ptsVal">0</b> pt</div>
-    <div class="lv" id="lvBadge">Lv.1</div>
+    <div class="pts" id="pts"><span class="coin">🦴</span><b id="ptsVal">0</b><small>pt</small></div>
+    <div class="lvbox"><div class="lvexp"><i id="lvExp" style="width:0%"></i></div><div class="lv" id="lvBadge">Lv.1</div></div>
   </header>
   <main id="view"></main>
   <nav class="tabbar" id="tabbar">
     <a href="#/home" data-tab="home"><span>🏠</span>ホーム</a>
-    <a href="#/quiz" data-tab="quiz"><span>📝</span>クイズ</a>
-    <a href="#/videos" data-tab="videos"><span>▶️</span>動画</a>
+    <a href="#/videos" data-tab="videos"><span>🎬</span>動画</a>
+    <a href="#/quiz" data-tab="quiz" class="center"><span>✏️</span>クイズ</a>
     <a href="#/books" data-tab="books"><span>📚</span>参考書</a>
     <a href="#/stats" data-tab="stats"><span>📊</span>記録</a>
   </nav>
