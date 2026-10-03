@@ -10,6 +10,7 @@ const blank = () => ({
   videos: {},         // videoId -> { state: "watching"|"done", t: 秒, dur: 秒, at }
   lessons: {},        // "YYYY-MM-DD" -> { qid, correct }
   settings: { voice: false },
+  dog: null,          // { breed, name } 最初に選ぶ相棒
   seenIntro: false,
   createdAt: Date.now(),
 });

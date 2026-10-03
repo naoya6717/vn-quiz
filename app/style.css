@@ -310,3 +310,13 @@ body.home-fixed .menu { flex: none; }
   body.home-fixed .menu a:not(.t-quiz) { min-height: 88px; }
   body.home-fixed .menu a .ico { font-size: 24px; }
 }
+
+/* ---------- 相棒えらび ---------- */
+.breeds { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.breed { position: relative; border: 0; background: #fff; border-radius: 22px; padding: 10px 8px 12px; text-align: center; cursor: pointer;
+  box-shadow: inset 0 0 0 2px var(--line), 0 4px 0 #efdde7; display: flex; flex-direction: column; align-items: center; gap: 0; transition: transform .1s; }
+.breed .dog { width: 120px; height: 120px; margin: 0 auto; pointer-events: none; }
+.breed b { font-size: 15px; } .breed .muted { font-size: 11px; line-height: 1.4; }
+.breed.on { background: #fff6fa; box-shadow: inset 0 0 0 3px var(--pink), 0 4px 0 var(--grad-dark); transform: translateY(-2px); }
+.breed .check { position: absolute; right: 8px; top: 8px; width: 26px; height: 26px; border-radius: 50%; background: var(--grad); color: #fff; font-weight: 900; display: none; place-items: center; font-size: 14px; }
+.breed.on .check { display: grid; }

@@ -1,5 +1,5 @@
 // オフラインでも開けるように、アプリ本体とデータをキャッシュする（ネットワーク優先）。
-const CACHE = "moko-v7";
+const CACHE = "moko-v8";
 const CORE = ["./", "index.html", "style.css", "manifest.webmanifest", "js/main.js", "js/ui.js", "js/store.js", "js/data.js", "js/dog.js", "js/items.js", "js/videos.js", "data/questions.enc", "data/k.txt", "data/videos.json", "data/books.json", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {

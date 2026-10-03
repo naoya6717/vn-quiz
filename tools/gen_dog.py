@@ -1,6 +1,6 @@
 """Gemini の画像生成でトイプードル「もこ」の成長段階画像を作る。
-使い方: tools/.venv/bin/python tools/gen_dog.py [--models] [stage1 stage1_happy ...]
-.env の GEMINI_API_KEY を使う。出力: app/data/dog/<name>.png（背景透過）
+使い方: tools/.venv/bin/python tools/gen_dog.py [--models] [--breed=poodle|shiba|pome|dachs] [stage1 stage1_happy ...]
+.env の GEMINI_API_KEY を使う。出力: app/data/dog/<breed>/<name>.png（背景透過）
 キャラの一貫性のため、stage1 を最初に作り、以降は stage1 を参照画像として渡す。
 """
 import base64, io, json, os, sys, urllib.request
@@ -25,16 +25,26 @@ def key():
 K = key()
 MODEL = os.environ.get("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
 
-BASE = ("A cute 3D-rendered character in a soft, high-quality animated-film style: a toy poodle named Moko with fluffy curly apricot "
-        "(light caramel) fur, big round shiny dark eyes, small black nose, rosy cheeks, friendly expression. Full body, front-facing, "
-        "centered, standing on nothing, soft studio lighting, no text, no logo, no shadow on the ground. "
-        "Background: perfectly flat solid pure green (#00FF00) chroma-key color filling the entire background.")
+BREEDS = {
+    "poodle": "a toy poodle with fluffy curly apricot (light caramel) fur",
+    "shiba": "a Shiba Inu with red-sesame (orange-tan) fur, cream white cheeks, chest and belly, upright triangular ears and a curled tail",
+    "pome": "a Pomeranian with very fluffy cream-orange double coat, a big fluffy mane around the neck, small upright ears and a plume tail",
+    "dachs": "a miniature dachshund with smooth chocolate-and-tan short coat, long body, short legs and long floppy ears",
+}
+BREED = "poodle"
+
+
+def base():
+    return ("A cute 3D-rendered character in a soft, high-quality animated-film style: " + BREEDS[BREED] +
+            ", big round shiny dark eyes, small black nose, rosy cheeks, friendly expression. Full body, front-facing, "
+            "centered, standing on nothing, soft studio lighting, no text, no logo, no shadow on the ground. "
+            "Background: perfectly flat solid pure green (#00FF00) chroma-key color filling the entire background.")
 STAGES = {
     "stage1": "Stage: tiny puppy, very small and round, oversized head, sitting, innocent look.",
     "stage2": "Stage: young playful dog, a bit bigger than a puppy, energetic pose with one paw raised.",
     "stage3": "Stage: hard-working student dog, sitting upright, wearing a small light-blue scarf, determined but kind smile.",
-    "stage4": "Stage: mature, elegant adult toy poodle with a well-groomed fluffy coat, confident gentle smile, sitting proudly.",
-    "stage5": "Stage: legendary champion toy poodle with a tiny golden star badge on a red ribbon collar, subtle sparkles around, majestic happy pose.",
+    "stage4": "Stage: mature, elegant grown-up version of the same dog (same breed, same coat color), well-groomed coat, confident gentle smile, sitting proudly. Only one dog in the image.",
+    "stage5": "Stage: legendary champion version of the same dog (same breed, same coat color) wearing a tiny golden star badge on a red ribbon collar, subtle sparkles around, majestic happy pose. Only one dog in the image.",
 }
 HAPPY = " Expression: overjoyed — eyes happily closed in crescent shapes, mouth open in a big smile, jumping slightly with front paws up, small pink hearts floating nearby."
 
@@ -81,20 +91,29 @@ def main():
                 if "image" in m["name"]:
                     print(m["name"], m.get("supportedGenerationMethods"))
         return
-    OUT.mkdir(parents=True, exist_ok=True)
-    RAW.mkdir(parents=True, exist_ok=True)
+    global BREED
+    if args[:1] and args[0].startswith("--breed="):
+        BREED = args.pop(0).split("=", 1)[1]
+    out, raw = OUT / BREED, RAW / BREED
+    out.mkdir(parents=True, exist_ok=True)
+    raw.mkdir(parents=True, exist_ok=True)
     names = args or [f"{s}{h}" for s in STAGES for h in ("", "_happy")]
-    ref = RAW / "stage1.png"
+    ref = raw / "stage1.png"
     for name in names:
         stage = name.replace("_happy", "")
-        prompt = BASE + " " + STAGES[stage] + (HAPPY if name.endswith("_happy") else "")
+        prompt = base() + " " + STAGES[stage] + (HAPPY if name.endswith("_happy") else "")
         parts = [{"text": prompt}]
         if ref.exists() and name != "stage1":
             parts = [{"text": "This is the reference character Moko. Keep exactly the same character design, fur color, face and art style. " + prompt},
                      {"inline_data": {"mime_type": "image/png", "data": base64.b64encode(ref.read_bytes()).decode()}}]
-        png = call(MODEL, parts)
-        (RAW / f"{name}.png").write_bytes(png)
-        chroma(png).save(OUT / f"{name}.png", optimize=True)
+        for attempt in range(3):
+            try:
+                png = call(MODEL, parts)
+                break
+            except Exception as err:  # 一時的な失敗は再試行
+                print("retry", name, err)
+        (raw / f"{name}.png").write_bytes(png)
+        chroma(png).save(out / f"{name}.png", optimize=True)
         print("ok", name)
 
 

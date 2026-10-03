@@ -1,6 +1,6 @@
 import { store, today, addPoints } from "./store.js";
 import { db, unlock, savedPass, autoUnlock } from "./data.js";
-import { renderDog, levelInfo, stageOf, say } from "./dog.js";
+import { renderDog, levelInfo, stageOf, say, BREEDS, STAGES, dogName, breedOf } from "./dog.js";
 import { ITEMS } from "./items.js";
 import { videosView } from "./videos.js";
 import { h, toast, modal } from "./ui.js";
@@ -69,7 +69,7 @@ async function render() {
   const fn = routes[name] || routes.home;
   await fn(arg);
 }
-const TAB_OF = { play: "quiz", result: "quiz", shop: "home", lesson: "home", install: "home", unlock: "home", settings: "stats" };
+const TAB_OF = { play: "quiz", result: "quiz", shop: "home", lesson: "home", install: "home", unlock: "home", welcome: "home", settings: "stats" };
 
 const isStandalone = () => window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
 const isIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
@@ -87,6 +87,7 @@ async function ensureData() {
 routes.home = async () => {
   const s = store.get();
   if (!s.seenIntro && !isStandalone()) return go("#/install");
+  if (!s.dog) return go("#/welcome");
   const li = levelInfo(), st = stageOf(li.lv);
   const lessonDone = !!s.lessons[today()];
   view.innerHTML = `
@@ -102,7 +103,7 @@ routes.home = async () => {
     <div class="menu">
       <a href="#/quiz" class="t-quiz"><span class="ico">✏️</span><span><b>過去問クイズ</b><br><span class="muted">10問で1セット！</span></span><span class="go">START</span></a>
       <a href="#/lesson" class="t-lesson ${lessonDone ? "done" : ""}"><span class="ico">💡</span><b>ワンポイント${lessonDone ? "" : '<span class="badge">NEW</span>'}</b><span class="muted">${lessonDone ? "今日はクリア済み" : "1日1回 +50pt"}</span></a>
-      <a href="#/shop" class="t-shop"><span class="ico">🎁</span><b>ショップ</b><span class="muted">もこにプレゼント</span></a>
+      <a href="#/shop" class="t-shop"><span class="ico">🎁</span><b>ショップ</b><span class="muted">${h(dogName())}にプレゼント</span></a>
       <a href="#/videos" class="t-video"><span class="ico">🎬</span><b>動画</b><span class="muted">見終わると +30pt</span></a>
     </div>`;
   const dog = $("#dog");
@@ -111,6 +112,40 @@ routes.home = async () => {
   dog.onclick = () => {
     dog.classList.remove("hop"); void dog.offsetWidth; dog.classList.add("hop");
     say($("#bubble"), "tap");
+  };
+};
+
+// ---------- はじめに：相棒の犬と名前を決める ----------
+routes.welcome = async () => {
+  const cur = store.get().dog || {};
+  let pick = cur.breed || BREEDS[0].id;
+  view.innerHTML = `
+    <h1>🐾 相棒をえらぼう！</h1>
+    <p class="muted" style="margin-top:-6px">いっしょに国家試験合格をめざすパートナーです。あとから名前は変えられます。</p>
+    <div class="breeds">${BREEDS.map((b) => `
+      <button class="breed ${b.id === pick ? "on" : ""}" data-b="${b.id}">
+        <span class="check">✓</span>
+        <div class="dog" data-dog="${b.id}"></div>
+        <b>${h(b.name)}</b><span class="muted">${h(b.desc)}</span>
+      </button>`).join("")}</div>
+    <div class="card" style="margin-top:14px">
+      <b>名前をつけてね</b>
+      <input type="text" id="dogName" maxlength="10" autocomplete="off" placeholder="例：もこ" value="${h(cur.name || "")}" style="margin-top:8px">
+      <div style="margin-top:14px"><button class="btn" id="decide">この子に決める！</button></div>
+    </div>`;
+  for (const el of view.querySelectorAll("[data-dog]")) renderDog(el, { breed: el.dataset.dog, stage: STAGES[0] });
+  view.querySelector(".breeds").onclick = (e) => {
+    const b = e.target.closest("[data-b]"); if (!b) return;
+    pick = b.dataset.b;
+    view.querySelectorAll(".breed").forEach((x) => x.classList.toggle("on", x === b));
+  };
+  $("#decide").onclick = () => {
+    const name = $("#dogName").value.trim().slice(0, 10);
+    if (!name) { toast("名前を入れてね"); $("#dogName").focus(); return; }
+    const first = !store.get().dog;
+    store.update((st) => { st.dog = { breed: pick, name }; });
+    toast(first ? `${name}がなかまになった！` : "設定を変えました");
+    go("#/home");
   };
 };
 
@@ -383,7 +418,7 @@ routes.shop = async () => {
   const s = store.get();
   view.innerHTML = `<h1>🛍️ ショップ</h1>
     <div class="shophead"><div class="dog" id="sDog" style="width:80px;height:80px;flex:none"></div><div class="bubble" id="sBubble" style="margin:0">なにを買ってくれるの？わくわく…！</div></div>
-    <p class="muted">アイテムをプレゼントすると、もこが成長します（EXPアップ）。</p>
+    <p class="muted">アイテムをプレゼントすると、${h(dogName())}が成長します（EXPアップ）。</p>
     <div class="items">${ITEMS.map((it) => {
       const owned = s.items[it.id] || 0, soldout = it.once && owned;
       const rar = it.price >= 3000 ? "SSR" : it.price >= 900 ? "SR" : it.price >= 250 ? "R" : "N";
@@ -433,8 +468,9 @@ routes.stats = async () => {
       ${s.history.slice(0, 10).map((x) => `<div class="row" style="justify-content:space-between;border-bottom:1px dashed var(--line);padding:4px 0"><span class="muted">${new Date(x.at).toLocaleDateString("ja-JP")}</span><span>${x.correct}/${x.total}</span><span style="color:var(--accent)">+${x.points}pt</span></div>`).join("") || '<p class="muted">まだありません</p>'}
     </div>
     <div class="card"><h2 style="margin-top:0">設定</h2>
-      <label class="row" style="justify-content:space-between"><span>もこのセリフを読み上げる</span><input type="checkbox" id="voice" ${s.settings.voice ? "checked" : ""}></label>
+      <label class="row" style="justify-content:space-between"><span>${h(dogName())}のセリフを読み上げる</span><input type="checkbox" id="voice" ${s.settings.voice ? "checked" : ""}></label>
       <div class="grid2" style="margin-top:12px"><button class="btn ghost small" id="exp" style="width:100%">バックアップを保存</button><button class="btn ghost small" id="imp" style="width:100%">バックアップから復元</button></div>
+      <button class="btn ghost small" id="partner" style="width:100%;margin-top:10px">相棒の犬・名前を変える</button>
       <button class="btn ghost small" id="guide" style="width:100%;margin-top:10px">ホーム画面への追加方法</button>
       <p class="muted" style="margin-top:12px">過去問：一般財団法人動物看護師統一認定機構が公表した問題・正答を、個人の学習目的でのみ利用しています。図や写真を使う問題は除外しています。</p>
     </div>`;
@@ -452,6 +488,7 @@ routes.stats = async () => {
   };
   $("#voice").onchange = (e) => store.update((st) => { st.settings.voice = e.target.checked; });
   $("#guide").onclick = () => go("#/install");
+  $("#partner").onclick = () => go("#/welcome");
   $("#exp").onclick = async () => {
     const blob = new Blob([store.export()], { type: "application/json" });
     const file = new File([blob], `moko-backup-${today()}.json`, { type: "application/json" });
