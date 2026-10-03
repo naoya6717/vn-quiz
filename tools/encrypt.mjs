@@ -23,4 +23,6 @@ const key = await crypto.subtle.deriveKey(
 const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv }, key, plain));
 const b64 = (u) => Buffer.from(u).toString("base64");
 writeFileSync(root + "app/data/questions.enc", JSON.stringify({ v: 1, salt: b64(salt), iv: b64(iv), ct: b64(ct) }));
-console.log(`encrypted ${plain.length} bytes → app/data/questions.enc`);
+// 合言葉の入力を省くため、アプリが自動で使う鍵ファイルも書き出す（ユーザー判断で合言葉入力を廃止）
+writeFileSync(root + "app/data/k.txt", pass);
+console.log(`encrypted ${plain.length} bytes → app/data/questions.enc (+ app/data/k.txt)`);

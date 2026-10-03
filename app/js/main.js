@@ -1,5 +1,5 @@
 import { store, today, addPoints } from "./store.js";
-import { db, unlock, savedPass } from "./data.js";
+import { db, unlock, savedPass, autoUnlock } from "./data.js";
 import { renderDog, levelInfo, stageOf, say } from "./dog.js";
 import { ITEMS } from "./items.js";
 import { videosView } from "./videos.js";
@@ -73,6 +73,7 @@ const isIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.p
 
 async function ensureData() {
   if (db()) return db();
+  try { return await autoUnlock(); } catch { /* 鍵ファイルが読めない場合は保存済みの合言葉を試す */ }
   const p = savedPass();
   if (p) { try { return await unlock(p); } catch { /* 合言葉が変わった */ } }
   go("#/unlock");

@@ -25,3 +25,9 @@ export async function unlock(pass) {
 }
 
 export const db = () => cache;
+
+// 合言葉の入力なしで開く：アプリに同梱した鍵で自動的に復号する
+export async function autoUnlock() {
+  const pass = (await (await fetch("data/k.txt", { cache: "no-cache" })).text()).trim();
+  return unlock(pass);
+}
