@@ -454,9 +454,9 @@ routes.books = async () => {
   let books = [];
   try { books = await (await fetch("data/books.json")).json(); } catch { /* なし */ }
   view.innerHTML = `<h1>📚 おすすめ参考書</h1>
-    <p class="muted">書誌情報（書名・ISBN・発行年）は出版社の公式ページで確認したものです。リンク先で目次や立ち読みも見られます。</p>
+    <p class="muted">書誌情報（書名・ISBN・発行年）は出版社の公式ページで確認したものです。リンク先で目次や立ち読みも見られます。表紙画像：各出版社の公式サイトより。</p>
     ${books.map((b) => `<div class="card book">
-      ${b.cover ? `<img src="${h(b.cover)}" alt="" loading="lazy">` : `<div class="noimg">📘</div>`}
+      ${b.cover ? `<img src="${h(b.cover)}" alt="${h(b.title)}の表紙" loading="lazy" onerror="this.outerHTML='<div class=noimg>📘</div>'">` : `<div class="noimg">📘</div>`}
       <div><b>${h(b.title)}</b><div class="muted">${h(b.author)}｜${h(b.publisher)}${b.pubdate ? `｜${h(b.pubdate)}` : ""}</div>
       ${b.isbn ? `<div class="muted">ISBN ${h(b.isbn)}</div>` : ""}
       <p style="font-size:14px;margin:6px 0">${h(b.note)}</p>
