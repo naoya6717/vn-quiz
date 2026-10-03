@@ -302,7 +302,7 @@ html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
 body.home-fixed { position: fixed; inset: 0; overflow: hidden; }
 body.home-fixed main { height: calc(100dvh - 64px - var(--safe-t) - 88px - var(--safe-b)); margin-top: 0; padding: 10px 16px 0; display: flex; flex-direction: column; }
 body.home-fixed .stage { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; }
-body.home-fixed .dog { width: auto; height: min(230px, 26dvh); aspect-ratio: 1; flex: 0 1 auto; min-height: 110px; }
+
 body.home-fixed .menu { flex: none; }
 @media (max-height: 700px) {
   body.home-fixed .bubble { font-size: 13.5px; padding: 8px 12px; min-height: 0; }
@@ -320,3 +320,42 @@ body.home-fixed .menu { flex: none; }
 .breed.on { background: #fff6fa; box-shadow: inset 0 0 0 3px var(--pink), 0 4px 0 var(--grad-dark); transform: translateY(-2px); }
 .breed .check { position: absolute; right: 8px; top: 8px; width: 26px; height: 26px; border-radius: 50%; background: var(--grad); color: #fff; font-weight: 900; display: none; place-items: center; font-size: 14px; }
 .breed.on .check { display: grid; }
+
+/* ---------- お部屋（位置はすべて部屋に対する％なので画面サイズでずれない） ---------- */
+.room {
+  position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 3; margin: 8px auto 10px; border-radius: 22px; overflow: hidden;
+  container-type: inline-size; box-shadow: inset 0 0 0 4px #fff, 0 6px 16px rgba(255, 111, 165, .18);
+}
+.room .wall { position: absolute; inset: 0 0 38% 0;
+  background: repeating-linear-gradient(90deg, #fff7ef 0 18px, #fff1e4 18px 36px); }
+.room.wp-star .wall {
+  background:
+    radial-gradient(circle at 25% 30%, #ffd86b 0 2px, transparent 3px) 0 0 / 34px 34px,
+    radial-gradient(circle at 75% 70%, #ffb3d1 0 2px, transparent 3px) 0 0 / 34px 34px,
+    linear-gradient(180deg, #ffe9f3, #fff3e6);
+}
+.room .floor { position: absolute; left: 0; right: 0; bottom: 0; height: 38%; border-top: 6px solid #fff;
+  background: repeating-linear-gradient(90deg, #f1c896 0 16%, #ebbd87 16% 32%), #f1c896;
+  box-shadow: inset 0 10px 14px rgba(120, 70, 30, .12); }
+.room .window { position: absolute; left: 22%; top: 9%; width: 22%; height: 30%; border-radius: 10px 10px 4px 4px; background: #fff; box-shadow: 0 2px 0 rgba(0,0,0,.06); }
+.room .window .sky { position: absolute; inset: 7%; border-radius: 7px 7px 2px 2px; background: linear-gradient(180deg, #9fdcff, #dff4ff); }
+.room .window .sky::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 6%; margin-left: -3%; background: #fff; }
+.room .window .sky::after { content: ""; position: absolute; left: 18%; top: 22%; width: 30%; height: 14%; background: #fff; border-radius: 99px; box-shadow: 14px 6px 0 -2px #fff; }
+.room .window .drape, .room .window .valance { display: none; }
+.room .window.curtain .drape { display: block; position: absolute; top: -4%; bottom: -10%; width: 34%;
+  background: repeating-linear-gradient(90deg, #fff 0 6px, #ffe3ef 6px 9px); opacity: .95; border-radius: 0 0 40% 40%; }
+.room .window.curtain .drape.l { left: -14%; } .room .window.curtain .drape.r { right: -14%; }
+.room .window.curtain .valance { display: block; position: absolute; left: -16%; right: -16%; top: -10%; height: 20%; border-radius: 10px 10px 50% 50%;
+  background: linear-gradient(180deg, #ff9cc2, #ff7eb3); box-shadow: 0 3px 0 rgba(0,0,0,.08); }
+.room .rug { position: absolute; left: 50%; bottom: 2%; width: 66%; height: 22%; transform: translateX(-50%); border-radius: 50%; z-index: 3;
+  background: radial-gradient(ellipse, #c7b4ff 0 45%, #b39cff 46% 58%, #e9e0ff 59% 70%, #c7b4ff 71%); box-shadow: 0 4px 0 rgba(90, 60, 160, .15); }
+.room .ritem { position: absolute; transform: translateX(-50%); display: flex; justify-content: center; align-items: flex-end; pointer-events: none; }
+.room .ritem img { width: 100%; height: auto; filter: drop-shadow(0 4px 4px rgba(90, 50, 30, .2)); }
+.room .ritem .emo { font-size: calc(var(--w) * 1cqw * .82); line-height: 1; filter: drop-shadow(0 4px 3px rgba(90, 50, 30, .25)); }
+.room .dog { position: absolute; left: 50%; bottom: 4%; width: auto; height: 60%; aspect-ratio: 1; margin: 0; transform: translateX(-50%); z-index: 4; }
+.room .sparkle { z-index: 8; color: #fff; }
+body.home-fixed .room { width: min(100%, calc(42dvh * 4 / 3)); flex: none; }
+body.home-fixed .stage .dog { width: auto; height: 60%; min-height: 0; }
+.item .e .emo { font-size: 44px; }
+.item .e img { width: 64px; height: 64px; object-fit: contain; }
+.item .kind { position: absolute; right: 8px; top: 8px; font-size: 10px; font-weight: 800; color: var(--sub); background: #f6eef3; border-radius: 6px; padding: 1px 6px; z-index: 1; }

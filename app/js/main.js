@@ -1,7 +1,7 @@
 import { store, today, addPoints } from "./store.js";
 import { db, unlock, savedPass, autoUnlock } from "./data.js";
 import { renderDog, levelInfo, stageOf, say, BREEDS, STAGES, dogName, breedOf } from "./dog.js";
-import { ITEMS } from "./items.js";
+import { ITEMS, itemVisual } from "./items.js";
 import { videosView } from "./videos.js";
 import { h, toast, modal } from "./ui.js";
 
@@ -92,10 +92,8 @@ routes.home = async () => {
   const lessonDone = !!s.lessons[today()];
   view.innerHTML = `
     <div class="stage">
-      <span class="sparkle" style="left:12%;top:40%">✦</span><span class="sparkle" style="right:14%;top:30%;animation-delay:.8s">✦</span><span class="sparkle" style="right:22%;top:62%;animation-delay:1.6s">✧</span>
       <div class="bubble" id="bubble"></div>
-      <div class="dog" id="dog" title="なでる"></div>
-      <div class="pedestal"></div>
+      <div class="room" id="room"></div>
       <div class="namebar"><b>${h(st.name)}</b><span class="lvchip">Lv.${li.lv}</span></div>
       <div class="expbar"><i style="width:${li.pct}%"></i></div>
       <div class="muted">つぎのレベルまで あと <b>${li.toNext}</b> EXP</div>
@@ -106,14 +104,34 @@ routes.home = async () => {
       <a href="#/shop" class="t-shop"><span class="ico">🎁</span><b>ショップ</b><span class="muted">${h(dogName())}にプレゼント</span></a>
       <a href="#/videos" class="t-video"><span class="ico">🎬</span><b>動画</b><span class="muted">見終わると +30pt</span></a>
     </div>`;
+  await renderRoom($("#room"));
   const dog = $("#dog");
-  await renderDog(dog);
   say($("#bubble"), null);
   dog.onclick = () => {
     dog.classList.remove("hop"); void dog.offsetWidth; dog.classList.add("hop");
     say($("#bubble"), "tap");
   };
 };
+
+// ---------- 部屋（買ったアイテムを飾る） ----------
+async function renderRoom(el) {
+  const owned = store.get().items;
+  const has = (id) => !!owned[id];
+  const placed = ITEMS.filter((it) => it.kind === "room" && it.place && has(it.id));
+  const parts = await Promise.all(placed.map(async (it) => {
+    const p = it.place, pos = p.top != null ? `top:${p.top}%` : `bottom:${p.bottom}%`;
+    return `<div class="ritem" style="left:${p.x}%;${pos};width:${p.w}%;--w:${p.w};z-index:${p.z}" title="${h(it.name)}">${await itemVisual(it)}</div>`;
+  }));
+  el.className = `room${has("wallpaper") ? " wp-star" : ""}`;
+  el.innerHTML = `
+    <div class="wall"></div><div class="floor"></div>
+    <div class="window${has("curtain") ? " curtain" : ""}"><i class="sky"></i><i class="drape l"></i><i class="drape r"></i><i class="valance"></i></div>
+    ${has("rug") ? '<div class="rug"></div>' : ""}
+    ${parts.join("")}
+    <div class="dog" id="dog" title="なでる"></div>
+    <span class="sparkle" style="left:8%;top:12%">✦</span><span class="sparkle" style="right:10%;top:44%;animation-delay:.9s">✧</span>`;
+  await renderDog($("#dog", el));
+}
 
 // ---------- はじめに：相棒の犬と名前を決める ----------
 routes.welcome = async () => {
@@ -419,21 +437,22 @@ routes.shop = async () => {
   view.innerHTML = `<h1>🛍️ ショップ</h1>
     <div class="shophead"><div class="dog" id="sDog" style="width:80px;height:80px;flex:none"></div><div class="bubble" id="sBubble" style="margin:0">なにを買ってくれるの？わくわく…！</div></div>
     <p class="muted">アイテムをプレゼントすると、${h(dogName())}が成長します（EXPアップ）。</p>
-    <div class="items">${ITEMS.map((it) => {
-      const owned = s.items[it.id] || 0, soldout = it.once && owned;
-      const rar = it.price >= 3000 ? "SSR" : it.price >= 900 ? "SR" : it.price >= 250 ? "R" : "N";
-      return `<div class="item r-${rar}"><span class="rar">${rar}</span><div class="e">${it.emoji}</div><b>${h(it.name)}</b>
+    <div class="items">${(await Promise.all(ITEMS.map(async (it) => {
+      const owned = s.items[it.id] || 0, soldout = it.kind === "room" && owned;
+      const rar = it.price >= 4000 ? "SSR" : it.price >= 1000 ? "SR" : it.price >= 300 ? "R" : "N";
+      return `<div class="item r-${rar}"><span class="rar">${rar}</span><span class="kind">${it.kind === "food" ? "おやつ" : "お部屋"}</span>
+        <div class="e">${await itemVisual(it)}</div><b>${h(it.name)}</b>
         <div class="muted">${h(it.desc)}</div><div class="muted">EXP +${it.exp}</div>
-        ${owned ? `<div class="owned">${it.once ? "プレゼント済み" : `これまで ${owned}こ`}</div>` : ""}
-        <button class="btn small" data-buy="${it.id}" ${soldout || s.points < it.price ? "disabled" : ""} >${soldout ? "GET済み" : `🦴 ${it.price.toLocaleString()}`}</button></div>`;
-    }).join("")}</div>`;
+        ${owned ? `<div class="owned">${it.kind === "room" ? "お部屋に飾ってあるよ" : `これまで ${owned}こ`}</div>` : ""}
+        <button class="btn small" data-buy="${it.id}" ${soldout || s.points < it.price ? "disabled" : ""}>${soldout ? "GET済み" : `🦴 ${it.price.toLocaleString()}`}</button></div>`;
+    }))).join("")}</div>`;
   await renderDog($("#sDog"));
   view.querySelector(".items").onclick = async (e) => {
     const b = e.target.closest("[data-buy]"); if (!b) return;
     const it = ITEMS.find((x) => x.id === b.dataset.buy);
     if (store.get().points < it.price) return;
     store.update((st) => { st.points -= it.price; st.items[it.id] = (st.items[it.id] || 0) + 1; });
-    toast(`${it.emoji} ${it.name} をプレゼントしました`);
+    toast(it.kind === "room" ? `${it.emoji} ${it.name} をお部屋に飾ったよ！` : `${it.emoji} ${it.name} をプレゼントしました`);
     const leveled = await gainExp(it.exp);
     if (!leveled) { await routes.shop(); say($("#sBubble"), "buy"); }
     else { $("#modal").addEventListener("click", () => routes.shop(), { once: true }); }
