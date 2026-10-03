@@ -467,7 +467,7 @@ routes.stats = async () => {
   const rows = Object.entries(d.genres).map(([k, name]) => ({ k, name, ...(gs[k] || { c: 0, n: 0 }) }));
   const rated = rows.filter((r) => r.n >= 5).sort((a, b) => b.c / b.n - a.c / a.n);
   const strong = rated.slice(0, 3).filter((r) => r.c / r.n >= .7), weak = rated.slice(-3).reverse().filter((r) => r.c / r.n < .7);
-  view.innerHTML = `<h1 id="statsTitle">📊 学習の記録</h1>
+  view.innerHTML = `<h1 id="statsTitle" data-multitap style="user-select:none;-webkit-user-select:none">📊 学習の記録</h1>
     <div class="grid2">
       <div class="card score"><div class="muted">累計回答</div><div class="big" style="font-size:40px">${n}</div></div>
       <div class="card score"><div class="muted">正答率</div><div class="big" style="font-size:40px">${n ? Math.round(c / n * 100) : 0}<span style="font-size:18px">%</span></div></div>
@@ -495,8 +495,8 @@ routes.stats = async () => {
     </div>`;
   // テスト用の隠し機能：タイトルを5回続けてタップするとポイントを追加できる
   let taps = 0, tapTimer = null;
-  $("#statsTitle").onclick = () => {
-    taps++; clearTimeout(tapTimer); tapTimer = setTimeout(() => (taps = 0), 1500);
+  $("#statsTitle").onpointerup = () => {
+    taps++; clearTimeout(tapTimer); tapTimer = setTimeout(() => (taps = 0), 2000);
     if (taps < 5) return;
     taps = 0;
     const n = parseInt(prompt("テスト用：追加するポイント数（減らすときはマイナス）", "1000") || "", 10);
@@ -545,7 +545,7 @@ document.addEventListener("touchmove", (e) => { if (e.touches.length > 1) e.prev
 let lastTouch = 0;
 document.addEventListener("touchend", (e) => {
   const now = Date.now();
-  if (now - lastTouch < 300 && !e.target.closest("input, textarea, select")) e.preventDefault();
+  if (now - lastTouch < 300 && !e.target.closest("input, textarea, select, [data-multitap]")) e.preventDefault();
   lastTouch = now;
 }, { passive: false });
 

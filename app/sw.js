@@ -1,5 +1,5 @@
 // オフラインでも開けるように、アプリ本体とデータをキャッシュする（ネットワーク優先）。
-const CACHE = "vnpass-v2";
+const CACHE = "vnpass-v3";
 const CORE = ["./", "index.html", "style.css", "manifest.webmanifest", "js/main.js", "js/ui.js", "js/store.js", "js/data.js", "js/dog.js", "js/items.js", "js/videos.js", "data/questions.enc", "data/k.txt", "data/videos.json", "data/books.json", "icons/icon-192.png", "icons/icon-180.png"];
 
 self.addEventListener("install", (e) => {
