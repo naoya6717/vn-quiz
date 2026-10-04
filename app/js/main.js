@@ -342,12 +342,15 @@ function renderExplanation(q) {
     ${e.checked ? `解説の出典照合日：${h(e.checked)}` : ""}</div></div>`;
 }
 
+// 図の記号（①や a など）を、図と同じピンクの丸で表示する
+const CIRC = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙㉚㉛㉜㉝㉞㉟㊱㊲㊳㊴㊵㊶㊷㊸㊹㊺㊻㊼㊽㊾㊿";
+const symDot = (c) => { const k = [...CIRC].indexOf(c); return `<span class="symdot">${h(k >= 0 ? String(k + 1) : c)}</span>`; };
 function questionHTML(q, idx, total) {
   return `
     <div class="qmeta"><span class="tag">${h(genreName(q.genre))}</span>${q.fig ? `<span>${h(q.section)}</span>` : `<span class="tag lv${q.level}">${LEVELS[q.level]}</span><span>${h(q.examName)} ${h(q.section)} 問${q.no}</span>`}</div>
     ${q.fig ? figHTML(q) : ""}
     <p class="stem">${idx != null ? `Q${idx + 1}. ` : ""}${h(q.stem).replace(/([ａｂｃｄｅ])[：:]/g, "\n$1：")}</p>
-    <div class="opts">${q.choices.map((c, i) => `<button class="opt" data-n="${i + 1}" data-i="${i + 1}">${h(c)}</button>`).join("")}</div>
+    <div class="opts">${q.choices.map((c, i) => `<button class="opt" data-n="${i + 1}" data-i="${i + 1}">${q.sym ? symDot(c) : h(c)}</button>`).join("")}</div>
     <div id="after"></div>`;
 }
 
@@ -366,7 +369,7 @@ function bindAnswer(root, q, onAnswered) {
     });
     const multi = q.answer.length > 1 ? `<p class="muted">※ この問題は公式発表で複数の選択肢（${q.answer.map((n) => NUM[n - 1]).join("・")}）が正解とされています。</p>` : "";
     onAnswered(ok, `<div class="verdict ${ok ? "ok" : "ng"}">${ok ? "GREAT! ⭕" : "ざんねん…"}<small>${ok ? "正解！この調子！" : "解説を読んで覚えちゃおう"}</small></div>
-      <p style="text-align:center">正答：<b>${q.answer.map((n) => NUM[n - 1]).join("・")}</b></p>${multi}${renderExplanation(q)}`);
+      <p style="text-align:center">正答：<b>${q.answer.map((n) => NUM[n - 1] + (q.sym ? ` 図の${symDot(q.choices[n - 1])}` : "")).join("・")}</b></p>${multi}${renderExplanation(q)}`);
   });
 }
 

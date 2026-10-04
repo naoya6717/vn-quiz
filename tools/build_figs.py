@@ -601,6 +601,7 @@ def build_questions(src, figs):
                 expl_choices.append("正答ではありません。")
         out.append({
             "id": "fig-" + qid, "genre": "fig", "level": q.get("level", 2), "fig": q["fig"],
+            "sym": q["kind"] == "num",  # 選択肢が図の記号（アプリではピンクの丸で表示）
             "examName": "図で覚える", "section": f["name"], "no": no,
             "stem": stem, "choices": choices, "answer": [answer],
             "source": {"title": "図：" + f["credit"]["title"], "publisher": f"{f['credit']['author']}／{f['credit']['license']}（{f['credit']['note']}）", "url": f["credit"]["url"]},

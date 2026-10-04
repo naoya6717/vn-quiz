@@ -393,3 +393,5 @@ body.home-fixed .stage > .room { flex: 1 1 0; min-height: 0; height: auto; width
 .figzoom .figscroll img { display: block; width: 220%; max-width: none; height: auto; }
 .figzoom p { text-align: center; font-size: 12px; color: var(--sub); }
 .figclose { position: absolute; top: calc(12px + env(safe-area-inset-top)); right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--accent, #e2457f); color: #fff; font-size: 24px; font-weight: 800; z-index: 1; }
+/* 図の記号から選ぶ選択肢：図と同じピンクの丸 */
+.symdot { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; height: 32px; padding: 0 6px; border-radius: 99px; background: #e2457f; color: #fff; font-weight: 900; font-size: 16px; border: 2px solid #fff; box-shadow: 0 0 0 1px #e2457f; vertical-align: middle; font-family: Arial, sans-serif; }
