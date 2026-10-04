@@ -1,0 +1,1509 @@
+{
+ "figs": {
+  "brain": {
+   "name": "犬の脳（正中断面）",
+   "img": "data/figs/brain.webp",
+   "keys": {
+    "cerebral cortex": {
+     "n": 1,
+     "ja": "大脳皮質"
+    },
+    "cerebrum": {
+     "n": 2,
+     "ja": "大脳"
+    },
+    "nerve fibres joining right and left cerebral hemispheres": {
+     "n": 3,
+     "ja": "脳梁（左右の大脳半球をつなぐ神経線維）"
+    },
+    "3rd ventricle": {
+     "n": 4,
+     "ja": "第三脳室"
+    },
+    "cerebellum": {
+     "n": 5,
+     "ja": "小脳"
+    },
+    "spinal cord": {
+     "n": 6,
+     "ja": "脊髄"
+    },
+    "thalamus": {
+     "n": 7,
+     "ja": "視床"
+    },
+    "hypothalamus": {
+     "n": 8,
+     "ja": "視床下部"
+    },
+    "pons": {
+     "n": 9,
+     "ja": "橋"
+    },
+    "medulla oblongata": {
+     "n": 10,
+     "ja": "延髄"
+    },
+    "pituitary gland": {
+     "n": 11,
+     "ja": "下垂体"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals Longitudinal section through brain of a dog.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Longitudinal_section_through_brain_of_a_dog.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "eye": {
+   "name": "眼球の構造（模式図）",
+   "img": "data/figs/eye.webp",
+   "keys": {
+    "conjunctiva": {
+     "n": 1,
+     "ja": "結膜"
+    },
+    "retina": {
+     "n": 2,
+     "ja": "網膜"
+    },
+    "choroid": {
+     "n": 3,
+     "ja": "脈絡膜"
+    },
+    "cornea": {
+     "n": 4,
+     "ja": "角膜"
+    },
+    "sclera": {
+     "n": 6,
+     "ja": "強膜"
+    },
+    "iris": {
+     "n": 5,
+     "ja": "虹彩"
+    },
+    "fovea": {
+     "n": 7,
+     "ja": "中心窩"
+    },
+    "pupil": {
+     "n": 8,
+     "ja": "瞳孔"
+    },
+    "lens": {
+     "n": 9,
+     "ja": "水晶体"
+    },
+    "optic nerve": {
+     "n": 10,
+     "ja": "視神経"
+    },
+    "anterior chamber": {
+     "n": 11,
+     "ja": "前眼房"
+    },
+    "blind spot": {
+     "n": 12,
+     "ja": "盲点"
+    },
+    "suspensory ligament": {
+     "n": 13,
+     "ja": "毛様小帯（チン小帯）"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals Structure of the eye.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Structure_of_the_eye.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "ear": {
+   "name": "耳の構造（模式図）",
+   "img": "data/figs/ear.webp",
+   "keys": {
+    "vestibular organ (semicircular canals and otolith organs)": {
+     "n": 2,
+     "ja": "前庭器官（半規管と耳石器）"
+    },
+    "ear ossicles tiny bones": {
+     "n": 1,
+     "ja": "耳小骨"
+    },
+    "ear drum": {
+     "n": 4,
+     "ja": "鼓膜"
+    },
+    "ear pinna": {
+     "n": 3,
+     "ja": "耳介"
+    },
+    "cochlea": {
+     "n": 5,
+     "ja": "蝸牛"
+    },
+    "auditory nerve": {
+     "n": 7,
+     "ja": "聴神経"
+    },
+    "Eustachian tube": {
+     "n": 6,
+     "ja": "耳管"
+    },
+    "ear canal": {
+     "n": 8,
+     "ja": "外耳道"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals The ear.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_ear.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "kidney": {
+   "name": "腎臓の断面（模式図）",
+   "img": "data/figs/kidney.webp",
+   "keys": {
+    "renal pelvis": {
+     "n": 1,
+     "ja": "腎盂"
+    },
+    "cortex": {
+     "n": 2,
+     "ja": "皮質"
+    },
+    "medulla": {
+     "n": 3,
+     "ja": "髄質"
+    },
+    "renal artery": {
+     "n": 4,
+     "ja": "腎動脈"
+    },
+    "pyramids": {
+     "n": 5,
+     "ja": "腎錐体"
+    },
+    "renal vein": {
+     "n": 6,
+     "ja": "腎静脈"
+    },
+    "fibrous capsule": {
+     "n": 7,
+     "ja": "線維被膜"
+    },
+    "ureter": {
+     "n": 8,
+     "ja": "尿管"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals Dissected kidney.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Dissected_kidney.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "liver": {
+   "name": "肝臓・胆嚢・膵臓（模式図）",
+   "img": "data/figs/liver.webp",
+   "keys": {
+    "diaphragm": {
+     "n": 1,
+     "ja": "横隔膜"
+    },
+    "bile ducts transporting bile to gall bladder": {
+     "n": 3,
+     "ja": "胆管（胆汁を胆嚢へ運ぶ）"
+    },
+    "liver": {
+     "n": 2,
+     "ja": "肝臓"
+    },
+    "gall bladder (under lobe of liver)": {
+     "n": 4,
+     "ja": "胆嚢"
+    },
+    "pancreas": {
+     "n": 5,
+     "ja": "膵臓"
+    },
+    "bile duct": {
+     "n": 6,
+     "ja": "胆管"
+    },
+    "small intestine (duodenum)": {
+     "n": 7,
+     "ja": "小腸（十二指腸）"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals Liver, gall bladder & pancreas.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Liver%2C_gall_bladder_%26_pancreas.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "heart": {
+   "name": "心臓の外観（模式図）",
+   "img": "data/figs/heart.webp",
+   "keys": {
+    "aorta": {
+     "n": 1,
+     "ja": "大動脈"
+    },
+    "pulmonary artery": {
+     "n": 2,
+     "ja": "肺動脈"
+    },
+    "cranial vena cava": {
+     "n": 3,
+     "ja": "前大静脈"
+    },
+    "coronary artery and vein": {
+     "n": 4,
+     "ja": "冠状動脈・冠状静脈"
+    },
+    "coronary artery and vein ": {
+     "n": 5,
+     "ja": "冠状動脈・冠状静脈"
+    },
+    "caudal vena cava": {
+     "n": 6,
+     "ja": "後大静脈"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals heart showing Coronary vessels.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_heart_showing_Coronary_vessels.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "organs": {
+   "name": "からだの主な臓器（腹側から見た模式図）",
+   "img": "data/figs/organs.webp",
+   "keys": {
+    "thymus": {
+     "n": 1,
+     "ja": "胸腺"
+    },
+    "left lung": {
+     "n": 2,
+     "ja": "左肺"
+    },
+    "heart": {
+     "n": 3,
+     "ja": "心臓"
+    },
+    "diaphragm": {
+     "n": 4,
+     "ja": "横隔膜"
+    },
+    "stomach": {
+     "n": 5,
+     "ja": "胃"
+    },
+    "liver": {
+     "n": 6,
+     "ja": "肝臓"
+    },
+    "spleen": {
+     "n": 7,
+     "ja": "脾臓"
+    },
+    "small intestine": {
+     "n": 9,
+     "ja": "小腸"
+    },
+    "right kidney": {
+     "n": 8,
+     "ja": "右の腎臓"
+    },
+    "ovary": {
+     "n": 10,
+     "ja": "卵巣"
+    },
+    "bladder": {
+     "n": 11,
+     "ja": "膀胱"
+    },
+    "uterus": {
+     "n": 12,
+     "ja": "子宮"
+    },
+    "testis": {
+     "n": 13,
+     "ja": "精巣"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals main organs vertebrate body.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_main_organs_vertebrate_body.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "skeleton": {
+   "name": "犬の骨格",
+   "img": "data/figs/skeleton.webp",
+   "keys": {
+    "1": {
+     "n": 1,
+     "ja": "頭蓋",
+     "en": "Cranium, or Skull"
+    },
+    "2": {
+     "n": 2,
+     "ja": "上顎骨",
+     "en": "Maxilla"
+    },
+    "3": {
+     "n": 3,
+     "ja": "下顎骨",
+     "en": "Mandible, or Lower jaw"
+    },
+    "4": {
+     "n": 4,
+     "ja": "環椎",
+     "en": "Atlas"
+    },
+    "5": {
+     "n": 5,
+     "ja": "軸椎",
+     "en": "Axis"
+    },
+    "6": {
+     "n": 6,
+     "ja": "肩甲骨",
+     "en": "Scapula, or Shoulder-blade"
+    },
+    "7": {
+     "n": 7,
+     "ja": "肩甲棘",
+     "en": "Spine of scapula"
+    },
+    "8": {
+     "n": 8,
+     "ja": "上腕骨",
+     "en": "Humerus"
+    },
+    "9": {
+     "n": 9,
+     "ja": "橈骨",
+     "en": "Radius"
+    },
+    "10": {
+     "n": 10,
+     "ja": "尺骨",
+     "en": "Ulna"
+    },
+    "11": {
+     "n": 11,
+     "ja": "指骨",
+     "en": "Phalanges"
+    },
+    "12": {
+     "n": 12,
+     "ja": "中手骨",
+     "en": "Metacarpal Bones"
+    },
+    "13": {
+     "n": 13,
+     "ja": "手根骨",
+     "en": "Carpal Bones or Wrist-bones"
+    },
+    "14": {
+     "n": 14,
+     "ja": "胸骨",
+     "en": "Sternum, or Breast-bone"
+    },
+    "15": {
+     "n": 15,
+     "ja": "肋軟骨",
+     "en": "Cartilaginous part of rib"
+    },
+    "16": {
+     "n": 16,
+     "ja": "肋骨",
+     "en": "Ribs (13 in number)"
+    },
+    "17": {
+     "n": 17,
+     "ja": "趾骨",
+     "en": "Phalanges"
+    },
+    "18": {
+     "n": 18,
+     "ja": "中足骨",
+     "en": "Metatarsal Bones"
+    },
+    "19": {
+     "n": 19,
+     "ja": "足根骨",
+     "en": "Tarsal Bones"
+    },
+    "20": {
+     "n": 20,
+     "ja": "踵骨",
+     "en": "Calcaneus (os calcu)"
+    },
+    "21": {
+     "n": 21,
+     "ja": "腓骨",
+     "en": "Fibula"
+    },
+    "22": {
+     "n": 22,
+     "ja": "脛骨",
+     "en": "Tibia"
+    },
+    "23": {
+     "n": 23,
+     "ja": "膝蓋骨",
+     "en": "Patella, or Knee-cap"
+    },
+    "24": {
+     "n": 24,
+     "ja": "大腿骨",
+     "en": "Femur"
+    },
+    "25": {
+     "n": 25,
+     "ja": "坐骨",
+     "en": "Ischium"
+    },
+    "26": {
+     "n": 26,
+     "ja": "寛骨",
+     "en": "Pelvis, or Hip-bone"
+    },
+    "A": {
+     "n": "A",
+     "ja": "頸椎",
+     "en": "Cervical or Neck Bones (7 in number)"
+    },
+    "B": {
+     "n": "B",
+     "ja": "胸椎",
+     "en": "Dorsal or Thoracic Bones (13 in number, each bearing a rib)"
+    },
+    "C": {
+     "n": "C",
+     "ja": "腰椎",
+     "en": "Lumbar Bones (7 in number)"
+    },
+    "D": {
+     "n": "D",
+     "ja": "仙椎",
+     "en": "Sacral Bones (3 in number)"
+    },
+    "E": {
+     "n": "E",
+     "ja": "尾椎",
+     "en": "Caudal or Tail Bones (20 to 23 in number)"
+    }
+   },
+   "credit": {
+    "title": "Skeleton of a dog diagram.svg",
+    "author": "Przemek Maksim",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg",
+    "note": "改変なし（凡例を日本語訳）"
+   }
+  }
+ },
+ "questions": [
+  {
+   "id": "fig-sk-humerus",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 1,
+   "stem": "図は犬の骨格である。⑧の骨はどれか。",
+   "choices": [
+    "橈骨",
+    "上腕骨",
+    "大腿骨",
+    "肩甲骨",
+    "脛骨"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の⑧は、図の凡例で Humerus（上腕骨）とされている骨です。上腕骨は肩と肘のあいだ（上腕）にある1本の骨で、上端の骨頭が肩甲骨と肩関節をつくります（OpenStax、ヒトの資料）。過去問でも「犬の前肢の骨格で上腕骨はどれか」が2回出ています。",
+    "choices": [
+     "正答ではありません。",
+     "正答。⑧は上腕骨（Humerus）。肩関節と肘関節のあいだにある1本の骨です。",
+     "正答ではありません。大腿骨は図の㉔です。",
+     "正答ではありません。肩甲骨は図の⑥です。",
+     "正答ではありません。"
+    ],
+    "point": "前肢：肩甲骨 → 上腕骨 → 橈骨・尺骨 → 手根骨 → 中手骨 → 指骨。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.2 Bones of the Upper Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+      "note": "The humerus is the single bone of the upper arm region"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-006",
+    "y4-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-sk-femur",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 2,
+   "stem": "図は犬の骨格である。㉔の骨はどれか。",
+   "choices": [
+    "上腕骨",
+    "坐骨",
+    "大腿骨",
+    "脛骨",
+    "腓骨"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の㉔は、図の凡例で Femur（大腿骨）とされている骨です。大腿骨は太もも（大腿）にある1本の骨で、上は寛骨と股関節を、下は脛骨と膝関節をつくります（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。上腕骨は図の⑧です。",
+     "正答ではありません。坐骨は図の㉕です。",
+     "正答。㉔は大腿骨（Femur）。太ももにある1本の骨です。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "後肢：寛骨 → 大腿骨 →（膝蓋骨）→ 脛骨・腓骨 → 足根骨 → 中足骨 → 趾骨。大腿骨頭の壊死＝レッグ・ペルテス病（若い小型犬）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "The femur, or thigh bone, is the single bone of the thigh region"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-jitti-004",
+    "k1-ippan-072"
+   ]
+  },
+  {
+   "id": "fig-sk-scapula",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 3,
+   "stem": "図は犬の骨格である。上腕骨とともに肩関節をつくる⑥の骨はどれか。",
+   "choices": [
+    "下顎骨",
+    "胸骨",
+    "肩甲骨",
+    "肋骨",
+    "寛骨"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の⑥は、図の凡例で Scapula（肩甲骨）とされている骨です。上腕骨の骨頭が肩甲骨の関節窩と関節して肩関節をつくります（OpenStax、ヒトの資料）。過去問では「矢印が示す関節はどれか（正答：肩関節）」が出ています。",
+    "choices": [
+     "正答ではありません。下顎骨は図の③です。",
+     "正答ではありません。胸骨は図の⑭です。",
+     "正答。⑥は肩甲骨（Scapula）。肩甲骨のくぼみ（関節窩）と上腕骨頭で肩関節をつくります。",
+     "正答ではありません。肋骨は図の⑯です。",
+     "正答ではありません。寛骨は図の㉖です。"
+    ],
+    "point": "肩関節＝肩甲骨＋上腕骨、肘関節＝上腕骨＋橈骨・尺骨、股関節＝寛骨＋大腿骨、膝関節＝大腿骨＋脛骨（＋膝蓋骨）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.2 Bones of the Upper Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+      "note": "The head articulates with the glenoid cavity of the scapula to form the glenohumeral (shoulder) joint."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-005"
+   ]
+  },
+  {
+   "id": "fig-sk-patella",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 4,
+   "stem": "図は犬の骨格である。㉓の骨はどれか。",
+   "choices": [
+    "大腿骨",
+    "踵骨",
+    "足根骨",
+    "腓骨",
+    "膝蓋骨"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の㉓は、図の凡例で Patella（膝蓋骨）とされている骨です。膝蓋骨はひざのお皿で、大腿骨の下端と関節します（OpenStax、ヒトの資料）。膝蓋骨が大腿骨の溝から外れるのが膝蓋骨脱臼（パテラ）で、主に小型犬に起こります。",
+    "choices": [
+     "正答ではありません。大腿骨は図の㉔です。",
+     "正答ではありません。踵骨は図の⑳です。",
+     "正答ではありません。足根骨は図の⑲です。",
+     "正答ではありません。",
+     "正答。㉓は膝蓋骨（Patella）。いわゆる「膝のお皿」で、大腿骨の下端と関節します。"
+    ],
+    "point": "膝蓋骨脱臼＝小型犬に多い発育性の病気（内方脱臼が多い）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "The patella is the kneecap and articulates with the distal femur."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-ippan-081",
+    "y3-hissu-042"
+   ]
+  },
+  {
+   "id": "fig-sk-calcaneus",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 5,
+   "stem": "図は犬の骨格である。⑳の骨はどれか。",
+   "choices": [
+    "坐骨",
+    "踵骨",
+    "膝蓋骨",
+    "趾骨",
+    "中足骨"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の⑳は、図の凡例で Calcaneus（踵骨）とされている骨です。踵骨は足根骨のひとつで、人ではかかと（heel）をつくる、足でいちばん大きな骨です（OpenStax、ヒトの資料。足根骨の項で説明されています）。図では後肢の足根部から後ろに突き出ています。",
+    "choices": [
+     "正答ではありません。坐骨は図の㉕です。",
+     "正答。⑳は踵骨（Calcaneus）。人ではかかとをつくる骨です。",
+     "正答ではありません。膝蓋骨は図の㉓です。",
+     "正答ではありません。趾骨は図の⑰です。",
+     "正答ではありません。中足骨は図の⑱です。"
+    ],
+    "point": "足根骨（踵骨を含む）→ 中足骨 → 趾骨。膝蓋骨（ひざ）と踵骨（かかと）を取り違えないように。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "the calcaneus (heel bone), the largest bone of the foot, which forms the heel"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-033"
+   ]
+  },
+  {
+   "id": "fig-sk-metatarsal",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 6,
+   "stem": "図は犬の骨格である。⑱の骨はどれか。",
+   "choices": [
+    "足根骨",
+    "中手骨",
+    "中足骨",
+    "趾骨",
+    "手根骨"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図の⑱は、図の凡例で Metatarsal Bones（中足骨）とされている骨です。足は後ろから足根骨・中足骨・趾骨の3つのグループに分かれます（OpenStax、ヒトの資料）。前肢で同じ位置にあるのが中手骨です。",
+    "choices": [
+     "正答ではありません。足根骨は図の⑲です。",
+     "正答ではありません。中手骨は図の⑫です。",
+     "正答。⑱は中足骨（Metatarsal Bones）。後肢の足根骨と趾骨のあいだにある骨です。",
+     "正答ではありません。趾骨は図の⑰です。",
+     "正答ではありません。手根骨は図の⑬です。"
+    ],
+    "point": "前肢：手根骨 → 中手骨 → 指骨／後肢：足根骨 → 中足骨 → 趾骨。「手」は前肢、「足」は後肢。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "The mid-foot has the five metatarsal bones."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-sk-lumbar",
+   "genre": "fig",
+   "level": 2,
+   "fig": "skeleton",
+   "examName": "図で覚える",
+   "section": "犬の骨格",
+   "no": 7,
+   "stem": "図は犬の骨格である。Cの範囲の椎骨はどれか。",
+   "choices": [
+    "腰椎",
+    "尾椎",
+    "胸椎",
+    "仙椎",
+    "頸椎"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Skeleton of a dog diagram.svg",
+    "publisher": "Przemek Maksim／CC BY-SA 3.0（改変なし（凡例を日本語訳））",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASkeleton_of_a_dog_diagram.svg"
+   },
+   "explanation": {
+    "summary": "図のCは、図の凡例で Lumbar Bones（腰椎、7個）とされている範囲です。脊柱は頭側から頸椎（A）・胸椎（B、肋骨と関節する）・腰椎（C）・仙椎（D、癒合して仙骨になる）・尾椎（E）に分かれます（Wikibooks の動物解剖学教科書）。犬の腰椎は通常7個ですが、6〜8個の個体もいます（犬32頭のMRI研究で65.6％が7個）。",
+    "choices": [
+     "正答。Cは腰椎（Lumbar）。図の凡例では7個です。",
+     "正答ではありません。尾椎は図のEです。",
+     "正答ではありません。胸椎は図のBです。",
+     "正答ではありません。仙椎は図のDです。",
+     "正答ではありません。頸椎は図のAです。"
+    ],
+    "point": "犬の椎骨（図の凡例）：頸椎7・胸椎13・腰椎7・仙椎3（癒合して仙骨）。第一頸椎＝環椎、第二頸椎＝軸椎。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / The Skeleton",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/The_Skeleton",
+      "note": "lumbar vertebrae in the loin region"
+     },
+     {
+      "title": "Transitional lumbosacral vertebrae in black Norwegian elkhound and Brittany dogs（PMC論文、犬）",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816518/",
+      "note": "most dogs having seven lumbar vertebrae"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-013",
+    "k4-ippan-013"
+   ]
+  },
+  {
+   "id": "fig-br-medulla",
+   "genre": "fig",
+   "level": 2,
+   "fig": "brain",
+   "examName": "図で覚える",
+   "section": "犬の脳（正中断面）",
+   "no": 8,
+   "stem": "図は犬の脳の正中断面である。⑩はどれか。",
+   "choices": [
+    "小脳",
+    "脊髄",
+    "視床下部",
+    "延髄",
+    "橋"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Longitudinal section through brain of a dog.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Longitudinal_section_through_brain_of_a_dog.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑩は、図の作者が medulla oblongata（延髄）とラベルを付けた部分です。延髄は橋とともに脳幹をつくり、心臓血管系と呼吸の調節にかかわります。呼吸中枢は延髄にあります（OpenStax、ヒトの資料）。過去問では「嚥下や血圧を調節しているのはどれか」として出ています。",
+    "choices": [
+     "正答ではありません。小脳は図の⑤です。",
+     "正答ではありません。脊髄は図の⑥です。",
+     "正答ではありません。視床下部は図の⑧です。",
+     "正答。⑩は延髄。脳幹のいちばん尾側で、脊髄につながる部分です。",
+     "正答ではありません。橋は図の⑨です。"
+    ],
+    "point": "延髄＝呼吸・心臓血管（血圧）の中枢。脳幹＝中脳＋橋＋延髄。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 13.2 The Central Nervous System（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+      "note": "The pons and the medulla regulate several crucial functions, including the cardiovascular and respiratory systems and rates."
+     },
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 22.3 The Process of Breathing（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing",
+      "note": "respiratory center located within the medulla oblongata"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-005",
+    "k1-ippan-008"
+   ]
+  },
+  {
+   "id": "fig-br-cerebellum",
+   "genre": "fig",
+   "level": 2,
+   "fig": "brain",
+   "examName": "図で覚える",
+   "section": "犬の脳（正中断面）",
+   "no": 9,
+   "stem": "図は犬の脳の正中断面である。小脳はどれか。",
+   "choices": [
+    "②",
+    "⑩",
+    "⑤",
+    "⑨",
+    "⑦"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Longitudinal section through brain of a dog.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Longitudinal_section_through_brain_of_a_dog.jpg"
+   },
+   "explanation": {
+    "summary": "小脳は、図の作者が cerebellum とラベルを付けた部分です。小脳は脳幹に付着していますが、脳の別の領域とされ、大脳からの情報と脊髄を通って届く末梢からの感覚情報を照らし合わせる働きをします（OpenStax、ヒトの資料）。断面では木の枝のような模様（白質）が見えるのが特徴です。",
+    "choices": [
+     "正答ではありません。②は大脳です。",
+     "正答ではありません。⑩は延髄です。",
+     "正答。小脳は脳幹の後ろ側にある、しわの多い丸い部分です。",
+     "正答ではありません。⑨は橋です。",
+     "正答ではありません。⑦は視床です。"
+    ],
+    "point": "小脳＝運動の調整（大脳の指令と末梢からの感覚情報を照合）。橋が小脳と脳幹をつなぐ。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 13.2 The Central Nervous System（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+      "note": "The cerebellum is largely responsible for comparing information from the cerebrum with sensory feedback"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-jitti-003"
+   ]
+  },
+  {
+   "id": "fig-br-pituitary",
+   "genre": "fig",
+   "level": 2,
+   "fig": "brain",
+   "examName": "図で覚える",
+   "section": "犬の脳（正中断面）",
+   "no": 10,
+   "stem": "図は犬の脳の正中断面である。⑪はどれか。",
+   "choices": [
+    "視床",
+    "視床下部",
+    "下垂体",
+    "橋",
+    "第三脳室"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Longitudinal section through brain of a dog.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Longitudinal_section_through_brain_of_a_dog.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑪は、図の作者が pituitary gland（下垂体）とラベルを付けた部分です。視床下部は茎のような漏斗で下垂体とつながり、下垂体の前葉・後葉は視床下部からの信号に応じて別々のホルモンを分泌します（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。視床は図の⑦です。",
+     "正答ではありません。視床下部は図の⑧です。",
+     "正答。⑪は下垂体。視床下部から茎（漏斗）でぶら下がっている内分泌腺です。",
+     "正答ではありません。橋は図の⑨です。",
+     "正答ではありません。第三脳室は図の④です。"
+    ],
+    "point": "視床下部 →（漏斗）→ 下垂体。オキシトシンは視床下部でつくられ下垂体後葉から放出される。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 17.3 The Pituitary Gland and Hypothalamus（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus",
+      "note": "It connects to the pituitary gland by the stalk-like infundibulum."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-ippan-009"
+   ]
+  },
+  {
+   "id": "fig-ey-retina",
+   "genre": "fig",
+   "level": 2,
+   "fig": "eye",
+   "examName": "図で覚える",
+   "section": "眼球の構造（模式図）",
+   "no": 11,
+   "stem": "図は眼球の構造である。②はどれか。",
+   "choices": [
+    "脈絡膜",
+    "強膜",
+    "結膜",
+    "角膜",
+    "網膜"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Structure of the eye.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Structure_of_the_eye.jpg"
+   },
+   "explanation": {
+    "summary": "図の②は、図の作者が retina（網膜）とラベルを付けた層です。眼球の壁の最も内側の層が網膜で、光を受け取る神経組織を含みます。そのすぐ外側の脈絡膜は血管に富み、眼球に血液を送ります（OpenStax、ヒトの資料）。選択肢は過去問（第4回 実地6）と同じです。",
+    "choices": [
+     "正答ではありません。脈絡膜は図の③です。",
+     "正答ではありません。強膜は図の⑥です。",
+     "正答ではありません。結膜は図の①です。",
+     "正答ではありません。角膜は図の④です。",
+     "正答。②は網膜。眼球壁のいちばん内側の層で、光を感じる神経組織です。"
+    ],
+    "point": "眼球の壁：外側から 強膜（前方は角膜）→ 脈絡膜 → 網膜。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "The innermost layer of the eye is the neural tunic, or retina"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-006"
+   ]
+  },
+  {
+   "id": "fig-ey-lens",
+   "genre": "fig",
+   "level": 2,
+   "fig": "eye",
+   "examName": "図で覚える",
+   "section": "眼球の構造（模式図）",
+   "no": 12,
+   "stem": "図は眼球の構造である。水晶体はどれか。",
+   "choices": [
+    "⑨",
+    "⑤",
+    "④",
+    "⑪",
+    "⑧"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Structure of the eye.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Structure_of_the_eye.jpg"
+   },
+   "explanation": {
+    "summary": "水晶体は、図の作者が lens とラベルを付けた構造です。角膜とともに光を網膜に集め、毛様体が毛様小帯（図の suspensory ligament）を介して水晶体を曲げ、ピントを合わせます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。水晶体は虹彩のすぐ後ろにある凸レンズ形の構造で、毛様小帯につながっています。",
+     "正答ではありません。⑤は虹彩です。",
+     "正答ではありません。④は角膜です。",
+     "正答ではありません。⑪は前眼房です。",
+     "正答ではありません。⑧は瞳孔です。"
+    ],
+    "point": "光の通り道：角膜 → 前眼房 → 瞳孔 → 水晶体 → 硝子体 → 網膜。ピント合わせ＝毛様体＋毛様小帯。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "along with the lens, focuses light onto the retina"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-jitti-005",
+    "k3-ippan-013"
+   ]
+  },
+  {
+   "id": "fig-er-ossicles",
+   "genre": "fig",
+   "level": 2,
+   "fig": "ear",
+   "examName": "図で覚える",
+   "section": "耳の構造（模式図）",
+   "no": 13,
+   "stem": "図は耳の構造である。①の骨（耳小骨）の役割はどれか。",
+   "choices": [
+    "加速の感知",
+    "鼓膜振動の増幅",
+    "回転の感知",
+    "音源の方向特定",
+    "音声の認識"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals The ear.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_ear.jpg"
+   },
+   "explanation": {
+    "summary": "図の①は、図の作者が ear ossicles（耳小骨）とラベルを付けた小さな骨です。音で鼓膜が振動し、その振動はツチ骨・キヌタ骨・アブミ骨を伝わるあいだに増幅されて、内耳の卵円窓に伝わります（OpenStax、ヒトの資料）。耳小骨は中耳にあり、外側で鼓膜に、内側で内耳の前庭窓につながります（獣医解剖学書）。選択肢は過去問（第3回 実地7）と同じです。",
+    "choices": [
+     "正答ではありません。",
+     "正答。耳小骨（ツチ骨・キヌタ骨・アブミ骨）は、鼓膜の振動を増幅して内耳へ伝えます。",
+     "正答ではありません。回転（頭の動き）を感じるのは内耳の半規管です。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "外耳＝耳介・外耳道、中耳＝鼓膜・鼓室・耳小骨、内耳＝蝸牛（聴覚）・前庭と半規管（平衡覚）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "This vibration is amplified as it moves across the malleus, incus, and stapes."
+     },
+     {
+      "title": "Veterian Key: The Ear（獣医解剖学）",
+      "url": "https://veteriankey.com/the-ear/",
+      "note": "These ossicles become components of the middle ear"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-007",
+    "k3-ippan-011"
+   ]
+  },
+  {
+   "id": "fig-er-cochlea",
+   "genre": "fig",
+   "level": 2,
+   "fig": "ear",
+   "examName": "図で覚える",
+   "section": "耳の構造（模式図）",
+   "no": 14,
+   "stem": "図は耳の構造である。⑤はどれか。",
+   "choices": [
+    "耳管",
+    "前庭器官（半規管と耳石器）",
+    "蝸牛",
+    "鼓膜",
+    "外耳道"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals The ear.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_ear.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑤は、図の作者が cochlea（蝸牛）とラベルを付けた、かたつむり形の器官です。蝸牛の中心にある蝸牛管には、音を神経の信号に変える細胞があります（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。耳管は図の⑥です。",
+     "正答ではありません。前庭器官（半規管と耳石器）は図の②です。",
+     "正答。⑤は蝸牛。かたつむり形の内耳の器官で、音を感じます。",
+     "正答ではありません。鼓膜は図の④です。",
+     "正答ではありません。外耳道は図の⑧です。"
+    ],
+    "point": "内耳：蝸牛（蝸牛管）＝聴覚。半規管＝回転（頭の動き）、卵形嚢・球形嚢＝頭の位置。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "cochlear duct ... contains the sound-transducing neurons"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-ippan-019",
+    "k2-ippan-015"
+   ]
+  },
+  {
+   "id": "fig-kd-pelvis",
+   "genre": "fig",
+   "level": 2,
+   "fig": "kidney",
+   "examName": "図で覚える",
+   "section": "腎臓の断面（模式図）",
+   "no": 15,
+   "stem": "図は腎臓の断面である。腎盂はどれか。",
+   "choices": [
+    "⑤",
+    "③",
+    "①",
+    "②",
+    "⑧"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Dissected kidney.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Dissected_kidney.jpg"
+   },
+   "explanation": {
+    "summary": "腎盂は、図の作者が renal pelvis とラベルを付けた部分です。腎盂は腎門から出てくる構造で、その平滑筋が蠕動運動で尿を尿管へ送り出します（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。⑤は腎錐体です。",
+     "正答ではありません。③は髄質です。",
+     "正答。腎盂は腎臓の中心部（腎門側）にある、尿が集まる空間です。",
+     "正答ではありません。②は皮質です。",
+     "正答ではありません。⑧は尿管です。"
+    ],
+    "point": "尿の流れ：皮質・髄質（ネフロン）→ 腎盂 → 尿管 → 膀胱 → 尿道。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 25.3 Gross Anatomy of the Kidney（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney",
+      "note": "The smooth muscle in the renal pelvis funnels urine via peristalsis into the ureter."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y4-jitti-003"
+   ]
+  },
+  {
+   "id": "fig-kd-ureter",
+   "genre": "fig",
+   "level": 2,
+   "fig": "kidney",
+   "examName": "図で覚える",
+   "section": "腎臓の断面（模式図）",
+   "no": 16,
+   "stem": "図は腎臓の断面である。⑧はどれか。",
+   "choices": [
+    "腎盂",
+    "腎静脈",
+    "腎動脈",
+    "線維被膜",
+    "尿管"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Dissected kidney.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Dissected_kidney.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑧は、図の作者が ureter（尿管）とラベルを付けた管です。腎盂の平滑筋が蠕動で尿を尿管へ送り、膀胱は左右の尿管から尿を受け取ります（OpenStax、ヒトの資料）。腎門には尿管のほか腎動脈・腎静脈が出入りします。",
+    "choices": [
+     "正答ではありません。腎盂は図の①です。",
+     "正答ではありません。腎静脈は図の⑥です。",
+     "正答ではありません。腎動脈は図の④です。",
+     "正答ではありません。線維被膜は図の⑦です。",
+     "正答。⑧は尿管。腎盂から尿を膀胱へ運ぶ管です。"
+    ],
+    "point": "腎門を出入りするもの：腎動脈・腎静脈・尿管（腎盂）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 25.2 Gross Anatomy of Urine Transport（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport",
+      "note": "The urinary bladder collects urine from both ureters"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-024"
+   ]
+  },
+  {
+   "id": "fig-lv-gallbladder",
+   "genre": "fig",
+   "level": 2,
+   "fig": "liver",
+   "examName": "図で覚える",
+   "section": "肝臓・胆嚢・膵臓（模式図）",
+   "no": 17,
+   "stem": "図は肝臓とその周りの臓器である。④はどれか。",
+   "choices": [
+    "胆嚢",
+    "肝臓",
+    "膵臓",
+    "小腸（十二指腸）",
+    "横隔膜"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Liver, gall bladder & pancreas.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Liver%2C_gall_bladder_%26_pancreas.jpg"
+   },
+   "explanation": {
+    "summary": "図の④は、図の作者が gall bladder（胆嚢、肝臓の葉の下にある）とラベルを付けた袋です。肝臓が胆汁をつくって十二指腸へ送り、胆嚢は胆汁をためて濃縮し、放出します（OpenStax、ヒトの資料）。過去問では「矢印が示す部位（胆嚢）は胆汁を貯留する」が正答でした。犬・猫には胆嚢がありますが、馬とラットにはありません。",
+    "choices": [
+     "正答。④は胆嚢。肝臓の葉の下にあり、胆汁をためる袋です。",
+     "正答ではありません。肝臓は図の②です。",
+     "正答ではありません。膵臓は図の⑤です。",
+     "正答ではありません。小腸（十二指腸）は図の⑦です。",
+     "正答ではありません。横隔膜は図の①です。"
+    ],
+    "point": "胆汁：肝臓でつくる → 胆嚢でためる・濃縮 → 十二指腸へ。胆嚢がない動物＝馬・ラット。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.6 The Liver, Pancreas, and Gallbladder（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+      "note": "The gallbladder primarily stores, concentrates, and releases bile."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-jitti-003",
+    "k3-hissu-003"
+   ]
+  },
+  {
+   "id": "fig-lv-pancreas",
+   "genre": "fig",
+   "level": 2,
+   "fig": "liver",
+   "examName": "図で覚える",
+   "section": "肝臓・胆嚢・膵臓（模式図）",
+   "no": 18,
+   "stem": "図は肝臓とその周りの臓器である。⑤の臓器はどれか。",
+   "choices": [
+    "横隔膜",
+    "胆嚢",
+    "小腸（十二指腸）",
+    "肝臓",
+    "膵臓"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Liver, gall bladder & pancreas.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Liver%2C_gall_bladder_%26_pancreas.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑤は、図の作者が pancreas（膵臓）とラベルを付けた臓器です。膵臓は消化酵素と重炭酸イオンを含む膵液をつくって十二指腸へ送り（外分泌）、膵島からはグルカゴン・インスリンなどのホルモンを分泌します（内分泌）（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。横隔膜は図の①です。",
+     "正答ではありません。胆嚢は図の④です。",
+     "正答ではありません。小腸（十二指腸）は図の⑦です。",
+     "正答ではありません。肝臓は図の②です。",
+     "正答。⑤は膵臓。十二指腸に沿って伸びる、ぶどうの房のような臓器です。"
+    ],
+    "point": "膵臓＝外分泌（膵液→十二指腸）＋内分泌（膵島：インスリン・グルカゴン）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.6 The Liver, Pancreas, and Gallbladder（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+      "note": "The pancreas produces pancreatic juice"
+     },
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 17.9 The Endocrine Pancreas（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-9-the-endocrine-pancreas",
+      "note": "secrete the hormones glucagon, insulin"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-jitti-002",
+    "k1-ippan-009"
+   ]
+  },
+  {
+   "id": "fig-ht-pulmonary",
+   "genre": "fig",
+   "level": 2,
+   "fig": "heart",
+   "examName": "図で覚える",
+   "section": "心臓の外観（模式図）",
+   "no": 19,
+   "stem": "図は心臓の外観である。②の血管はどれか。",
+   "choices": [
+    "前大静脈",
+    "大動脈",
+    "冠状動脈・冠状静脈",
+    "後大静脈",
+    "肺動脈"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals heart showing Coronary vessels.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_heart_showing_Coronary_vessels.jpg"
+   },
+   "explanation": {
+    "summary": "図の②は、図の作者が pulmonary artery（肺動脈）とラベルを付けた血管です。右心室は酸素の少ない血液を肺動脈幹へ送り出し、肺動脈幹は左右の肺動脈に分かれて肺へ向かいます（OpenStax、ヒトの資料）。左心室から出た血液は大動脈へ流れます。",
+    "choices": [
+     "正答ではありません。前大静脈は図の③です。",
+     "正答ではありません。大動脈は図の①です。",
+     "正答ではありません。冠状動脈・冠状静脈は図の④です。",
+     "正答ではありません。後大静脈は図の⑥です。",
+     "正答。②は肺動脈。右心室から肺へ血液を送る血管です。"
+    ],
+    "point": "右心室 → 肺動脈（静脈血）→ 肺 → 肺静脈（動脈血）→ 左心房 → 左心室 → 大動脈。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.1 Heart Anatomy（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+      "note": "The right ventricle pumps deoxygenated blood into the pulmonary trunk"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-006",
+    "y3-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-og-spleen",
+   "genre": "fig",
+   "level": 2,
+   "fig": "organs",
+   "examName": "図で覚える",
+   "section": "からだの主な臓器（腹側から見た模式図）",
+   "no": 20,
+   "stem": "図はからだの主な臓器の模式図である。⑦の臓器はどれか。",
+   "choices": [
+    "肝臓",
+    "脾臓",
+    "胃",
+    "胸腺",
+    "右の腎臓"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals main organs vertebrate body.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 2.5（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_main_organs_vertebrate_body.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑦は、図の作者が spleen（脾臓）とラベルを付けた臓器です。脾臓はリンパ節などとともに二次リンパ器官で、リンパ球が集まります。胎児期には肝臓とともに血液をつくる働きも担います（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。肝臓は図の⑥です。",
+     "正答。⑦は脾臓。図では胃のそばにある細長い臓器です。",
+     "正答ではありません。胃は図の⑤です。",
+     "正答ではありません。胸腺は図の①です。",
+     "正答ではありません。右の腎臓は図の⑧です。"
+    ],
+    "point": "一次リンパ器官＝骨髄・胸腺、二次リンパ器官＝脾臓・リンパ節など。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 21.1 Anatomy of the Lymphatic and Immune Systems（ヒト）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems",
+      "note": "secondary lymphoid organs, which include the lymph nodes, spleen, and lymphoid nodules"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-014",
+    "y2-jitti-002"
+   ]
+  }
+ ]
+}

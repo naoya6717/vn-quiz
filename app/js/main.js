@@ -242,6 +242,11 @@ routes.quiz = async () => {
       </select>
       <div style="margin-top:16px"><button class="btn" id="start">10問スタート！</button></div>
     </div>
+    <div class="card figcard">
+      <h2 style="margin-top:0">🦴 図で覚える（骨格・内臓）</h2>
+      <p class="muted">過去の実地問題で問われた部位を、教科書の図で確認するコーナーです。正答は図の作者が付けたラベルで、解説はすべて出典と照合済みです。</p>
+      <button class="btn" id="figStart">図の問題 10問スタート！</button>
+    </div>
     <div class="card muted">
       収録：愛玩動物看護師国家試験 第1〜4回・予備試験 第1〜4回の必須/一般問題 ${data.questions.length}問（図・写真を使う実地問題は、公式PDFで図が非公開のため除外）。<br>
       これまでに解いた問題：${answered}問
@@ -254,6 +259,7 @@ routes.quiz = async () => {
   };
   $("#genre").onchange = (e) => { quizConf.genre = e.target.value; };
   $("#start").onclick = () => startQuiz();
+  $("#figStart").onclick = () => startFigQuiz();
 };
 
 function genreStats() {
@@ -271,6 +277,27 @@ function weakGenres(min = 5) {
 }
 
 let session = null;
+let figData = null;
+async function startFigQuiz() {
+  try { figData ||= await (await fetch("data/figs.json")).json(); }
+  catch { toast("図の問題を読み込めませんでした"); return; }
+  const ans = store.get().answers;
+  const weight = (q) => { const a = ans[q.id]; return !a ? 3 : a.last === 0 ? 4 : 1; };
+  const bag = figData.questions.map((q) => ({ q, k: Math.random() ** (1 / weight(q)) })).sort((a, b) => b.k - a.k);
+  session = { qs: bag.slice(0, 10).map((x) => x.q), i: 0, results: [], conf: { level: "fig", genre: "fig" }, mode: "fig" };
+  go("#/play");
+}
+const genreName = (g) => g === "fig" ? "図で覚える" : db().genres[g];
+const examLabel = (id) => {
+  const m = /^([ky])(\d)-(hissu|ippan|jitti)-0*(\d+)$/.exec(id); if (!m) return id;
+  return `${m[1] === "k" ? "国家試験" : "予備試験"}第${m[2]}回 ${{ hissu: "必須", ippan: "一般", jitti: "実地" }[m[3]]}問${m[4]}`;
+};
+function figHTML(q) {
+  const f = figData && figData.figs[q.fig]; if (!f) return "";
+  const c = f.credit;
+  return `<figure class="figq"><img src="${h(f.img)}" alt="${h(f.name)}"><span class="fighint">🔍 タップで拡大</span>
+    <figcaption>図：<a href="${h(c.url)}" target="_blank" rel="noopener">${h(c.title)}</a> / ${h(c.author)} / <a href="${h(c.license_url)}" target="_blank" rel="noopener">${h(c.license)}</a>（${h(c.note)}）</figcaption></figure>`;
+}
 function startQuiz() {
   const d = db(), ans = store.get().answers;
   let pool = d.questions;
@@ -302,13 +329,15 @@ function renderExplanation(q) {
     ${e.conflict ? `<div class="caution">⚠️ 注意：${h(e.conflict)}</div>` : ""}
     ${e.choices ? `<h3>選択肢ごとのポイント</h3><ol style="list-style:none;padding-left:0">${e.choices.map((c, i) => `<li><b>${NUM[i]}</b> ${h(c)}</li>`).join("")}</ol>` : ""}
     ${e.point ? `<h3>💡 覚えるポイント</h3><p>${h(e.point)}</p>` : ""}
+    ${q.related && q.related.length ? `<p class="muted">📚 関連する過去問：${q.related.map((r) => h(examLabel(r))).join("、")}</p>` : ""}
     <div class="src">出典<ul>${official}${(e.refs || []).map((r) => `<li>${h(r.title)}${r.note ? `（${h(r.note)}）` : ""}<br><a href="${h(r.url)}" target="_blank" rel="noopener">${h(r.url)}</a></li>`).join("")}</ul>
     ${e.checked ? `解説の出典照合日：${h(e.checked)}` : ""}</div></div>`;
 }
 
 function questionHTML(q, idx, total) {
   return `
-    <div class="qmeta"><span class="tag">${h(db().genres[q.genre])}</span><span class="tag lv${q.level}">${LEVELS[q.level]}</span><span>${h(q.examName)} ${h(q.section)} 問${q.no}</span></div>
+    <div class="qmeta"><span class="tag">${h(genreName(q.genre))}</span>${q.fig ? `<span>${h(q.section)}</span>` : `<span class="tag lv${q.level}">${LEVELS[q.level]}</span><span>${h(q.examName)} ${h(q.section)} 問${q.no}</span>`}</div>
+    ${q.fig ? figHTML(q) : ""}
     <p class="stem">${idx != null ? `Q${idx + 1}. ` : ""}${h(q.stem).replace(/([ａｂｃｄｅ])[：:]/g, "\n$1：")}</p>
     <div class="opts">${q.choices.map((c, i) => `<button class="opt" data-n="${i + 1}" data-i="${i + 1}">${h(c)}</button>`).join("")}</div>
     <div id="after"></div>`;
@@ -339,6 +368,15 @@ routes.play = async () => {
   view.innerHTML = `
     <div class="progress">${qs.map((_, k) => `<i class="${k < results.length ? (results[k] ? "ok" : "ng") : k === i ? "cur" : ""}"></i>`).join("")}</div>
     <div class="card">${questionHTML(q, i, qs.length)}</div>`;
+  const fimg = $(".figq img");
+  if (fimg) fimg.onclick = () => {
+    // 図を拡大して見る（画面のズームは止めているので、横スクロールできる大きな図を重ねて表示）
+    const z = document.createElement("div");
+    z.className = "figzoom";
+    z.innerHTML = `<button class="figclose" aria-label="閉じる">×</button><div class="figscroll"><img src="${fimg.getAttribute("src")}" alt=""></div><p>横にスクロールできます</p>`;
+    z.querySelector(".figclose").onclick = () => z.remove();
+    document.body.appendChild(z);
+  };
   bindAnswer(view, q, (ok, html) => {
     results.push(ok);
     $(".progress i:nth-child(" + (i + 1) + ")").className = ok ? "ok" : "ng";
@@ -368,8 +406,8 @@ routes.result = async () => {
   const { qs, results, summary } = session, d = db();
   const by = {};
   qs.forEach((q, k) => { const g = (by[q.genre] ||= { c: 0, n: 0 }); g.n++; if (results[k]) g.c++; });
-  const good = Object.entries(by).filter(([, v]) => v.c === v.n).map(([k]) => d.genres[k]);
-  const bad = Object.entries(by).filter(([, v]) => v.c < v.n).sort((a, b) => a[1].c / a[1].n - b[1].c / b[1].n).map(([k]) => d.genres[k]);
+  const good = Object.entries(by).filter(([, v]) => v.c === v.n).map(([k]) => genreName(k));
+  const bad = Object.entries(by).filter(([, v]) => v.c < v.n).sort((a, b) => a[1].c / a[1].n - b[1].c / b[1].n).map(([k]) => genreName(k));
   const rate = summary.correct / qs.length;
   const kind = rate >= .8 ? "quizGood" : rate >= .5 ? "quizMid" : "quizLow";
   const comment = rate >= .8
@@ -399,7 +437,7 @@ routes.result = async () => {
     <div class="grid2"><button class="btn" id="again">もう10問</button><button class="btn ghost" id="home">ホームへ</button></div>`;
   await renderDog($("#rDog"), { happy: rate >= .8 });
   say($("#rBubble"), kind);
-  $("#again").onclick = () => startQuiz();
+  $("#again").onclick = () => session.mode === "fig" ? startFigQuiz() : startQuiz();
   $("#home").onclick = () => go("#/home");
 };
 
