@@ -1333,6 +1333,193 @@
     "note": "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）"
    }
   },
+  "ecg": {
+   "name": "心電図の波形（洞調律・ヒトの模式図）",
+   "img": "data/figs/ecg.webp",
+   "keys": {
+    "QRS Complex": {
+     "n": 1,
+     "ja": "QRS群"
+    },
+    "PR Segment": {
+     "n": 2,
+     "ja": "PR部分（PRセグメント）"
+    },
+    "ST Segment": {
+     "n": 3,
+     "ja": "ST部分（STセグメント）"
+    },
+    "T": {
+     "n": 4,
+     "ja": "T波"
+    },
+    "P": {
+     "n": 5,
+     "ja": "P波"
+    },
+    "PR Interval": {
+     "n": 6,
+     "ja": "PR間隔"
+    },
+    "Baseline": {
+     "n": 7,
+     "ja": "基線"
+    },
+    "QT Interval": {
+     "n": 8,
+     "ja": "QT間隔"
+    }
+   },
+   "credit": {
+    "title": "SinusRhythmLabels.svg",
+    "author": "Created by Agateller (Anthony Atkielski), converted to svg by atom.",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASinusRhythmLabels.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "synapse": {
+   "name": "化学シナプス（模式図）",
+   "img": "data/figs/synapse.webp",
+   "keys": {
+    "Presynaptic neuron": {
+     "n": 1,
+     "ja": "シナプス前ニューロン"
+    },
+    "Axon terminal": {
+     "n": 2,
+     "ja": "軸索終末"
+    },
+    "Synaptic vesicles": {
+     "n": 3,
+     "ja": "シナプス小胞"
+    },
+    "Neurotransmitters": {
+     "n": 4,
+     "ja": "神経伝達物質"
+    },
+    "Ligand-gated channels with receptors for neurotransmitters": {
+     "n": 6,
+     "ja": "神経伝達物質の受容体（をもつイオンチャネル）"
+    },
+    "Synaptic cleft": {
+     "n": 5,
+     "ja": "シナプス間隙"
+    },
+    "Postsynaptic neuron": {
+     "n": 7,
+     "ja": "シナプス後ニューロン"
+    }
+   },
+   "credit": {
+    "title": "1225 Chemical Synapse.jpg",
+    "author": "Young, KA., Wise, JA., DeSaix, P., Kruse, DH., Poe, B., Johnson, E., Johnson, JE., Korol, O., Betts, JG., &amp;  Womble, M.",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1225_Chemical_Synapse.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "blood": {
+   "name": "遠心分離した血液（模式図）",
+   "img": "data/figs/blood.webp",
+   "keys": {
+    "Plasma: Water, proteins, nutrients, hormones, etc.": {
+     "n": 1,
+     "ja": "血漿"
+    },
+    "Buffy coat: White blood cells, platelets": {
+     "n": 2,
+     "ja": "バフィーコート"
+    },
+    "Hematocrit: Red blood cells": {
+     "n": 3,
+     "ja": "赤血球の層"
+    }
+   },
+   "credit": {
+    "title": "1901 Composition of Blood.jpg",
+    "author": "OpenStax College",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1901_Composition_of_Blood.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "wbc": {
+   "name": "白血球の種類（イラスト）",
+   "img": "data/figs/wbc.webp",
+   "keys": {
+    "Eosinophil": {
+     "n": 1,
+     "ja": "好酸球"
+    },
+    "Basophil": {
+     "n": 2,
+     "ja": "好塩基球"
+    },
+    "Monocyte": {
+     "n": 3,
+     "ja": "単球"
+    },
+    "Lymphocytes": {
+     "n": 4,
+     "ja": "リンパ球"
+    },
+    "Neutrophil": {
+     "n": 5,
+     "ja": "好中球"
+    }
+   },
+   "credit": {
+    "title": "Blausen 0909 WhiteBloodCells.png",
+    "author": "BruceBlaus. When using this image in external sources it can be cited as:",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0909_WhiteBloodCells.png",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "muscle3": {
+   "name": "3種類の筋組織（模式図）",
+   "img": "data/figs/muscle3.webp",
+   "keys": {
+    "Skeletal muscle": {
+     "n": 1,
+     "ja": "骨格筋"
+    },
+    "Smooth muscle": {
+     "n": 2,
+     "ja": "平滑筋"
+    },
+    "Cardiac muscle": {
+     "n": 3,
+     "ja": "心筋"
+    }
+   },
+   "credit": {
+    "title": "Different Muscle Tissue.jpg",
+    "author": "Nwongh",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3ADifferent_Muscle_Tissue.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "teeth": {
+   "name": "犬の乳歯と永久歯（I：上顎、II：下顎）",
+   "img": "data/figs/teeth.webp",
+   "keys": {},
+   "credit": {
+    "title": "EB1911 Mammalia - Milk and Permanent Dentitions of the Dog.jpg",
+    "author": "William Henry Flower and Richard Lydekker",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AEB1911_Mammalia_-_Milk_and_Permanent_Dentitions_of_the_Dog.jpg",
+    "note": "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）"
+   }
+  },
   "skeleton": {
    "name": "犬の骨格",
    "img": "data/figs/skeleton.webp",
@@ -4203,6 +4390,635 @@
    },
    "related": [
     "k3-jitti-008"
+   ]
+  },
+  {
+   "id": "fig-ecg-p",
+   "genre": "fig",
+   "level": 2,
+   "fig": "ecg",
+   "sym": true,
+   "examName": "図で覚える",
+   "section": "心電図の波形（洞調律・ヒトの模式図）",
+   "no": 56,
+   "stem": "図は心電図の波形である。心房の興奮（脱分極）を表すのはどれか。",
+   "choices": [
+    "⑧",
+    "⑤",
+    "④",
+    "①",
+    "⑥"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：SinusRhythmLabels.svg",
+    "publisher": "Created by Agateller (Anthony Atkielski), converted to svg by atom.／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASinusRhythmLabels.svg"
+   },
+   "explanation": {
+    "summary": "P波は、図の作者が P とラベルを付けた最初の小さな波です。小さなP波は心房の脱分極（興奮）を表し、P波が始まって約25ミリ秒後に心房が収縮を始めます（OpenStax、ヒトの資料）。過去問（国家試験第1回 実地1）でも、犬の心電図で心房の興奮を示す部分が問われています。",
+    "choices": [
+     "正答ではありません。⑧はQT間隔です。",
+     "正答。心房の興奮（脱分極）を表すのは、最初の小さな山の P波です。",
+     "正答ではありません。④はT波です。",
+     "正答ではありません。①はQRS群です。",
+     "正答ではありません。⑥はPR間隔です。"
+    ],
+    "point": "P波＝心房の脱分極、QRS群＝心室の脱分極、T波＝心室の再分極。心房の再分極はQRS群に隠れて見えない。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.2 Cardiac Muscle and Electrical Activity（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+      "note": "The small P wave represents the depolarization of the atria."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-ecg-qrs",
+   "genre": "fig",
+   "level": 2,
+   "fig": "ecg",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "心電図の波形（洞調律・ヒトの模式図）",
+   "no": 57,
+   "stem": "図は心電図の波形である。①の範囲の波（QRS群）が表すのはどれか。",
+   "choices": [
+    "洞房結節の興奮だけ",
+    "心房の脱分極",
+    "心房の再分極",
+    "心室の再分極",
+    "心室の脱分極"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：SinusRhythmLabels.svg",
+    "publisher": "Created by Agateller (Anthony Atkielski), converted to svg by atom.／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASinusRhythmLabels.svg"
+   },
+   "explanation": {
+    "summary": "図の①は、図の作者が QRS Complex（QRS群）とラベルを付けた範囲です。大きなQRS群は心室の脱分極を表し、心室の心筋が大きいため強い電気信号になります。心室はR波の頂点のころに収縮を始めます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。",
+     "正答ではありません。P波（図の⑤）が表します。",
+     "正答ではありません。QRS群のあいだに起こるため、心電図では隠れて見えません。",
+     "正答ではありません。T波（図の④）が表します。",
+     "正答。QRS群は心室の脱分極（興奮）を表します。"
+    ],
+    "point": "QRS群＝心室の脱分極（心室の収縮の始まり）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.2 Cardiac Muscle and Electrical Activity（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+      "note": "The small P wave represents the depolarization of the atria."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-ecg-t",
+   "genre": "fig",
+   "level": 2,
+   "fig": "ecg",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "心電図の波形（洞調律・ヒトの模式図）",
+   "no": 58,
+   "stem": "図は心電図の波形である。④の波はどれか。",
+   "choices": [
+    "T波",
+    "P波",
+    "QRS群",
+    "PR間隔",
+    "ST部分（STセグメント）"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：SinusRhythmLabels.svg",
+    "publisher": "Created by Agateller (Anthony Atkielski), converted to svg by atom.／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASinusRhythmLabels.svg"
+   },
+   "explanation": {
+    "summary": "図の④は、図の作者が T とラベルを付けた波です。T波は心室の再分極を表します。なお心房の再分極はQRS群のあいだに起こるため、心電図では隠れて見えません（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。④はT波。心室の再分極（興奮からの回復）を表します。",
+     "正答ではありません。P波は図の⑤です。",
+     "正答ではありません。QRS群は図の①です。",
+     "正答ではありません。PR間隔は図の⑥です。",
+     "正答ではありません。ST部分（STセグメント）は図の③です。"
+    ],
+    "point": "波の順番：P波 → QRS群 → T波。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.2 Cardiac Muscle and Electrical Activity（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+      "note": "The small P wave represents the depolarization of the atria."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-jitti-001",
+    "k4-jitti-035"
+   ]
+  },
+  {
+   "id": "fig-sy-vesicle",
+   "genre": "fig",
+   "level": 2,
+   "fig": "synapse",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "化学シナプス（模式図）",
+   "no": 59,
+   "stem": "図は化学シナプスの模式図である。③はどれか。",
+   "choices": [
+    "神経伝達物質",
+    "軸索終末",
+    "シナプス間隙",
+    "神経伝達物質の受容体（をもつイオンチャネル）",
+    "シナプス小胞"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：1225 Chemical Synapse.jpg",
+    "publisher": "Young, KA., Wise, JA., DeSaix, P., Kruse, DH., Poe, B., Johnson, E., Johnson, JE., Korol, O., Betts, JG., &amp;  Womble, M.／CC BY 4.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1225_Chemical_Synapse.jpg"
+   },
+   "explanation": {
+    "summary": "図の③は、図の作者が Synaptic vesicles（シナプス小胞）とラベルを付けた小さな袋です。シナプスに共通する要素は、シナプス前の要素、小胞に詰められた神経伝達物質、シナプス間隙、受容体タンパク質、シナプス後の要素などです（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。神経伝達物質は図の④です。",
+     "正答ではありません。軸索終末は図の②です。",
+     "正答ではありません。シナプス間隙は図の⑤です。",
+     "正答ではありません。神経伝達物質の受容体（をもつイオンチャネル）は図の⑥です。",
+     "正答。③はシナプス小胞。神経伝達物質を詰めた小さな袋です。"
+    ],
+    "point": "軸索終末のシナプス小胞 → 神経伝達物質がシナプス間隙へ → シナプス後膜の受容体に結合。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 12.5 Communication Between Neurons（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+      "note": "neurotransmitter (packaged in vesicles)   synaptic cleft   receptor proteins"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-004",
+    "k1-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-sy-cleft",
+   "genre": "fig",
+   "level": 2,
+   "fig": "synapse",
+   "sym": true,
+   "examName": "図で覚える",
+   "section": "化学シナプス（模式図）",
+   "no": 60,
+   "stem": "図は化学シナプスの模式図である。シナプス間隙はどれか。",
+   "choices": [
+    "⑥",
+    "③",
+    "⑤",
+    "②",
+    "⑦"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：1225 Chemical Synapse.jpg",
+    "publisher": "Young, KA., Wise, JA., DeSaix, P., Kruse, DH., Poe, B., Johnson, E., Johnson, JE., Korol, O., Betts, JG., &amp;  Womble, M.／CC BY 4.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1225_Chemical_Synapse.jpg"
+   },
+   "explanation": {
+    "summary": "シナプス間隙は、図の作者が Synaptic cleft とラベルを付けたすき間です。シナプスには、シナプス前の要素、小胞に詰められた神経伝達物質、シナプス間隙、受容体タンパク質、シナプス後の要素が共通してあります（OpenStax、ヒトの資料）。神経筋接合部では、シナプス間隙は運動ニューロンの軸索終末と筋線維のあいだのすき間です。",
+    "choices": [
+     "正答ではありません。⑥は神経伝達物質の受容体（をもつイオンチャネル）です。",
+     "正答ではありません。③はシナプス小胞です。",
+     "正答。シナプス間隙は、軸索終末とシナプス後のニューロンのあいだのすき間です。",
+     "正答ではありません。②は軸索終末です。",
+     "正答ではありません。⑦はシナプス後ニューロンです。"
+    ],
+    "point": "シナプス＝シナプス前（軸索終末）＋シナプス間隙＋シナプス後（受容体）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 12.5 Communication Between Neurons（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+      "note": "neurotransmitter (packaged in vesicles)   synaptic cleft   receptor proteins"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-bl-buffy",
+   "genre": "fig",
+   "level": 2,
+   "fig": "blood",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "遠心分離した血液（模式図）",
+   "no": 61,
+   "stem": "図は遠心分離した血液である。②の層を構成する主な成分はどれか。ａ：赤血球　ｂ：白血球　ｃ：血小板　ｄ：グロブリン　ｅ：血管内皮細胞",
+   "choices": [
+    "ｄ，ｅ",
+    "ｃ，ｄ",
+    "ａ，ｅ",
+    "ｂ，ｃ",
+    "ａ，ｂ"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：1901 Composition of Blood.jpg",
+    "publisher": "OpenStax College／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1901_Composition_of_Blood.jpg"
+   },
+   "explanation": {
+    "summary": "図の②は、図の作者が Buffy coat（白血球・血小板）とラベルを付けた薄い層です。遠心分離すると、いちばん下に赤血球、その上に白血球と血小板からなるバフィーコート（ふつう血液の1％未満）、いちばん上に淡い黄色の血漿が分かれます（OpenStax、ヒトの資料）。選択肢は過去問（国家試験第3回 実地43）と同じです。",
+    "choices": [
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答。②はバフィーコート。白血球と血小板の層です。",
+     "正答ではありません。"
+    ],
+    "point": "遠心分離後：上＝血漿、真ん中の薄い層＝バフィーコート（白血球・血小板）、下＝赤血球（この割合がヘマトクリット）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 18.1 An Overview of Blood（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-1-an-overview-of-blood",
+      "note": "This layer is referred to as the buffy coat"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-043"
+   ]
+  },
+  {
+   "id": "fig-bl-plasma",
+   "genre": "fig",
+   "level": 2,
+   "fig": "blood",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "遠心分離した血液（模式図）",
+   "no": 62,
+   "stem": "図は遠心分離した血液である。①の層はどれか。",
+   "choices": [
+    "血漿",
+    "赤血球の層",
+    "白血球の層",
+    "血小板の層",
+    "バフィーコート"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：1901 Composition of Blood.jpg",
+    "publisher": "OpenStax College／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3A1901_Composition_of_Blood.jpg"
+   },
+   "explanation": {
+    "summary": "図の①は、図の作者が Plasma（血漿：水・タンパク質・栄養素・ホルモンなど）とラベルを付けた層です。バフィーコートの上にある、ふつう淡い麦わら色の液体が血漿です（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。①は血漿。いちばん上の淡い黄色の液体の層です。",
+     "正答ではありません。赤血球の層は図の③です。",
+     "正答ではありません。白血球は血小板とともにバフィーコート（図の②）に集まります。",
+     "正答ではありません。血小板は白血球とともにバフィーコート（図の②）に集まります。",
+     "正答ではありません。バフィーコートは図の②です。"
+    ],
+    "point": "血漿＝血液の液体成分。いちばん上の層。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 18.1 An Overview of Blood（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-1-an-overview-of-blood",
+      "note": "Above the buffy coat is the blood plasma"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-043"
+   ]
+  },
+  {
+   "id": "fig-wb-neutrophil",
+   "genre": "fig",
+   "level": 2,
+   "fig": "wbc",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "白血球の種類（イラスト）",
+   "no": 63,
+   "stem": "図は白血球の種類である。⑤はどれか。",
+   "choices": [
+    "単球",
+    "リンパ球",
+    "好酸球",
+    "好塩基球",
+    "好中球"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Blausen 0909 WhiteBloodCells.png",
+    "publisher": "BruceBlaus. When using this image in external sources it can be cited as:／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0909_WhiteBloodCells.png"
+   },
+   "explanation": {
+    "summary": "図の⑤は、図の作者が Neutrophil（好中球）とラベルを付けた細胞です。好中球の核は2〜5個に分かれた分葉核で、感染の場所にいち早く駆けつけ、細菌を好んで食べる（貪食する）細胞です（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。単球は図の③です。",
+     "正答ではありません。リンパ球は図の④です。",
+     "正答ではありません。好酸球は図の①です。",
+     "正答ではありません。好塩基球は図の②です。",
+     "正答。⑤は好中球。核がいくつかに分かれている（分葉している）のが特徴です。"
+    ],
+    "point": "好中球＝分葉核・細菌の貪食、単球＝大きく核がくぼむ（マクロファージになる）、リンパ球＝免疫の主役。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 18.4 Leukocytes and Platelets（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-4-leukocytes-and-platelets",
+      "note": "Neutrophils are rapid responders to the site of infection"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-016"
+   ]
+  },
+  {
+   "id": "fig-wb-monocyte",
+   "genre": "fig",
+   "level": 2,
+   "fig": "wbc",
+   "sym": true,
+   "examName": "図で覚える",
+   "section": "白血球の種類（イラスト）",
+   "no": 64,
+   "stem": "図は白血球の種類である。単球はどれか。",
+   "choices": [
+    "⑤",
+    "②",
+    "③",
+    "①",
+    "④"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Blausen 0909 WhiteBloodCells.png",
+    "publisher": "BruceBlaus. When using this image in external sources it can be cited as:／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0909_WhiteBloodCells.png"
+   },
+   "explanation": {
+    "summary": "単球は、図の作者が Monocyte とラベルを付けた細胞です。単球は12〜20μmと大きく、くぼんだ馬蹄形の核をもつことで見分けやすく、血管の外に出るとマクロファージになって異物を貪食します（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。⑤は好中球です。",
+     "正答ではありません。②は好塩基球です。",
+     "正答。単球は白血球の中で大きく、核がくぼんだ（馬蹄形の）形をしています。",
+     "正答ではありません。①は好酸球です。",
+     "正答ではありません。④はリンパ球です。"
+    ],
+    "point": "大きさ：単球が最大。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 18.4 Leukocytes and Platelets（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-4-leukocytes-and-platelets",
+      "note": "large size of 12–20 μm and indented or horseshoe-shaped nuclei"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-016",
+    "k4-ippan-001"
+   ]
+  },
+  {
+   "id": "fig-mu-combo",
+   "genre": "fig",
+   "level": 2,
+   "fig": "muscle3",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "3種類の筋組織（模式図）",
+   "no": 65,
+   "stem": "図は3種類の筋組織である。①②③の組合せとして正しいのはどれか。",
+   "choices": [
+    "①心筋、②平滑筋、③骨格筋",
+    "①骨格筋、②平滑筋、③心筋",
+    "①平滑筋、②心筋、③骨格筋",
+    "①骨格筋、②心筋、③平滑筋",
+    "①平滑筋、②骨格筋、③心筋"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Different Muscle Tissue.jpg",
+    "publisher": "Nwongh／CC BY-SA 4.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ADifferent_Muscle_Tissue.jpg"
+   },
+   "explanation": {
+    "summary": "図の作者は ① Skeletal muscle（骨格筋）、② Smooth muscle（平滑筋）、③ Cardiac muscle（心筋）とラベルを付けています。骨格筋の細胞は横紋があり、多数の細胞が融合した多核の線維です。心筋も横紋がありますが、細胞どうしが介在板でつながって枝分かれした線維をつくります。平滑筋の細胞は核が1つの紡錘形で、横紋は見えません（OpenStax、ヒトの資料）。選択肢は過去問（国家試験第2回 実地1）と同じ形です。",
+    "choices": [
+     "正答ではありません。",
+     "正答。①は横紋のある長い線維（骨格筋）、②は横紋のない紡錘形の細胞（平滑筋）、③は横紋があり枝分かれした線維（心筋）です。",
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "横紋あり＝骨格筋・心筋、横紋なし＝平滑筋。随意筋＝骨格筋のみ。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 4.4 Muscle Tissue and Motion（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-4-muscle-tissue-and-motion",
+      "note": "skeletal, cardiac, and smooth muscle"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-mu-cardiac",
+   "genre": "fig",
+   "level": 2,
+   "fig": "muscle3",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "3種類の筋組織（模式図）",
+   "no": 66,
+   "stem": "図は3種類の筋組織である。③の筋組織の特徴として正しいのはどれか。",
+   "choices": [
+    "細胞どうしが介在板でつながり、枝分かれした線維をつくる。",
+    "横紋がなく、核が1つの紡錘形の細胞からなる。",
+    "骨に付着し、随意運動を起こす。",
+    "消化管や気道・動脈の壁で、不随意の運動を起こす。",
+    "多数の細胞が融合した、多核の長い線維からなる。"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Different Muscle Tissue.jpg",
+    "publisher": "Nwongh／CC BY-SA 4.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ADifferent_Muscle_Tissue.jpg"
+   },
+   "explanation": {
+    "summary": "図の③は、図の作者が Cardiac muscle（心筋）とラベルを付けた組織です。心筋細胞は介在板という特殊な結合でつながり、枝分かれした長い線維をつくって同調して収縮します。骨格筋は骨に付着して随意運動を起こし、平滑筋は消化器・気道・動脈などの壁で不随意の運動を起こします（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。③は心筋。細胞どうしが介在板でつながり、枝分かれした線維をつくります。",
+     "正答ではありません。平滑筋（図の②）の特徴です。",
+     "正答ではありません。骨格筋（図の①）の特徴です。",
+     "正答ではありません。平滑筋（図の②）の特徴です。",
+     "正答ではありません。骨格筋（図の①）の特徴です。"
+    ],
+    "point": "心筋＝横紋あり・介在板・不随意、骨格筋＝横紋あり・多核・随意、平滑筋＝横紋なし・紡錘形・不随意。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 4.4 Muscle Tissue and Motion（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-4-muscle-tissue-and-motion",
+      "note": "skeletal, cardiac, and smooth muscle"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-th-premolar",
+   "genre": "fig",
+   "level": 2,
+   "fig": "teeth",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "犬の乳歯と永久歯（I：上顎、II：下顎）",
+   "no": 67,
+   "stem": "図は犬の歯である（Iは上顎、IIは下顎。i：切歯、c：犬歯、p：前臼歯、m：後臼歯。d の付く記号は乳歯）。上顎の永久歯の前臼歯は、片側に何本か。",
+   "choices": [
+    "3本",
+    "5本",
+    "6本",
+    "4本",
+    "2本"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：EB1911 Mammalia - Milk and Permanent Dentitions of the Dog.jpg",
+    "publisher": "William Henry Flower and Richard Lydekker／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AEB1911_Mammalia_-_Milk_and_Permanent_Dentitions_of_the_Dog.jpg"
+   },
+   "explanation": {
+    "summary": "図の I（上顎）には、永久歯の前臼歯として p.1〜p.4 の4本が描かれています。犬の永久歯は42本（切歯12・犬歯4・前臼歯16・後臼歯10）で、上顎には第1〜第4前臼歯と第1・第2後臼歯があります（Merck獣医マニュアル）。",
+    "choices": [
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答。上顎の前臼歯は片側4本（図の I の p.1〜p.4）です。",
+     "正答ではありません。"
+    ],
+    "point": "犬の歯式：上顎 3142 / 下顎 3143（切歯・犬歯・前臼歯・後臼歯の順、片側）＝42本。",
+    "refs": [
+     {
+      "title": "Merck Veterinary Manual: Dentition and Dental Nomenclature of Animals",
+      "url": "https://www.merckvetmanual.com/digestive-system/dental-development-and-anatomy/dentition-and-dental-nomenclature-of-animals",
+      "note": "Dogs have 42 permanent teeth"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-hissu-003",
+    "k1-hissu-003"
+   ]
+  },
+  {
+   "id": "fig-th-molar",
+   "genre": "fig",
+   "level": 2,
+   "fig": "teeth",
+   "sym": false,
+   "examName": "図で覚える",
+   "section": "犬の乳歯と永久歯（I：上顎、II：下顎）",
+   "no": 68,
+   "stem": "図は犬の歯である（Iは上顎、IIは下顎。i：切歯、c：犬歯、p：前臼歯、m：後臼歯。d の付く記号は乳歯）。下顎の永久歯の後臼歯は、片側に何本か。",
+   "choices": [
+    "3本",
+    "2本",
+    "4本",
+    "6本",
+    "5本"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：EB1911 Mammalia - Milk and Permanent Dentitions of the Dog.jpg",
+    "publisher": "William Henry Flower and Richard Lydekker／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AEB1911_Mammalia_-_Milk_and_Permanent_Dentitions_of_the_Dog.jpg"
+   },
+   "explanation": {
+    "summary": "図の II（下顎）には、永久歯の後臼歯として m.1・m.2・m.3 の3本が描かれています（上顎の I は m.1・m.2 の2本）。犬の永久歯の後臼歯は合計10本で、下顎には第1〜第3後臼歯があります（Merck獣医マニュアル）。",
+    "choices": [
+     "正答。下顎の後臼歯は片側3本（図の II の m.1〜m.3）です。上顎は2本です。",
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "後臼歯：上顎2本・下顎3本（片側）→ 左右で10本。",
+    "refs": [
+     {
+      "title": "Merck Veterinary Manual: Dentition and Dental Nomenclature of Animals",
+      "url": "https://www.merckvetmanual.com/digestive-system/dental-development-and-anatomy/dentition-and-dental-nomenclature-of-animals",
+      "note": "the third molars (311, 411) have 1 root"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y4-hissu-006",
+    "y2-hissu-003"
    ]
   }
  ]

@@ -395,6 +395,64 @@ FIGS = {
             ("d", (113, 287), "羊膜", "amnios"), ("d", (797, 315), "羊膜", "amnios"),
         ],
     },
+    # ---- 第4弾 ----
+    "ecg": {
+        "file": "SinusRhythmLabels.svg", "chrome": (512, 512), "strip_text": True, "name": "心電図の波形（洞調律・ヒトの模式図）",
+        "blank": [(20, 16, 112, 74), (160, 222, 222, 255), (278, 222, 344, 255)],
+        "labels": [
+            ("QRS Complex", "QRS群", (218, 30, 281, 59), "C"),
+            ("PR Segment", "PR部分（PRセグメント）", (164, 226, 219, 254), "C"),
+            ("ST Segment", "ST部分（STセグメント）", (281, 226, 341, 254), "C"),
+            ("T", "T波", (374, 257, 407, 290), "C"),
+            ("P", "P波", (123, 272, 155, 304), "C"),
+            ("PR Interval", "PR間隔", (116, 393, 193, 410), "C"),
+            ("Baseline", "基線", (27, 441, 83, 458), "C"),
+            ("QT Interval", "QT間隔", (284, 442, 362, 460), "C"),
+        ],
+    },
+    "synapse": {
+        "file": "1225_Chemical_Synapse.jpg", "name": "化学シナプス（模式図）", "r": 16,
+        "labels": [
+            ("Presynaptic neuron", "シナプス前ニューロン", (405, 90, 593, 116)),
+            ("Axon terminal", "軸索終末", (780, 320, 918, 341)),
+            ("Synaptic vesicles", "シナプス小胞", (872, 409, 963, 456)),
+            ("Neurotransmitters", "神経伝達物質", (180, 462, 354, 484)),
+            ("Ligand-gated channels with receptors for neurotransmitters", "神経伝達物質の受容体（をもつイオンチャネル）", (34, 641, 256, 713)),
+            ("Synaptic cleft", "シナプス間隙", (900, 611, 990, 658)),
+            ("Postsynaptic neuron", "シナプス後ニューロン", (421, 778, 617, 804), "C"),
+        ],
+    },
+    "blood": {
+        "file": "1901_Composition_of_Blood.jpg", "name": "遠心分離した血液（模式図）", "crop": (0, 0, 760, 800), "r": 24,
+        "labels": [
+            ("Plasma: Water, proteins, nutrients, hormones, etc.", "血漿", (0, 240, 395, 420)),
+            ("Buffy coat: White blood cells, platelets", "バフィーコート", (0, 470, 355, 595)),
+            ("Hematocrit: Red blood cells", "赤血球の層", (0, 615, 320, 710)),
+        ],
+    },
+    "wbc": {
+        "file": "Blausen_0909_WhiteBloodCells.png", "name": "白血球の種類（イラスト）", "r": 26,
+        "labels": [
+            ("Eosinophil", "好酸球", (790, 420, 1065, 488), "C"),
+            ("Basophil", "好塩基球", (1235, 420, 1465, 488), "C"),
+            ("Monocyte", "単球", (55, 505, 312, 580), "C"),
+            ("Lymphocytes", "リンパ球", (555, 900, 898, 968), "C"),
+            ("Neutrophil", "好中球", (1128, 900, 1398, 968), "C"),
+        ],
+        "captions": [("白血球", (455, 1075, 1145, 1165))], "caption_size": 34,
+    },
+    "muscle3": {
+        "file": "Different_Muscle_Tissue.jpg", "name": "3種類の筋組織（模式図）",
+        "labels": [
+            ("Skeletal muscle", "骨格筋", (40, 203, 126, 256), "C"),
+            ("Smooth muscle", "平滑筋", (224, 203, 312, 256), "C"),
+            ("Cardiac muscle", "心筋", (412, 203, 500, 256), "C"),
+        ],
+    },
+    "teeth": {
+        "file": "EB1911_Mammalia_-_Milk_and_Permanent_Dentitions_of_the_Dog.jpg", "name": "犬の乳歯と永久歯（I：上顎、II：下顎）",
+        "page_crop": (0, 0, 776, 757), "r": 10, "markers": [],
+    },
     # 骨格図は番号と凡例が最初から付いている（番号＝凡例の番号）
     "skeleton": {
         "file": "Skeleton_of_a_dog_diagram.svg", "name": "犬の骨格", "svg": True,
@@ -457,7 +515,7 @@ def masked(fig):
     d = ImageDraw.Draw(im)
     rr = fig.get("r", 12)  # 番号の丸の半径（等倍）。ラベルが密な図は小さくする
     font = ImageFont.truetype(FONT, round(rr * 13 / 12 * SCALE))
-    jfont = ImageFont.truetype(JFONT, 12 * SCALE)
+    jfont = ImageFont.truetype(JFONT, fig.get("caption_size", 12) * SCALE)
     labels = fig["labels"]
     # 番号は上から順（同じ高さなら左から）
     band = fig.get("band", 30)
@@ -468,6 +526,9 @@ def masked(fig):
             break
         x0, y0, x1, y1 = (v * SCALE for v in r)
         d.rectangle((x0 - 2, y0 - 2, x1 + 2, y1 + 2), fill=bgcolor(arr, x0 - 3, y0 - 3, x1 + 3, y1 + 3))
+    for r in fig.get("blank", []):  # 番号を付けずに消すだけの部分（答えのヒントになる凡例など）
+        x0, y0, x1, y1 = (v * SCALE for v in r)
+        d.rectangle((x0, y0, x1, y1), fill=bgcolor(arr, x0 - 3, y0 - 3, x1 + 3, y1 + 3))
     for i, (_, _, r, *side) in enumerate(labels):
         x0, y0, x1, y1 = (v * SCALE for v in r)
         cx = (r[0] + r[2]) / 2
@@ -528,7 +589,7 @@ def main():
     meta = json.loads((SRC / "meta.json").read_text())
     figs = {}
     for fid, fig in FIGS.items():
-        im, keys = skeleton(fig) if fig.get("svg") else marked(fig) if fig.get("markers") else masked(fig)
+        im, keys = skeleton(fig) if fig.get("svg") else marked(fig) if "markers" in fig else masked(fig)
         if im.width > 1000:
             im = im.resize((1000, round(im.height * 1000 / im.width)), Image.LANCZOS)
         im.save(OUT / f"{fid}.webp", "WEBP", quality=82)
@@ -540,7 +601,7 @@ def main():
         figs[fid] = {"name": fig["name"], "img": f"data/figs/{fid}.webp", "keys": keys,
                      "credit": {"title": m["title"].replace("File:", ""), "author": m["artist"].split("\n")[0].strip(),
                                 "license": m["license"], "license_url": m["license_url"], "url": m["page"],
-                                "note": "改変なし（凡例を日本語訳）" if fig.get("svg") else "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）" if fig.get("markers") else "英語ラベルを番号に置き換えて改変"}}
+                                "note": "改変なし（凡例を日本語訳）" if fig.get("svg") else "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）" if "markers" in fig else "英語ラベルを番号に置き換えて改変"}}
         print(fid, im.size, len(keys))
     qsrc = SRC / "fig_questions.json"
     questions = build_questions(json.loads(qsrc.read_text()), figs) if qsrc.exists() else []
@@ -560,7 +621,7 @@ def build_questions(src, figs):
     for no, (qid, q) in enumerate(src.items(), 1):
         f = figs[q["fig"]]
         keys = f["keys"]
-        tgt = keys[q["target"]]
+        tgt = keys[q["target"]] if q.get("target") else {"n": "", "ja": ""}  # 図の記号を使わない問題（本数を数えるなど）
         fill = lambda t: t.replace("{n}", mark(tgt["n"]))
         stem = fill(q["stem"])
         if q["kind"] == "term":      # 「図の③はどれか」→ 日本語名から選ぶ
