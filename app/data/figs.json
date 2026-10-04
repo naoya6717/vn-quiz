@@ -362,6 +362,676 @@
     "note": "英語ラベルを番号に置き換えて改変"
    }
   },
+  "heart2": {
+   "name": "心臓の断面（ヒトの図・正面から見たところ）",
+   "img": "data/figs/heart2.webp",
+   "keys": {
+    "Brachiocephalic artery": {
+     "n": 3,
+     "ja": "腕頭動脈"
+    },
+    "Superior vena cava": {
+     "n": 5,
+     "ja": "上大静脈（動物では前大静脈）"
+    },
+    "Right pulmonary arteries": {
+     "n": 7,
+     "ja": "右肺動脈"
+    },
+    "Right pulmonary veins": {
+     "n": 8,
+     "ja": "右肺静脈"
+    },
+    "Right atrium": {
+     "n": 12,
+     "ja": "右心房"
+    },
+    "Atrioventricular (tricuspid) valve": {
+     "n": 14,
+     "ja": "三尖弁（右房室弁）"
+    },
+    "Chordae tendineae": {
+     "n": 16,
+     "ja": "腱索"
+    },
+    "Right ventricle": {
+     "n": 18,
+     "ja": "右心室"
+    },
+    "Inferior vena cava": {
+     "n": 19,
+     "ja": "下大静脈（動物では後大静脈）"
+    },
+    "Left common carotid artery": {
+     "n": 1,
+     "ja": "左総頸動脈"
+    },
+    "Left subclavian artery": {
+     "n": 2,
+     "ja": "左鎖骨下動脈"
+    },
+    "Aorta": {
+     "n": 4,
+     "ja": "大動脈"
+    },
+    "Left pulmonary arteries": {
+     "n": 6,
+     "ja": "左肺動脈"
+    },
+    "Left pulmonary veins": {
+     "n": 9,
+     "ja": "左肺静脈"
+    },
+    "Left atrium": {
+     "n": 10,
+     "ja": "左心房"
+    },
+    "Semilunar valves": {
+     "n": 11,
+     "ja": "半月弁"
+    },
+    "Atrioventricular (mitral) valve": {
+     "n": 13,
+     "ja": "僧帽弁（左房室弁）"
+    },
+    "Left ventricle": {
+     "n": 15,
+     "ja": "左心室"
+    },
+    "Septum": {
+     "n": 17,
+     "ja": "心室中隔"
+    }
+   },
+   "credit": {
+    "title": "Heart diagram-en.svg",
+    "author": "ZooFari",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHeart_diagram-en.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "conduction": {
+   "name": "心臓の刺激伝導系（ヒトの図）",
+   "img": "data/figs/conduction.webp",
+   "keys": {
+    "Sinoatrial node": {
+     "n": 2,
+     "ja": "洞房結節"
+    },
+    "Atrioventricular node": {
+     "n": 4,
+     "ja": "房室結節"
+    },
+    "Left posterior bundle": {
+     "n": 5,
+     "ja": "左脚後枝"
+    },
+    "Right bundle": {
+     "n": 6,
+     "ja": "右脚"
+    },
+    "Bachmann's bundle": {
+     "n": 1,
+     "ja": "バッハマン束"
+    },
+    "His bundle": {
+     "n": 3,
+     "ja": "ヒス束"
+    },
+    "Purkinje fibres": {
+     "n": 7,
+     "ja": "プルキンエ線維"
+    }
+   },
+   "credit": {
+    "title": "Conductionsystemoftheheart.png",
+    "author": "Madhero88",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AConductionsystemoftheheart.png",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "eye2": {
+   "name": "眼球の水平断面（ヒトの図）",
+   "img": "data/figs/eye2.webp",
+   "keys": {
+    "Anterior chamber (aqueous humour) Posterior chamber": {
+     "n": 2,
+     "ja": "前眼房（眼房水）と後眼房"
+    },
+    "Cornea": {
+     "n": 1,
+     "ja": "角膜"
+    },
+    "Pupil": {
+     "n": 3,
+     "ja": "瞳孔"
+    },
+    "Uvea": {
+     "n": 4,
+     "ja": "ぶどう膜"
+    },
+    "Iris": {
+     "n": 5,
+     "ja": "虹彩"
+    },
+    "Ciliary body": {
+     "n": 6,
+     "ja": "毛様体"
+    },
+    "Choroid": {
+     "n": 9,
+     "ja": "脈絡膜"
+    },
+    "Suspensory ligament of lens": {
+     "n": 7,
+     "ja": "毛様小帯（チン小帯）"
+    },
+    "Lens": {
+     "n": 8,
+     "ja": "水晶体"
+    },
+    "Sclera": {
+     "n": 10,
+     "ja": "強膜"
+    },
+    "Vitreous humour": {
+     "n": 11,
+     "ja": "硝子体"
+    },
+    "Hyaloid canal": {
+     "n": 12,
+     "ja": "硝子体管"
+    },
+    "Retinal blood vessels": {
+     "n": 13,
+     "ja": "網膜の血管"
+    },
+    "Retina": {
+     "n": 14,
+     "ja": "網膜"
+    },
+    "Macula": {
+     "n": 15,
+     "ja": "黄斑"
+    },
+    "Fovea": {
+     "n": 16,
+     "ja": "中心窩"
+    },
+    "Optic nerve": {
+     "n": 17,
+     "ja": "視神経"
+    },
+    "Optic disc": {
+     "n": 18,
+     "ja": "視神経乳頭（視神経円板）"
+    }
+   },
+   "credit": {
+    "title": "Schematic diagram of the human eye en.svg",
+    "author": "Rhcastilhos. And Jmarchn.",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASchematic_diagram_of_the_human_eye_en.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "nephron": {
+   "name": "ネフロンと集合管（模式図）",
+   "img": "data/figs/nephron.webp",
+   "keys": {
+    "Proximal convoluted tubule": {
+     "n": 2,
+     "ja": "近位尿細管"
+    },
+    "Bowman's capsule": {
+     "n": 1,
+     "ja": "ボーマン嚢"
+    },
+    "Descending Limb of Loop of Henle": {
+     "n": 3,
+     "ja": "ヘンレのワナの下行脚"
+    },
+    "Distal convoluted tubule": {
+     "n": 4,
+     "ja": "遠位尿細管"
+    },
+    "Collecting duct": {
+     "n": 5,
+     "ja": "集合管"
+    },
+    "Loop of Henle": {
+     "n": 6,
+     "ja": "ヘンレのワナ"
+    },
+    "Ascending Limb of Loop of Henle": {
+     "n": 7,
+     "ja": "ヘンレのワナの上行脚"
+    }
+   },
+   "credit": {
+    "title": "Kidney Nephron.svg",
+    "author": "Artwork by Holly Fischer",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AKidney_Nephron.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "cell": {
+   "name": "動物細胞の構造（模式図）",
+   "img": "data/figs/cell.webp",
+   "keys": {
+    "Nuclear pore": {
+     "n": 1,
+     "ja": "核膜孔"
+    },
+    "Chromatin": {
+     "n": 2,
+     "ja": "クロマチン"
+    },
+    "Nuclear envelope": {
+     "n": 3,
+     "ja": "核膜"
+    },
+    "Nucleus": {
+     "n": 4,
+     "ja": "核"
+    },
+    "Nucleolus": {
+     "n": 5,
+     "ja": "核小体"
+    },
+    "Plasma membrane": {
+     "n": 11,
+     "ja": "細胞膜"
+    },
+    "Golgi vesicles (golgi apparatus)": {
+     "n": 13,
+     "ja": "ゴルジ小胞（ゴルジ体）"
+    },
+    "Ribosomes": {
+     "n": 14,
+     "ja": "リボソーム"
+    },
+    "Rough endoplasmic reticulum": {
+     "n": 15,
+     "ja": "粗面小胞体"
+    },
+    "Smooth endoplasmic reticulum": {
+     "n": 16,
+     "ja": "滑面小胞体"
+    },
+    "Actin Filaments": {
+     "n": 17,
+     "ja": "アクチンフィラメント"
+    },
+    "Peroxisome": {
+     "n": 6,
+     "ja": "ペルオキシソーム"
+    },
+    "Microtubule": {
+     "n": 7,
+     "ja": "微小管"
+    },
+    "Lysosome": {
+     "n": 8,
+     "ja": "リソソーム"
+    },
+    "Free Ribosomes": {
+     "n": 9,
+     "ja": "遊離リボソーム"
+    },
+    "Mitochondrion": {
+     "n": 10,
+     "ja": "ミトコンドリア"
+    },
+    "Intermediate Filaments": {
+     "n": 12,
+     "ja": "中間径フィラメント"
+    },
+    "Cytoplasm": {
+     "n": 18,
+     "ja": "細胞質"
+    },
+    "Secretory vesicle": {
+     "n": 19,
+     "ja": "分泌小胞"
+    },
+    "Centrosome (with 2 centrioles)": {
+     "n": 20,
+     "ja": "中心体（2個の中心小体）"
+    },
+    "Flagellum": {
+     "n": 21,
+     "ja": "鞭毛"
+    }
+   },
+   "credit": {
+    "title": "Animal cell structure en.svg",
+    "author": "LadyofHats (Mariana Ruiz)",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnimal_cell_structure_en.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "gi": {
+   "name": "消化管の壁の構造（模式図）",
+   "img": "data/figs/gi.webp",
+   "keys": {
+    "Vein": {
+     "n": 1,
+     "ja": "静脈"
+    },
+    "Submucosal plexus (Meissner's plexus)": {
+     "n": 2,
+     "ja": "粘膜下神経叢（マイスナー神経叢）"
+    },
+    "Glands in submucosa": {
+     "n": 3,
+     "ja": "粘膜下組織の腺"
+    },
+    "Submucosa": {
+     "n": 4,
+     "ja": "粘膜下組織"
+    },
+    "Gland in mucossa": {
+     "n": 5,
+     "ja": "粘膜内の腺"
+    },
+    "Duct of gland outside tract": {
+     "n": 9,
+     "ja": "消化管の外にある腺の導管"
+    },
+    "Lymphatic tissue": {
+     "n": 11,
+     "ja": "リンパ組織"
+    },
+    "Lumen": {
+     "n": 12,
+     "ja": "管腔"
+    },
+    "Epithelium (mucosa)": {
+     "n": 15,
+     "ja": "上皮（粘膜）"
+    },
+    "Lamina propria": {
+     "n": 16,
+     "ja": "粘膜固有層"
+    },
+    "Muscularis mucosae": {
+     "n": 17,
+     "ja": "粘膜筋板"
+    },
+    "Mesentery": {
+     "n": 6,
+     "ja": "腸間膜"
+    },
+    "Artery": {
+     "n": 7,
+     "ja": "動脈"
+    },
+    "Nerve": {
+     "n": 8,
+     "ja": "神経"
+    },
+    "Myenteric plexus (Auerbach's plexus)": {
+     "n": 10,
+     "ja": "筋層間神経叢（アウエルバッハ神経叢）"
+    },
+    "Areolar connective tissue": {
+     "n": 13,
+     "ja": "疎性結合組織（漿膜）"
+    },
+    "Epithelium (serosa)": {
+     "n": 14,
+     "ja": "上皮（漿膜）"
+    },
+    "Circular muscle": {
+     "n": 18,
+     "ja": "輪走筋"
+    },
+    "Longitudinal muscle": {
+     "n": 19,
+     "ja": "縦走筋"
+    }
+   },
+   "credit": {
+    "title": "Layers of the GI Tract english.svg",
+    "author": "Goran tek-en",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3ALayers_of_the_GI_Tract_english.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "bacteria": {
+   "name": "細菌（原核細胞）の構造（模式図）",
+   "img": "data/figs/bacteria.webp",
+   "keys": {
+    "Capsule": {
+     "n": 1,
+     "ja": "莢膜"
+    },
+    "Cell wall": {
+     "n": 2,
+     "ja": "細胞壁"
+    },
+    "Plasma membrane": {
+     "n": 3,
+     "ja": "細胞膜"
+    },
+    "Cytoplasm": {
+     "n": 4,
+     "ja": "細胞質"
+    },
+    "Ribosomes": {
+     "n": 5,
+     "ja": "リボソーム"
+    },
+    "Plasmid": {
+     "n": 6,
+     "ja": "プラスミド"
+    },
+    "Pili": {
+     "n": 7,
+     "ja": "線毛"
+    },
+    "Flagellum": {
+     "n": 8,
+     "ja": "鞭毛"
+    },
+    "Nucleoid (circular DNA)": {
+     "n": 9,
+     "ja": "核様体（環状DNA）"
+    }
+   },
+   "credit": {
+    "title": "Average prokaryote cell- en.svg",
+    "author": "Mariana Ruiz Villarreal, LadyofHats",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAverage_prokaryote_cell-_en.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "neuron": {
+   "name": "ニューロンの構造（模式図）",
+   "img": "data/figs/neuron.webp",
+   "keys": {
+    "Dendrites": {
+     "n": 2,
+     "ja": "樹状突起"
+    },
+    "Microtubule": {
+     "n": 3,
+     "ja": "微小管"
+    },
+    "Neurofibrils": {
+     "n": 4,
+     "ja": "神経原線維"
+    },
+    "Neurotransmitter": {
+     "n": 6,
+     "ja": "神経伝達物質"
+    },
+    "Receptor": {
+     "n": 8,
+     "ja": "受容体"
+    },
+    "Synapse": {
+     "n": 1,
+     "ja": "シナプス"
+    },
+    "Synaptic vesicles": {
+     "n": 5,
+     "ja": "シナプス小胞"
+    },
+    "Synapse (Axoaxonic)": {
+     "n": 7,
+     "ja": "シナプス（軸索－軸索間）"
+    },
+    "Synaptic cleft": {
+     "n": 9,
+     "ja": "シナプス間隙"
+    },
+    "Axonal terminal": {
+     "n": 10,
+     "ja": "軸索終末"
+    },
+    "Rough ER (Nissl body)": {
+     "n": 11,
+     "ja": "粗面小胞体（ニッスル小体）"
+    },
+    "Polyribosomes": {
+     "n": 12,
+     "ja": "ポリリボソーム"
+    },
+    "Ribosomes": {
+     "n": 14,
+     "ja": "リボソーム"
+    },
+    "Golgi apparatus": {
+     "n": 16,
+     "ja": "ゴルジ装置（ゴルジ体）"
+    },
+    "Synapse (Axosomatic)": {
+     "n": 15,
+     "ja": "シナプス（軸索－細胞体間）"
+    },
+    "Node of Ranvier": {
+     "n": 13,
+     "ja": "ランビエ絞輪"
+    },
+    "Myelin Sheath (Schwann cell)": {
+     "n": 17,
+     "ja": "髄鞘（シュワン細胞）"
+    },
+    "Axon hillock": {
+     "n": 18,
+     "ja": "軸索小丘"
+    },
+    "Nucleus": {
+     "n": 19,
+     "ja": "核"
+    },
+    "Nucleolus": {
+     "n": 20,
+     "ja": "核小体"
+    },
+    "Membrane": {
+     "n": 22,
+     "ja": "細胞膜"
+    },
+    "Microtubule ": {
+     "n": 23,
+     "ja": "微小管"
+    },
+    "Mitochondrion": {
+     "n": 24,
+     "ja": "ミトコンドリア"
+    },
+    "Smooth ER": {
+     "n": 25,
+     "ja": "滑面小胞体"
+    },
+    "Synapse (Axodendritic)": {
+     "n": 29,
+     "ja": "シナプス（軸索－樹状突起間）"
+    },
+    "Nucleus (Schwann cell)": {
+     "n": 21,
+     "ja": "核（シュワン細胞）"
+    },
+    "Microfilament": {
+     "n": 26,
+     "ja": "ミクロフィラメント"
+    },
+    "Microtubule  ": {
+     "n": 27,
+     "ja": "微小管"
+    },
+    "Axon": {
+     "n": 28,
+     "ja": "軸索"
+    },
+    "Dendrites ": {
+     "n": 30,
+     "ja": "樹状突起"
+    }
+   },
+   "credit": {
+    "title": "Complete neuron cell diagram en.svg",
+    "author": "LadyofHats",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AComplete_neuron_cell_diagram_en.svg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "hen": {
+   "name": "鶏の胃と小腸（模式図）",
+   "img": "data/figs/hen.webp",
+   "keys": {
+    "oesophagus": {
+     "n": 1,
+     "ja": "食道"
+    },
+    "crop": {
+     "n": 2,
+     "ja": "そ嚢（嗉嚢）"
+    },
+    "true stomach": {
+     "n": 3,
+     "ja": "腺胃（真胃）"
+    },
+    "gizzard": {
+     "n": 4,
+     "ja": "筋胃"
+    },
+    "duodenum": {
+     "n": 5,
+     "ja": "十二指腸"
+    },
+    "pancreas": {
+     "n": 6,
+     "ja": "膵臓"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals Stomach & small intestine of hen.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Stomach_%26_small_intestine_of_hen.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
   "skeleton": {
    "name": "犬の骨格",
    "img": "data/figs/skeleton.webp",
@@ -1503,6 +2173,970 @@
    "related": [
     "k2-ippan-014",
     "y2-jitti-002"
+   ]
+  },
+  {
+   "id": "fig-h2-lv",
+   "genre": "fig",
+   "level": 2,
+   "fig": "heart2",
+   "examName": "図で覚える",
+   "section": "心臓の断面（ヒトの図・正面から見たところ）",
+   "no": 21,
+   "stem": "図は心臓を正面から見た断面である。⑮はどれか。",
+   "choices": [
+    "右心房",
+    "左心房",
+    "右心室",
+    "心室中隔",
+    "左心室"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Heart diagram-en.svg",
+    "publisher": "ZooFari／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHeart_diagram-en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑮は、図の作者が Left ventricle（左心室）とラベルを付けた部屋です。肺静脈からの血液は左心房に入り、左心房から左心室へ、左心室から大動脈へ送り出されます（OpenStax、ヒトの資料）。図は正面から見ているので、心臓の左側は図の右側に描かれている点に注意しましょう。",
+    "choices": [
+     "正答ではありません。右心房は図の⑫です。",
+     "正答ではありません。左心房は図の⑩です。",
+     "正答ではありません。右心室は図の⑱です。",
+     "正答ではありません。心室中隔は図の⑰です。",
+     "正答。⑮は左心室。左心房から血液を受け取り、大動脈へ送り出します。"
+    ],
+    "point": "全身 → 大静脈 → 右心房 → 右心室 → 肺動脈 → 肺 → 肺静脈 → 左心房 → 左心室 → 大動脈 → 全身。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.1 Heart Anatomy（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+      "note": "The pulmonary veins conduct blood into the left atrium, which pumps the blood into the left ventricle"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-001",
+    "k1-ippan-006"
+   ]
+  },
+  {
+   "id": "fig-h2-ra",
+   "genre": "fig",
+   "level": 2,
+   "fig": "heart2",
+   "examName": "図で覚える",
+   "section": "心臓の断面（ヒトの図・正面から見たところ）",
+   "no": 22,
+   "stem": "図は心臓を正面から見た断面である。右心房はどれか。",
+   "choices": [
+    "⑱",
+    "⑤",
+    "⑫",
+    "⑮",
+    "⑩"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Heart diagram-en.svg",
+    "publisher": "ZooFari／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHeart_diagram-en.svg"
+   },
+   "explanation": {
+    "summary": "右心房は、図の作者が Right atrium とラベルを付けた部屋です。右心房は全身から戻ってくる血液を受け取る部屋で、上大静脈と下大静脈が流れ込み、右心房から右心室へ血液が送られます（OpenStax、ヒトの資料）。正面から見た図なので、右心房は図の左側にあります。",
+    "choices": [
+     "正答ではありません。⑱は右心室です。",
+     "正答ではありません。⑤は上大静脈（動物では前大静脈）です。",
+     "正答。右心房は、上大静脈・下大静脈（動物では前大静脈・後大静脈）から全身の血液を受け取る部屋です。",
+     "正答ではありません。⑮は左心室です。",
+     "正答ではありません。⑩は左心房です。"
+    ],
+    "point": "心房＝血液を受け取る部屋、心室＝送り出す部屋。右心房には大静脈が、左心房には肺静脈が入る。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.1 Heart Anatomy（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+      "note": "The right atrium serves as the receiving chamber for blood returning to the heart from the systemic circulation."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-001",
+    "k1-ippan-006"
+   ]
+  },
+  {
+   "id": "fig-h2-mitral",
+   "genre": "fig",
+   "level": 2,
+   "fig": "heart2",
+   "examName": "図で覚える",
+   "section": "心臓の断面（ヒトの図・正面から見たところ）",
+   "no": 23,
+   "stem": "図は心臓を正面から見た断面である。⑬の弁はどれか。",
+   "choices": [
+    "心室中隔",
+    "腱索",
+    "半月弁",
+    "僧帽弁（左房室弁）",
+    "三尖弁（右房室弁）"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Heart diagram-en.svg",
+    "publisher": "ZooFari／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHeart_diagram-en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑬は、図の作者が Atrioventricular (mitral) valve（僧帽弁）とラベルを付けた弁です。左心房と左心室のあいだにある弁が僧帽弁で、二尖弁・左房室弁とも呼ばれます（OpenStax、ヒトの資料）。右心房と右心室のあいだにあるのは三尖弁です。",
+    "choices": [
+     "正答ではありません。心室中隔は図の⑰です。",
+     "正答ではありません。腱索は図の⑯です。",
+     "正答ではありません。半月弁は図の⑪です。",
+     "正答。⑬は僧帽弁（左房室弁・二尖弁）。左心房と左心室のあいだにある弁です。",
+     "正答ではありません。三尖弁（右房室弁）は図の⑭です。"
+    ],
+    "point": "左の房室弁＝僧帽弁（二尖弁）、右の房室弁＝三尖弁、心室の出口＝半月弁。犬では僧帽弁閉鎖不全症が多い。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.1 Heart Anatomy（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+      "note": "Located at the opening between the left atrium and left ventricle is the mitral valve"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-006",
+    "k1-ippan-070"
+   ]
+  },
+  {
+   "id": "fig-cd-av",
+   "genre": "fig",
+   "level": 2,
+   "fig": "conduction",
+   "examName": "図で覚える",
+   "section": "心臓の刺激伝導系（ヒトの図）",
+   "no": 24,
+   "stem": "図は心臓の刺激伝導系である。房室結節はどれか。",
+   "choices": [
+    "⑦",
+    "②",
+    "④",
+    "⑥",
+    "③"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Conductionsystemoftheheart.png",
+    "publisher": "Madhero88／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AConductionsystemoftheheart.png"
+   },
+   "explanation": {
+    "summary": "房室結節は、図の作者が Atrioventricular node とラベルを付けた部分です。房室結節は右心房の下部、房室中隔の中にある特殊な心筋細胞のかたまりで、ここで約100ミリ秒の遅れが生じ、そのあいだに心房が血液を送り終えてから興奮が房室束（ヒス束）へ伝わります（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。⑦はプルキンエ線維です。",
+     "正答ではありません。②は洞房結節です。",
+     "正答。房室結節は右心房の下部、心房と心室の境目にある結節です。",
+     "正答ではありません。⑥は右脚です。",
+     "正答ではありません。③はヒス束です。"
+    ],
+    "point": "刺激伝導系：洞房結節 → 房室結節 → ヒス束（房室束）→ 右脚・左脚 → プルキンエ線維。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.2 Cardiac Muscle and Electrical Activity（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+      "note": "The atrioventricular (AV) node is a second clump of specialized myocardial conductive cells"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-002",
+    "k3-ippan-057"
+   ]
+  },
+  {
+   "id": "fig-cd-sa",
+   "genre": "fig",
+   "level": 2,
+   "fig": "conduction",
+   "examName": "図で覚える",
+   "section": "心臓の刺激伝導系（ヒトの図）",
+   "no": 25,
+   "stem": "図は心臓の刺激伝導系である。②はどれか。",
+   "choices": [
+    "洞房結節",
+    "バッハマン束",
+    "プルキンエ線維",
+    "ヒス束",
+    "房室結節"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Conductionsystemoftheheart.png",
+    "publisher": "Madhero88／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AConductionsystemoftheheart.png"
+   },
+   "explanation": {
+    "summary": "図の②は、図の作者が Sinoatrial node（洞房結節）とラベルを付けた部分です。洞房結節は自発的に興奮する頻度がいちばん高く、心臓のペースメーカーと呼ばれ、正常な洞調律を始めます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。②は洞房結節。心臓のペースメーカーです。",
+     "正答ではありません。バッハマン束は図の①です。",
+     "正答ではありません。プルキンエ線維は図の⑦です。",
+     "正答ではありません。ヒス束は図の③です。",
+     "正答ではありません。房室結節は図の④です。"
+    ],
+    "point": "心臓の拍動で最初に興奮するのは洞房結節（ペースメーカー）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 19.2 Cardiac Muscle and Electrical Activity（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity",
+      "note": "known as the pacemaker of the heart"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-ippan-007",
+    "y4-hissu-004"
+   ]
+  },
+  {
+   "id": "fig-e2-vitreous",
+   "genre": "fig",
+   "level": 2,
+   "fig": "eye2",
+   "examName": "図で覚える",
+   "section": "眼球の水平断面（ヒトの図）",
+   "no": 26,
+   "stem": "図は眼球の水平断面である。⑪はどれか。",
+   "choices": [
+    "脈絡膜",
+    "水晶体",
+    "網膜",
+    "角膜",
+    "硝子体"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Schematic diagram of the human eye en.svg",
+    "publisher": "Rhcastilhos. And Jmarchn.／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASchematic_diagram_of_the_human_eye_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑪は、図の作者が Vitreous humour（硝子体）とラベルを付けた部分です。水晶体の後ろから網膜までの眼球の後方の空間は、粘りけのある硝子体で満たされています（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。脈絡膜は図の⑨です。",
+     "正答ではありません。水晶体は図の⑧です。",
+     "正答ではありません。網膜は図の⑭です。",
+     "正答ではありません。角膜は図の①です。",
+     "正答。⑪は硝子体。水晶体の後ろの空間を満たす、粘りけのある透明な物質です。"
+    ],
+    "point": "眼球の中身：前方＝眼房水（角膜と水晶体のあいだ）、後方＝硝子体（水晶体と網膜のあいだ）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "The posterior cavity is filled with a more viscous fluid called the vitreous humor"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-jitti-005"
+   ]
+  },
+  {
+   "id": "fig-e2-ciliary",
+   "genre": "fig",
+   "level": 2,
+   "fig": "eye2",
+   "examName": "図で覚える",
+   "section": "眼球の水平断面（ヒトの図）",
+   "no": 27,
+   "stem": "図は眼球の水平断面である。毛様小帯を介して水晶体の厚さを調節する⑥はどれか。",
+   "choices": [
+    "脈絡膜",
+    "強膜",
+    "毛様小帯（チン小帯）",
+    "毛様体",
+    "虹彩"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Schematic diagram of the human eye en.svg",
+    "publisher": "Rhcastilhos. And Jmarchn.／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ASchematic_diagram_of_the_human_eye_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑥は、図の作者が Ciliary body（毛様体）とラベルを付けた部分です。毛様体は毛様小帯によって水晶体につながる筋性の構造で、この2つが水晶体を曲げて網膜にピントを合わせます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。脈絡膜は図の⑨です。",
+     "正答ではありません。強膜は図の⑩です。",
+     "正答ではありません。毛様小帯（チン小帯）は図の⑦です。",
+     "正答。⑥は毛様体。毛様小帯（チン小帯）で水晶体につながる筋性の構造です。",
+     "正答ではありません。虹彩は図の⑤です。"
+    ],
+    "point": "ぶどう膜＝虹彩・毛様体・脈絡膜（図の作者も Uvea としてまとめています）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "a muscular structure that is attached to the lens by suspensory ligaments"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-ippan-013"
+   ]
+  },
+  {
+   "id": "fig-nf-collecting",
+   "genre": "fig",
+   "level": 2,
+   "fig": "nephron",
+   "examName": "図で覚える",
+   "section": "ネフロンと集合管（模式図）",
+   "no": 28,
+   "stem": "図はネフロンの模式図である。抗利尿ホルモン（バソプレシン）の主な作用部位はどれか。",
+   "choices": [
+    "①",
+    "⑤",
+    "⑦",
+    "③",
+    "②"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Kidney Nephron.svg",
+    "publisher": "Artwork by Holly Fischer／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AKidney_Nephron.svg"
+   },
+   "explanation": {
+    "summary": "集合管は、図の作者が Collecting duct とラベルを付けた管です。集合管の上皮にはADH（抗利尿ホルモン）の受容体があり、ADHで刺激されるとアクアポリン（水の通り道）が膜に入り、水が血液側に回収されます。ADHがないと薄い尿が出ます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。①はボーマン嚢です。",
+     "正答。集合管の細胞には抗利尿ホルモン（ADH）の受容体があり、水の再吸収が増えます。",
+     "正答ではありません。⑦はヘンレのワナの上行脚です。",
+     "正答ではありません。③はヘンレのワナの下行脚です。",
+     "正答ではありません。②は近位尿細管です。"
+    ],
+    "point": "ADH（バソプレシン）＝集合管で水の再吸収を増やす → 尿が濃くなる。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 25.4 Microscopic Anatomy of the Kidney（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-4-microscopic-anatomy-of-the-kidney",
+      "note": "They are lined with simple cuboidal or columnar epithelium with receptors for ADH."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-004",
+    "k2-ippan-011"
+   ]
+  },
+  {
+   "id": "fig-nf-bowman",
+   "genre": "fig",
+   "level": 2,
+   "fig": "nephron",
+   "examName": "図で覚える",
+   "section": "ネフロンと集合管（模式図）",
+   "no": 29,
+   "stem": "図はネフロンの模式図である。①はどれか。",
+   "choices": [
+    "ヘンレのワナ",
+    "遠位尿細管",
+    "集合管",
+    "ボーマン嚢",
+    "近位尿細管"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Kidney Nephron.svg",
+    "publisher": "Artwork by Holly Fischer／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AKidney_Nephron.svg"
+   },
+   "explanation": {
+    "summary": "図の①は、図の作者が Bowman's capsule（ボーマン嚢）とラベルを付けた部分です。ボーマン嚢は糸球体（毛細血管のかたまり）を包み、こし出された液（ろ液）を受け取って近位尿細管へ送ります（OpenStax、ヒトの資料）。糸球体とボーマン嚢をあわせて腎小体といいます。",
+    "choices": [
+     "正答ではありません。ヘンレのワナは図の⑥です。",
+     "正答ではありません。遠位尿細管は図の④です。",
+     "正答ではありません。集合管は図の⑤です。",
+     "正答。①はボーマン嚢。糸球体を包み、こし出された液を受け取ります。",
+     "正答ではありません。近位尿細管は図の②です。"
+    ],
+    "point": "尿の通り道：腎小体（糸球体＋ボーマン嚢）→ 近位尿細管 → ヘンレのワナ → 遠位尿細管 → 集合管。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 25.4 Microscopic Anatomy of the Kidney（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-4-microscopic-anatomy-of-the-kidney",
+      "note": "Bowman’s capsule surrounds the glomerulus"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-011",
+    "y3-jitti-003"
+   ]
+  },
+  {
+   "id": "fig-cl-ribosome",
+   "genre": "fig",
+   "level": 2,
+   "fig": "cell",
+   "examName": "図で覚える",
+   "section": "動物細胞の構造（模式図）",
+   "no": 30,
+   "stem": "図は動物細胞の模式図である。タンパク質が合成される場はどれか。",
+   "choices": [
+    "⑧",
+    "⑭",
+    "⑤",
+    "⑩",
+    "⑬"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Animal cell structure en.svg",
+    "publisher": "LadyofHats (Mariana Ruiz)／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnimal_cell_structure_en.svg"
+   },
+   "explanation": {
+    "summary": "リボソームは、図の作者が Ribosomes とラベルを付けた小さな粒です。リボソームはタンパク質合成の場で、粗面小胞体の表面にもたくさん付いています（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。⑧はリソソームです。",
+     "正答。リボソームはタンパク質合成の場です。粗面小胞体の表面にもたくさん付いています。",
+     "正答ではありません。⑤は核小体です。",
+     "正答ではありません。⑩はミトコンドリアです。",
+     "正答ではありません。⑬はゴルジ小胞（ゴルジ体）です。"
+    ],
+    "point": "リボソーム＝タンパク質合成、ミトコンドリア＝ATP産生、リソソーム＝不要物の分解。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 3.2 The Cytoplasm and Cellular Organelles（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+      "note": "ribosomes, which are sites of protein synthesis"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-001",
+    "k4-jitti-001",
+    "k1-ippan-005"
+   ]
+  },
+  {
+   "id": "fig-cl-mito",
+   "genre": "fig",
+   "level": 2,
+   "fig": "cell",
+   "examName": "図で覚える",
+   "section": "動物細胞の構造（模式図）",
+   "no": 31,
+   "stem": "図は動物細胞の模式図である。⑩の細胞小器官はどれか。",
+   "choices": [
+    "リソソーム",
+    "分泌小胞",
+    "ミトコンドリア",
+    "ゴルジ小胞（ゴルジ体）",
+    "ペルオキシソーム"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Animal cell structure en.svg",
+    "publisher": "LadyofHats (Mariana Ruiz)／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnimal_cell_structure_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑩は、図の作者が Mitochondrion（ミトコンドリア）とラベルを付けた細胞小器官です。ミトコンドリアでは細胞呼吸の反応が行われ、グルコースなど栄養素のエネルギーがATP（細胞が使えるエネルギー）に変えられます（OpenStax、ヒトの資料）。内側に折れ込んだ膜（クリステ）が特徴です。",
+    "choices": [
+     "正答ではありません。リソソームは図の⑧です。",
+     "正答ではありません。分泌小胞は図の⑲です。",
+     "正答。⑩はミトコンドリア。栄養素のエネルギーからATPをつくります。",
+     "正答ではありません。ゴルジ小胞（ゴルジ体）は図の⑬です。",
+     "正答ではありません。ペルオキシソームは図の⑥です。"
+    ],
+    "point": "ミトコンドリア＝細胞呼吸でATPをつくる（酸素が必要）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 3.2 The Cytoplasm and Cellular Organelles（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+      "note": "convert energy stored in nutrient molecules (such as glucose) into adenosine triphosphate (ATP)"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k1-ippan-005"
+   ]
+  },
+  {
+   "id": "fig-cl-lysosome",
+   "genre": "fig",
+   "level": 2,
+   "fig": "cell",
+   "examName": "図で覚える",
+   "section": "動物細胞の構造（模式図）",
+   "no": 32,
+   "stem": "図は動物細胞の模式図である。⑧の細胞小器官はどれか。",
+   "choices": [
+    "ミトコンドリア",
+    "中心体（2個の中心小体）",
+    "リソソーム",
+    "核小体",
+    "ペルオキシソーム"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Animal cell structure en.svg",
+    "publisher": "LadyofHats (Mariana Ruiz)／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnimal_cell_structure_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑧は、図の作者が Lysosome（リソソーム）とラベルを付けた細胞小器官です。リソソームは、傷んだ細胞小器官など不要になった細胞成分を分解・消化する酵素を含みます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。ミトコンドリアは図の⑩です。",
+     "正答ではありません。中心体（2個の中心小体）は図の⑳です。",
+     "正答。⑧はリソソーム。不要になった細胞成分を分解する酵素を含みます。",
+     "正答ではありません。核小体は図の⑤です。",
+     "正答ではありません。ペルオキシソームは図の⑥です。"
+    ],
+    "point": "細胞内の不要物の分解＝リソソーム。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 3.2 The Cytoplasm and Cellular Organelles（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-2-the-cytoplasm-and-cellular-organelles",
+      "note": "A lysosome is an organelle that contains enzymes that break down and digest unneeded cellular components"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-004",
+    "k4-jitti-001"
+   ]
+  },
+  {
+   "id": "fig-gi-long",
+   "genre": "fig",
+   "level": 2,
+   "fig": "gi",
+   "examName": "図で覚える",
+   "section": "消化管の壁の構造（模式図）",
+   "no": 33,
+   "stem": "図は消化管の壁の構造である。縦走筋はどれか。",
+   "choices": [
+    "④",
+    "⑯",
+    "⑲",
+    "⑱",
+    "⑰"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Layers of the GI Tract english.svg",
+    "publisher": "Goran tek-en／CC BY-SA 4.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3ALayers_of_the_GI_Tract_english.svg"
+   },
+   "explanation": {
+    "summary": "縦走筋は、図の作者が Longitudinal muscle とラベルを付けた層です。小腸の筋層は2層の平滑筋で、内側が輪走筋、外側が縦走筋です。これらの収縮で食物が混ぜられ、先へ送られます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。④は粘膜下組織です。",
+     "正答ではありません。⑯は粘膜固有層です。",
+     "正答。縦走筋は筋層の外側の層です（内側が輪走筋）。",
+     "正答ではありません。⑱は輪走筋です。",
+     "正答ではありません。⑰は粘膜筋板です。"
+    ],
+    "point": "消化管の壁：内側から 粘膜 → 粘膜下組織 → 筋層（内輪・外縦）→ 漿膜。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.1 Overview of the Digestive System（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system",
+      "note": "an inner circular layer and an outer longitudinal layer"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-003"
+   ]
+  },
+  {
+   "id": "fig-bc-flagellum",
+   "genre": "fig",
+   "level": 2,
+   "fig": "bacteria",
+   "examName": "図で覚える",
+   "section": "細菌（原核細胞）の構造（模式図）",
+   "no": 34,
+   "stem": "図は細菌の構造の模式図である。⑧はどれか。",
+   "choices": [
+    "莢膜",
+    "線毛",
+    "プラスミド",
+    "鞭毛",
+    "細胞壁"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Average prokaryote cell- en.svg",
+    "publisher": "Mariana Ruiz Villarreal, LadyofHats／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAverage_prokaryote_cell-_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑧は、図の作者が Flagellum（鞭毛）とラベルを付けた長い構造です。鞭毛は細胞が水の中で動くための構造で、細菌の鞭毛はスクリューのように回転します。線毛（pili）は細胞表面の短い毛状の構造です（OpenStax Microbiology）。",
+    "choices": [
+     "正答ではありません。莢膜は図の①です。",
+     "正答ではありません。線毛は図の⑦です。",
+     "正答ではありません。プラスミドは図の⑥です。",
+     "正答。⑧は鞭毛。細菌が水の中で動くための構造です。",
+     "正答ではありません。細胞壁は図の②です。"
+    ],
+    "point": "細菌の付属構造：鞭毛＝運動、線毛・線毛様構造＝付着やDNAの受け渡し。細胞壁・プラスミドも細菌の構造。",
+    "refs": [
+     {
+      "title": "OpenStax Microbiology 3.3 Unique Characteristics of Prokaryotic Cells",
+      "url": "https://openstax.org/books/microbiology/pages/3-3-unique-characteristics-of-prokaryotic-cells",
+      "note": "Flagella are structures used by cells to move in aqueous environments."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-020",
+    "y3-hissu-026"
+   ]
+  },
+  {
+   "id": "fig-nr-dendrite",
+   "genre": "fig",
+   "level": 2,
+   "fig": "neuron",
+   "examName": "図で覚える",
+   "section": "ニューロンの構造（模式図）",
+   "no": 35,
+   "stem": "図はニューロンの模式図である。ほかの神経細胞から信号を受け取る部位はどれか。",
+   "choices": [
+    "②",
+    "㉘",
+    "⑬",
+    "⑰",
+    "⑱"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Complete neuron cell diagram en.svg",
+    "publisher": "LadyofHats／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AComplete_neuron_cell_diagram_en.svg"
+   },
+   "explanation": {
+    "summary": "樹状突起は、図の作者が Dendrites とラベルを付けた枝分かれした突起です（図には2か所あります）。樹状突起はシナプスでほかのニューロンから情報を受け取り、情報は樹状突起 → 細胞体 → 軸索の一方向に流れます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答。樹状突起は、細胞体から枝分かれした突起で、ほかの神経細胞からシナプスを介して情報を受け取ります。",
+     "正答ではありません。㉘は軸索です。",
+     "正答ではありません。⑬はランビエ絞輪です。",
+     "正答ではありません。⑰は髄鞘（シュワン細胞）です。",
+     "正答ではありません。⑱は軸索小丘です。"
+    ],
+    "point": "樹状突起＝受け取る、軸索＝伝える（軸索終末からシナプスへ）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 12.2 Nervous Tissue（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-2-nervous-tissue",
+      "note": "dendrites, which receive information from other neurons at specialized areas of contact called synapses"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-004",
+    "k1-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-nr-myelin",
+   "genre": "fig",
+   "level": 2,
+   "fig": "neuron",
+   "examName": "図で覚える",
+   "section": "ニューロンの構造（模式図）",
+   "no": 36,
+   "stem": "図はニューロンの模式図である。⑰はどれか。",
+   "choices": [
+    "軸索",
+    "樹状突起",
+    "ランビエ絞輪",
+    "軸索小丘",
+    "髄鞘（シュワン細胞）"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Complete neuron cell diagram en.svg",
+    "publisher": "LadyofHats／Public domain（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AComplete_neuron_cell_diagram_en.svg"
+   },
+   "explanation": {
+    "summary": "図の⑰は、図の作者が Myelin Sheath (Schwann cell)（髄鞘〔シュワン細胞〕）とラベルを付けた部分です。神経系の軸索の絶縁はグリア細胞がつくり、末梢神経系ではシュワン細胞が絶縁（髄鞘形成）を担います（OpenStax、ヒトの資料）。髄鞘と髄鞘のすき間がランビエ絞輪です。",
+    "choices": [
+     "正答ではありません。軸索は図の㉘です。",
+     "正答ではありません。樹状突起は図の②です。",
+     "正答ではありません。ランビエ絞輪は図の⑬です。",
+     "正答ではありません。軸索小丘は図の⑱です。",
+     "正答。⑰は髄鞘。末梢神経ではシュワン細胞がつくる、軸索の絶縁体です。"
+    ],
+    "point": "髄鞘をつくる細胞：末梢神経＝シュワン細胞、中枢神経＝オリゴデンドロサイト。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 12.2 Nervous Tissue（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-2-nervous-tissue",
+      "note": "The insulation for axons in the nervous system is provided by glial cells"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-ippan-001"
+   ]
+  },
+  {
+   "id": "fig-hn-gizzard",
+   "genre": "fig",
+   "level": 2,
+   "fig": "hen",
+   "examName": "図で覚える",
+   "section": "鶏の胃と小腸（模式図）",
+   "no": 37,
+   "stem": "図は鶏の胃と小腸である。④はどれか。",
+   "choices": [
+    "そ嚢（嗉嚢）",
+    "膵臓",
+    "腺胃（真胃）",
+    "筋胃",
+    "十二指腸"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Stomach & small intestine of hen.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Stomach_%26_small_intestine_of_hen.jpg"
+   },
+   "explanation": {
+    "summary": "図の④は、図の作者が gizzard（筋胃）とラベルを付けた部分です。筋胃は「機械的な胃」とも呼ばれ、鳥の歯の役目をする2組の強い筋肉と、それを守る厚い内張りをもっています（家きんの解剖学）。腺胃（真胃）で消化液を加えられた餌は、筋胃ですりつぶされます。",
+    "choices": [
+     "正答ではありません。そ嚢（嗉嚢）は図の②です。",
+     "正答ではありません。膵臓は図の⑥です。",
+     "正答ではありません。腺胃（真胃）は図の③です。",
+     "正答。④は筋胃（砂肝）。強い筋肉で食べた物をすりつぶす「機械的な胃」です。",
+     "正答ではありません。十二指腸は図の⑤です。"
+    ],
+    "point": "鶏の消化管：食道 → そ嚢（一時貯蔵）→ 腺胃（真胃、塩酸・ペプシン）→ 筋胃（すりつぶし）→ 十二指腸 … → 総排泄腔。",
+    "refs": [
+     {
+      "title": "eXtension: Avian Digestive System（家きん）",
+      "url": "https://poultry.extension.org/articles/poultry-anatomy/avian-digestive-system/",
+      "note": "Often referred to as the mechanical stomach"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-013",
+    "y3-hissu-016"
+   ]
+  },
+  {
+   "id": "fig-hn-proventriculus",
+   "genre": "fig",
+   "level": 2,
+   "fig": "hen",
+   "examName": "図で覚える",
+   "section": "鶏の胃と小腸（模式図）",
+   "no": 38,
+   "stem": "図は鶏の胃と小腸である。腺胃はどれか。",
+   "choices": [
+    "①",
+    "⑤",
+    "③",
+    "④",
+    "②"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals Stomach & small intestine of hen.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_Stomach_%26_small_intestine_of_hen.jpg"
+   },
+   "explanation": {
+    "summary": "腺胃は、図の作者が true stomach（真胃）とラベルを付けた部分です。腺胃（前胃、真胃ともいう）は消化が本格的に始まる腺性の胃で、ここで塩酸やペプシンなどの消化酵素が餌に加えられます（家きんの解剖学）。",
+    "choices": [
+     "正答ではありません。①は食道です。",
+     "正答ではありません。⑤は十二指腸です。",
+     "正答。腺胃（真胃）は、そ嚢と筋胃のあいだにあり、塩酸やペプシンなどの消化液を分泌します。",
+     "正答ではありません。④は筋胃です。",
+     "正答ではありません。②はそ嚢（嗉嚢）です。"
+    ],
+    "point": "そ嚢＝ためる、腺胃＝消化液を出す、筋胃＝すりつぶす。",
+    "refs": [
+     {
+      "title": "eXtension: Avian Digestive System（家きん）",
+      "url": "https://poultry.extension.org/articles/poultry-anatomy/avian-digestive-system/",
+      "note": "The proventriculus (also known as the true stomach) is the glandular stomach"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-013"
+   ]
+  },
+  {
+   "id": "fig-og-smallint",
+   "genre": "fig",
+   "level": 2,
+   "fig": "organs",
+   "examName": "図で覚える",
+   "section": "からだの主な臓器（腹側から見た模式図）",
+   "no": 39,
+   "stem": "図はからだの主な臓器の模式図である。⑨の臓器の働きはどれか。",
+   "choices": [
+    "栄養素の消化と吸収を行う。",
+    "主に水分を吸収する。",
+    "胆汁を産生する。",
+    "塩酸やペプシノゲンを分泌する。",
+    "インスリンを産生する。"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals main organs vertebrate body.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 2.5（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_main_organs_vertebrate_body.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑨は、図の作者が small intestine（小腸）とラベルを付けた臓器です。小腸は主な消化器官で、消化のほとんどがここで行われ、吸収もほぼすべて小腸で行われます（OpenStax、ヒトの資料）。選択肢は過去問（予備第1回 実地4）と同じです。",
+    "choices": [
+     "正答。⑨は小腸。消化のほとんどと、吸収のほぼすべてが小腸で行われます。",
+     "正答ではありません。",
+     "正答ではありません。胆汁をつくるのは肝臓です。",
+     "正答ではありません。胃の壁細胞（塩酸）と主細胞（ペプシノゲン）の働きです。",
+     "正答ではありません。膵臓の膵島の働きです。"
+    ],
+    "point": "胃＝塩酸・ペプシノゲン、小腸＝消化と吸収、膵島＝インスリン、肝臓＝胆汁をつくる。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.5 The Small and Large Intestines（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "note": "it is also where practically all absorption occurs"
+     },
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.4 The Stomach（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach",
+      "note": "parietal cells ... produce both hydrochloric acid"
+     },
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.6 The Liver, Pancreas, and Gallbladder（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+      "note": "The digestive role of the liver is to produce bile"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-og-stomach",
+   "genre": "fig",
+   "level": 2,
+   "fig": "organs",
+   "examName": "図で覚える",
+   "section": "からだの主な臓器（腹側から見た模式図）",
+   "no": 40,
+   "stem": "図はからだの主な臓器の模式図である。⑤の臓器の働きはどれか。",
+   "choices": [
+    "インスリンを産生する。",
+    "主に水分を吸収する。",
+    "胆汁を産生する。",
+    "栄養素の消化と吸収を行う。",
+    "塩酸やペプシノゲンを分泌する。"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals main organs vertebrate body.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 2.5（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_main_organs_vertebrate_body.jpg"
+   },
+   "explanation": {
+    "summary": "図の⑤は、図の作者が stomach（胃）とラベルを付けた臓器です。胃腺の壁細胞は塩酸（HCl）を、主細胞はペプシンのもと（不活性型）であるペプシノゲンを分泌し、塩酸がペプシノゲンをペプシンに変えます（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。膵臓の膵島の働きです。",
+     "正答ではありません。",
+     "正答ではありません。胆汁をつくるのは肝臓です。",
+     "正答ではありません。小腸の働きです。",
+     "正答。⑤は胃。壁細胞が塩酸を、主細胞がペプシノゲンを分泌します。"
+    ],
+    "point": "壁細胞＝塩酸（＋内因子）、主細胞＝ペプシノゲン。塩酸でペプシノゲン → ペプシン。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 23.4 The Stomach（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach",
+      "note": "chief cells , which secrete pepsinogen"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-004",
+    "k4-jitti-018"
    ]
   }
  ]

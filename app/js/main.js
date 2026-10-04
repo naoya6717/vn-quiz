@@ -243,9 +243,10 @@ routes.quiz = async () => {
       <div style="margin-top:16px"><button class="btn" id="start">10問スタート！</button></div>
     </div>
     <div class="card figcard">
-      <h2 style="margin-top:0">🦴 図で覚える（骨格・内臓）</h2>
+      <h2 style="margin-top:0">🦴 図で覚える（骨格・内臓・細胞など）</h2>
       <p class="muted">過去の実地問題で問われた部位を、教科書の図で確認するコーナーです。正答は図の作者が付けたラベルで、解説はすべて出典と照合済みです。</p>
       <button class="btn" id="figStart">図の問題 10問スタート！</button>
+      <p class="muted" style="margin:8px 0 0">収録：${figCount ? figCount + "問" : "読み込み中…"}（毎回ランダムに10問）</p>
     </div>
     <div class="card muted">
       収録：愛玩動物看護師国家試験 第1〜4回・予備試験 第1〜4回の必須/一般問題 ${data.questions.length}問（図・写真を使う実地問題は、公式PDFで図が非公開のため除外）。<br>
@@ -260,6 +261,7 @@ routes.quiz = async () => {
   $("#genre").onchange = (e) => { quizConf.genre = e.target.value; };
   $("#start").onclick = () => startQuiz();
   $("#figStart").onclick = () => startFigQuiz();
+  if (!figCount) loadFigs().then(() => { if (location.hash === "#/quiz") render(); }).catch(() => {});
 };
 
 function genreStats() {
@@ -278,8 +280,14 @@ function weakGenres(min = 5) {
 
 let session = null;
 let figData = null;
+let figCount = 0;
+async function loadFigs() {
+  figData ||= await (await fetch("data/figs.json")).json();
+  figCount = figData.questions.length;
+  return figData;
+}
 async function startFigQuiz() {
-  try { figData ||= await (await fetch("data/figs.json")).json(); }
+  try { await loadFigs(); }
   catch { toast("図の問題を読み込めませんでした"); return; }
   const ans = store.get().answers;
   const weight = (q) => { const a = ans[q.id]; return !a ? 3 : a.last === 0 ? 4 : 1; };
