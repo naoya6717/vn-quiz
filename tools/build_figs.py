@@ -315,6 +315,86 @@ FIGS = {
             ("pancreas", "膵臓", (503, 260, 575, 277)),
         ],
     },
+    # ---- 第3弾（犬の図） ----
+    "forelimb": {
+        "file": "Forelimb_dog_corrected.JPG", "name": "犬の前肢の骨（ラベル修正版）",
+        "labels": [
+            ("humerus", "上腕骨", (292, 74, 361, 91)),
+            ("ulna", "尺骨", (5, 168, 44, 185)),
+            ("radius", "橈骨", (267, 192, 318, 209)),
+            ("carpals", "手根骨", (212, 287, 271, 307)),
+            ("metacarpals", "中手骨", (71, 326, 163, 346)),
+            ("digits", "指骨", (296, 373, 342, 392)),
+        ],
+    },
+    "hindlimb": {
+        "file": "Hind_limb_dog_corrected.JPG", "name": "犬の後肢の骨（ラベル修正版）",
+        "labels": [
+            ("femur", "大腿骨", (87, 49, 137, 66)),
+            ("patella", "膝蓋骨", (350, 132, 405, 152)),
+            ("fibula", "腓骨", (87, 169, 134, 186)),
+            ("tibia", "脛骨", (317, 199, 356, 216)),
+            ("tarsals", "足根骨", (193, 293, 249, 310)),
+            ("metatarsals", "中足骨", (30, 331, 118, 348)),
+            ("digits", "趾骨", (241, 384, 287, 402)),
+        ],
+    },
+    "repro": {
+        "file": "Female_repro_system_labelled.JPG", "name": "雌犬の生殖器",
+        "labels": [
+            ("uterus", "子宮", (242, 7, 294, 23)),
+            ("fallopian tube", "卵管", (7, 105, 99, 125)),
+            ("ovary", "卵巣", (201, 130, 249, 145)),
+            ("uterus ", "子宮", (319, 143, 371, 159)),
+            ("cervix", "子宮頸", (319, 166, 369, 182)),
+            ("vagina", "腟", (318, 196, 373, 212)),
+            ("opening of urethra", "外尿道口", (318, 243, 451, 263)),
+            ("vulva", "外陰部", (318, 278, 364, 295)),
+        ],
+    },
+    "rumen": {
+        "file": "Anatomy_and_physiology_of_animals_The_rumen.jpg", "name": "反芻動物（牛など）の胃（模式図）",
+        "labels": [
+            ("oesophagus", "食道", (244, 21, 337, 41)),
+            ("omasum", "第三胃", (111, 97, 179, 111)),
+            ("abomasum", "第四胃", (94, 165, 179, 182)),
+            ("to small intestine", "小腸へ", (38, 267, 105, 302)),
+            ("reticulum", "第二胃", (334, 287, 405, 304)),
+            ("rumen", "第一胃", (451, 290, 504, 304)),
+        ],
+    },
+    # 古い教科書の図は図中の記号（a, b, 9 …）と凡例で示されている。記号の位置に同じ記号の丸を重ねる（位置は原画像の座標）
+    "brain3": {
+        "file": "A_text-book_of_veterinary_anatomy_(Page_724)_BHL18587848.jpg", "name": "犬の脳の底面（Sisson の獣医解剖学書 Fig.539）",
+        "page_crop": (180, 1150, 1250, 2380), "r": 30,
+        "markers": [
+            ("a", (567, 1382), "嗅球", "Olfactory bulb"), ("b", (620, 1717), "視神経", "optic nerve"),
+            ("4", (635, 1792), "灰白隆起と漏斗", "tuber cinereum and infundibulum"), ("5", (498, 1792), "梨状葉", "pyriform lobe"),
+            ("9", (686, 2086), "橋", "pons"), ("10", (683, 2223), "延髄", "medulla oblongata"),
+            ("11", (897, 2213), "小脳", "cerebellum"), ("12", (695, 1919), "大脳脚", "cerebral peduncle"),
+        ],
+    },
+    "muscles": {
+        "file": "A_text-book_of_veterinary_anatomy_(Page_319)_BHL18587443.jpg", "name": "犬の浅層の筋（Sisson の獣医解剖学書 Fig.230）",
+        "page_crop": (150, 950, 2400, 2090), "r": 46,
+        "markers": [
+            ("e", (1468, 1319), "僧帽筋", "trapezius"), ("f", (1328, 1320), "僧帽筋", "trapezius"),
+            ("i", (1178, 1444), "広背筋", "latissimus dorsi"), ("o", (1448, 1605), "上腕三頭筋（長頭）", "triceps, long head"),
+            ("29", (777, 1970), "前脛骨筋", "tibialis anterior"), ("33", (632, 1862), "腓腹筋", "gastrocnemius"),
+            ("25", (1757, 1444), "頸静脈", "jugular vein"),
+        ],
+    },
+    "placenta": {
+        "file": "PlacZonaireRailliet1895MeyCh.jpg", "name": "犬の胎子と胎膜（Railliet 1895）",
+        "page_crop": (0, 0, 996, 418), "r": 21,
+        "markers": [
+            ("a", (546, 37), "帯状胎盤", "placenta zonaire"), ("a", (531, 357), "帯状胎盤", "placenta zonaire"),
+            ("b", (450, 33), "帯状胎盤", "placenta zonaire"), ("b", (627, 53), "帯状胎盤", "placenta zonaire"),
+            ("b", (486, 375), "帯状胎盤", "placenta zonaire"), ("b", (574, 375), "帯状胎盤", "placenta zonaire"),
+            ("c", (286, 46), "絨毛膜", "chorion"), ("c", (737, 95), "絨毛膜", "chorion"), ("c", (844, 339), "絨毛膜", "chorion"),
+            ("d", (113, 287), "羊膜", "amnios"), ("d", (797, 315), "羊膜", "amnios"),
+        ],
+    },
     # 骨格図は番号と凡例が最初から付いている（番号＝凡例の番号）
     "skeleton": {
         "file": "Skeleton_of_a_dog_diagram.svg", "name": "犬の骨格", "svg": True,
@@ -415,6 +495,26 @@ def masked(fig):
     return im, keys
 
 
+def marked(fig):
+    """図中の記号の位置に、同じ記号のピンクの丸を重ねる（記号の意味は原典の凡例どおり）。"""
+    im = Image.open(SRC / fig["file"]).convert("RGB")
+    ox, oy = fig["page_crop"][:2]
+    im = im.crop(fig["page_crop"])
+    sc = 2 if im.width < 1200 else 1
+    if sc > 1:
+        im = im.resize((im.width * sc, im.height * sc), Image.LANCZOS)
+    d = ImageDraw.Draw(im)
+    R = fig["r"] * sc
+    font = ImageFont.truetype(FONT, round(R * 1.1))
+    keys = {}
+    for sym, (x, y), ja, en in fig["markers"]:
+        x, y = (x - ox) * sc, (y - oy) * sc
+        d.ellipse((x - R, y - R, x + R, y + R), fill=PINK, outline="white", width=max(2, R // 6))
+        d.text((x, y + 1), sym, font=font, fill="white", anchor="mm")
+        keys[sym] = {"n": sym, "ja": ja, "en": en}
+    return im, keys
+
+
 def skeleton(fig):
     doc = fitz.open(SRC / fig["file"])
     pix = doc[0].get_pixmap(dpi=96)  # 1052x744 → 約1000px幅
@@ -428,17 +528,19 @@ def main():
     meta = json.loads((SRC / "meta.json").read_text())
     figs = {}
     for fid, fig in FIGS.items():
-        im, keys = skeleton(fig) if fig.get("svg") else masked(fig)
+        im, keys = skeleton(fig) if fig.get("svg") else marked(fig) if fig.get("markers") else masked(fig)
         if im.width > 1000:
             im = im.resize((1000, round(im.height * 1000 / im.width)), Image.LANCZOS)
         im.save(OUT / f"{fid}.webp", "WEBP", quality=82)
         m = meta[fig["file"]]
-        if "Ruth Lawson" in m["description"]:  # Commons の Artist 欄はアップロード者なので、説明欄の作者名を使う
+        if "Lawson" in m["description"] and "Otago" in m["description"]:  # Commons の Artist 欄はアップロード者なので、説明欄の作者名を使う
             m = {**m, "artist": "Ruth Lawson（Otago Polytechnic）"}
+        if "Sisson" in m["artist"]:
+            m = {**m, "artist": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）"}
         figs[fid] = {"name": fig["name"], "img": f"data/figs/{fid}.webp", "keys": keys,
                      "credit": {"title": m["title"].replace("File:", ""), "author": m["artist"].split("\n")[0].strip(),
                                 "license": m["license"], "license_url": m["license_url"], "url": m["page"],
-                                "note": "英語ラベルを番号に置き換えて改変" if not fig.get("svg") else "改変なし（凡例を日本語訳）"}}
+                                "note": "改変なし（凡例を日本語訳）" if fig.get("svg") else "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）" if fig.get("markers") else "英語ラベルを番号に置き換えて改変"}}
         print(fid, im.size, len(keys))
     qsrc = SRC / "fig_questions.json"
     questions = build_questions(json.loads(qsrc.read_text()), figs) if qsrc.exists() else []
@@ -471,8 +573,11 @@ def build_questions(src, figs):
             choices = [mark(o["n"]) for o in opts]
             answer = q["options"].index(q["target"]) + 1
             where = {}
-        else:                        # 選択肢を直接書く問題（役割を問うなど）
-            choices, answer, where, opts = q["choices"], q["answer"], {}, None
+        else:                        # 選択肢を直接書く問題（役割を問うなど）。図にある名前なら場所も示す
+            choices, answer, opts = q["choices"], q["answer"], None
+            where = {}
+            for k in keys.values():
+                where.setdefault(k["ja"], k["n"])
         # 正答の位置が偏らないよう、問題ごとに決まった並びにシャッフル
         perm = list(range(len(choices)))
         random.Random(qid).shuffle(perm)
@@ -488,10 +593,12 @@ def build_questions(src, figs):
                 expl_choices.append("正答。" + fill(q.get("why", "")))
             elif q["kind"] == "num":
                 expl_choices.append(f"正答ではありません。{c}は{opts[i]['ja']}です。")
+            elif c in q.get("notes", {}):
+                expl_choices.append("正答ではありません。" + q["notes"][c])
             elif c in where:
                 expl_choices.append(f"正答ではありません。{c}は図の{mark(where[c])}です。")
             else:
-                expl_choices.append("正答ではありません。" + q.get("notes", {}).get(c, ""))
+                expl_choices.append("正答ではありません。")
         out.append({
             "id": "fig-" + qid, "genre": "fig", "level": q.get("level", 2), "fig": q["fig"],
             "examName": "図で覚える", "section": f["name"], "no": no,

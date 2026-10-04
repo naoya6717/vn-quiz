@@ -1032,6 +1032,307 @@
     "note": "英語ラベルを番号に置き換えて改変"
    }
   },
+  "forelimb": {
+   "name": "犬の前肢の骨（ラベル修正版）",
+   "img": "data/figs/forelimb.webp",
+   "keys": {
+    "humerus": {
+     "n": 1,
+     "ja": "上腕骨"
+    },
+    "ulna": {
+     "n": 2,
+     "ja": "尺骨"
+    },
+    "radius": {
+     "n": 3,
+     "ja": "橈骨"
+    },
+    "carpals": {
+     "n": 4,
+     "ja": "手根骨"
+    },
+    "metacarpals": {
+     "n": 5,
+     "ja": "中手骨"
+    },
+    "digits": {
+     "n": 6,
+     "ja": "指骨"
+    }
+   },
+   "credit": {
+    "title": "Forelimb dog corrected.JPG",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AForelimb_dog_corrected.JPG",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "hindlimb": {
+   "name": "犬の後肢の骨（ラベル修正版）",
+   "img": "data/figs/hindlimb.webp",
+   "keys": {
+    "femur": {
+     "n": 1,
+     "ja": "大腿骨"
+    },
+    "patella": {
+     "n": 2,
+     "ja": "膝蓋骨"
+    },
+    "fibula": {
+     "n": 3,
+     "ja": "腓骨"
+    },
+    "tibia": {
+     "n": 4,
+     "ja": "脛骨"
+    },
+    "tarsals": {
+     "n": 5,
+     "ja": "足根骨"
+    },
+    "metatarsals": {
+     "n": 6,
+     "ja": "中足骨"
+    },
+    "digits": {
+     "n": 7,
+     "ja": "趾骨"
+    }
+   },
+   "credit": {
+    "title": "Hind limb dog corrected.JPG",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHind_limb_dog_corrected.JPG",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "repro": {
+   "name": "雌犬の生殖器",
+   "img": "data/figs/repro.webp",
+   "keys": {
+    "uterus": {
+     "n": 1,
+     "ja": "子宮"
+    },
+    "fallopian tube": {
+     "n": 2,
+     "ja": "卵管"
+    },
+    "ovary": {
+     "n": 3,
+     "ja": "卵巣"
+    },
+    "uterus ": {
+     "n": 4,
+     "ja": "子宮"
+    },
+    "cervix": {
+     "n": 5,
+     "ja": "子宮頸"
+    },
+    "vagina": {
+     "n": 6,
+     "ja": "腟"
+    },
+    "opening of urethra": {
+     "n": 7,
+     "ja": "外尿道口"
+    },
+    "vulva": {
+     "n": 8,
+     "ja": "外陰部"
+    }
+   },
+   "credit": {
+    "title": "Female repro system labelled.JPG",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AFemale_repro_system_labelled.JPG",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "rumen": {
+   "name": "反芻動物（牛など）の胃（模式図）",
+   "img": "data/figs/rumen.webp",
+   "keys": {
+    "oesophagus": {
+     "n": 1,
+     "ja": "食道"
+    },
+    "omasum": {
+     "n": 2,
+     "ja": "第三胃"
+    },
+    "abomasum": {
+     "n": 3,
+     "ja": "第四胃"
+    },
+    "to small intestine": {
+     "n": 4,
+     "ja": "小腸へ"
+    },
+    "reticulum": {
+     "n": 5,
+     "ja": "第二胃"
+    },
+    "rumen": {
+     "n": 6,
+     "ja": "第一胃"
+    }
+   },
+   "credit": {
+    "title": "Anatomy and physiology of animals The rumen.jpg",
+    "author": "Ruth Lawson（Otago Polytechnic）",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_rumen.jpg",
+    "note": "英語ラベルを番号に置き換えて改変"
+   }
+  },
+  "brain3": {
+   "name": "犬の脳の底面（Sisson の獣医解剖学書 Fig.539）",
+   "img": "data/figs/brain3.webp",
+   "keys": {
+    "a": {
+     "n": "a",
+     "ja": "嗅球",
+     "en": "Olfactory bulb"
+    },
+    "b": {
+     "n": "b",
+     "ja": "視神経",
+     "en": "optic nerve"
+    },
+    "4": {
+     "n": "4",
+     "ja": "灰白隆起と漏斗",
+     "en": "tuber cinereum and infundibulum"
+    },
+    "5": {
+     "n": "5",
+     "ja": "梨状葉",
+     "en": "pyriform lobe"
+    },
+    "9": {
+     "n": "9",
+     "ja": "橋",
+     "en": "pons"
+    },
+    "10": {
+     "n": "10",
+     "ja": "延髄",
+     "en": "medulla oblongata"
+    },
+    "11": {
+     "n": "11",
+     "ja": "小脳",
+     "en": "cerebellum"
+    },
+    "12": {
+     "n": "12",
+     "ja": "大脳脚",
+     "en": "cerebral peduncle"
+    }
+   },
+   "credit": {
+    "title": "A text-book of veterinary anatomy (Page 724) BHL18587848.jpg",
+    "author": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_724%29_BHL18587848.jpg",
+    "note": "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）"
+   }
+  },
+  "muscles": {
+   "name": "犬の浅層の筋（Sisson の獣医解剖学書 Fig.230）",
+   "img": "data/figs/muscles.webp",
+   "keys": {
+    "e": {
+     "n": "e",
+     "ja": "僧帽筋",
+     "en": "trapezius"
+    },
+    "f": {
+     "n": "f",
+     "ja": "僧帽筋",
+     "en": "trapezius"
+    },
+    "i": {
+     "n": "i",
+     "ja": "広背筋",
+     "en": "latissimus dorsi"
+    },
+    "o": {
+     "n": "o",
+     "ja": "上腕三頭筋（長頭）",
+     "en": "triceps, long head"
+    },
+    "29": {
+     "n": "29",
+     "ja": "前脛骨筋",
+     "en": "tibialis anterior"
+    },
+    "33": {
+     "n": "33",
+     "ja": "腓腹筋",
+     "en": "gastrocnemius"
+    },
+    "25": {
+     "n": "25",
+     "ja": "頸静脈",
+     "en": "jugular vein"
+    }
+   },
+   "credit": {
+    "title": "A text-book of veterinary anatomy (Page 319) BHL18587443.jpg",
+    "author": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_319%29_BHL18587443.jpg",
+    "note": "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）"
+   }
+  },
+  "placenta": {
+   "name": "犬の胎子と胎膜（Railliet 1895）",
+   "img": "data/figs/placenta.webp",
+   "keys": {
+    "a": {
+     "n": "a",
+     "ja": "帯状胎盤",
+     "en": "placenta zonaire"
+    },
+    "b": {
+     "n": "b",
+     "ja": "帯状胎盤",
+     "en": "placenta zonaire"
+    },
+    "c": {
+     "n": "c",
+     "ja": "絨毛膜",
+     "en": "chorion"
+    },
+    "d": {
+     "n": "d",
+     "ja": "羊膜",
+     "en": "amnios"
+    }
+   },
+   "credit": {
+    "title": "PlacZonaireRailliet1895MeyCh.jpg",
+    "author": "Alcide Railliet",
+    "license": "Public domain",
+    "license_url": "",
+    "url": "https://commons.wikimedia.org/wiki/File%3APlacZonaireRailliet1895MeyCh.jpg",
+    "note": "図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による）"
+   }
+  },
   "skeleton": {
    "name": "犬の骨格",
    "img": "data/figs/skeleton.webp",
@@ -3137,6 +3438,716 @@
    "related": [
     "y1-jitti-004",
     "k4-jitti-018"
+   ]
+  },
+  {
+   "id": "fig-fl-ulna",
+   "genre": "fig",
+   "level": 2,
+   "fig": "forelimb",
+   "examName": "図で覚える",
+   "section": "犬の前肢の骨（ラベル修正版）",
+   "no": 41,
+   "stem": "図は犬の前肢の骨である。尺骨はどれか。",
+   "choices": [
+    "⑤",
+    "③",
+    "②",
+    "①",
+    "④"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Forelimb dog corrected.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AForelimb_dog_corrected.JPG"
+   },
+   "explanation": {
+    "summary": "尺骨は、図の作者が ulna とラベルを付けた骨です。前腕は尺骨と橈骨の2本の骨でできていて、尺骨の肘頭は肘を伸ばしたときに上腕骨後面の肘頭窩に入ります（OpenStax、ヒトの資料）。過去問（国家試験第3回 実地6）でも「尺骨はどれか」が出ています。この図は作者自身がラベルを修正した版（labelling corrected）です。",
+    "choices": [
+     "正答ではありません。⑤は中手骨です。",
+     "正答ではありません。③は橈骨です。",
+     "正答。尺骨は前腕の2本の骨のうちの1本で、図では左側の骨です。上端の肘頭は、肘を伸ばしたときに上腕骨のくぼみ（肘頭窩）に入ります。",
+     "正答ではありません。①は上腕骨です。",
+     "正答ではありません。④は手根骨です。"
+    ],
+    "point": "前腕＝橈骨＋尺骨（肘頭があるのが尺骨）。下腿＝脛骨（太い）＋腓骨（細い）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.2 Bones of the Upper Limb（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+      "note": "the ulna (medially) and the radius (laterally) are the paired bones of the forearm"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-006",
+    "k2-ippan-070"
+   ]
+  },
+  {
+   "id": "fig-fl-radius",
+   "genre": "fig",
+   "level": 2,
+   "fig": "forelimb",
+   "examName": "図で覚える",
+   "section": "犬の前肢の骨（ラベル修正版）",
+   "no": 42,
+   "stem": "図は犬の前肢の骨である。③の骨はどれか。",
+   "choices": [
+    "橈骨",
+    "尺骨",
+    "中手骨",
+    "上腕骨",
+    "手根骨"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Forelimb dog corrected.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AForelimb_dog_corrected.JPG"
+   },
+   "explanation": {
+    "summary": "図の③は、図の作者が radius（橈骨）とラベルを付けた骨です。前腕は橈骨と尺骨の2本の骨でできています（OpenStax、ヒトの資料）。犬の前肢では、橈骨の下に手根骨・中手骨・指骨が続きます。",
+    "choices": [
+     "正答。③は橈骨。前腕の2本の骨のうち、図では右側の骨です。",
+     "正答ではありません。尺骨は図の②です。",
+     "正答ではありません。中手骨は図の⑤です。",
+     "正答ではありません。上腕骨は図の①です。",
+     "正答ではありません。手根骨は図の④です。"
+    ],
+    "point": "前肢：上腕骨 → 橈骨・尺骨 → 手根骨 → 中手骨 → 指骨。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.2 Bones of the Upper Limb（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+      "note": "the ulna (medially) and the radius (laterally) are the paired bones of the forearm"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-070"
+   ]
+  },
+  {
+   "id": "fig-hl-tibia",
+   "genre": "fig",
+   "level": 2,
+   "fig": "hindlimb",
+   "examName": "図で覚える",
+   "section": "犬の後肢の骨（ラベル修正版）",
+   "no": 43,
+   "stem": "図は犬の後肢の骨である。④の骨はどれか。",
+   "choices": [
+    "脛骨",
+    "大腿骨",
+    "膝蓋骨",
+    "腓骨",
+    "足根骨"
+   ],
+   "answer": [
+    1
+   ],
+   "source": {
+    "title": "図：Hind limb dog corrected.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHind_limb_dog_corrected.JPG"
+   },
+   "explanation": {
+    "summary": "図の④は、図の作者が tibia（脛骨）とラベルを付けた骨です。脛骨は下腿の太い骨で体重を支え、腓骨は外側の細い骨です（OpenStax、ヒトの資料）。この図は作者自身がラベルを修正した版です。",
+    "choices": [
+     "正答。④は脛骨。下腿の2本の骨のうち、太くて体重を支える骨です。",
+     "正答ではありません。大腿骨は図の①です。",
+     "正答ではありません。膝蓋骨は図の②です。",
+     "正答ではありません。腓骨は図の③です。",
+     "正答ではありません。足根骨は図の⑤です。"
+    ],
+    "point": "下腿＝脛骨（太い・体重を支える）＋腓骨（細い）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "The tibia is the larger, weight-bearing bone ... the fibula is the thin bone of the lateral leg"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-ippan-070",
+    "y2-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-hl-fibula",
+   "genre": "fig",
+   "level": 2,
+   "fig": "hindlimb",
+   "examName": "図で覚える",
+   "section": "犬の後肢の骨（ラベル修正版）",
+   "no": 44,
+   "stem": "図は犬の後肢の骨である。腓骨はどれか。",
+   "choices": [
+    "④",
+    "⑥",
+    "③",
+    "①",
+    "⑤"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：Hind limb dog corrected.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AHind_limb_dog_corrected.JPG"
+   },
+   "explanation": {
+    "summary": "腓骨は、図の作者が fibula とラベルを付けた細い骨です。下腿は太い脛骨と細い腓骨でできています（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。④は脛骨です。",
+     "正答ではありません。⑥は中足骨です。",
+     "正答。腓骨は下腿の2本の骨のうち、細いほうの骨です。",
+     "正答ではありません。①は大腿骨です。",
+     "正答ではありません。⑤は足根骨です。"
+    ],
+    "point": "細いのが腓骨、太いのが脛骨。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 8.4 Bones of the Lower Limb（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+      "note": "The tibia is the larger, weight-bearing bone ... the fibula is the thin bone of the lateral leg"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-004"
+   ]
+  },
+  {
+   "id": "fig-rp-ovary",
+   "genre": "fig",
+   "level": 2,
+   "fig": "repro",
+   "examName": "図で覚える",
+   "section": "雌犬の生殖器",
+   "no": 45,
+   "stem": "図は雌犬の生殖器である。③はどれか。",
+   "choices": [
+    "卵管",
+    "腟",
+    "外陰部",
+    "子宮頸",
+    "卵巣"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Female repro system labelled.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AFemale_repro_system_labelled.JPG"
+   },
+   "explanation": {
+    "summary": "図の③は、図の作者が ovary（卵巣）とラベルを付けた器官です。雌の生殖器は、卵子をつくる左右一対の卵巣、受精の場で受精卵を子宮へ運ぶ卵管、胎子が育つ子宮、子宮と腟を隔てる子宮頸、腟からなります。卵巣は腎臓のすぐ腹側の腹腔内にある小さな楕円形の器官です（図と同じ教科書）。",
+    "choices": [
+     "正答ではありません。卵管は図の②です。",
+     "正答ではありません。腟は図の⑥です。",
+     "正答ではありません。外陰部は図の⑧です。",
+     "正答ではありません。子宮頸は図の⑤です。",
+     "正答。③は卵巣。卵子（卵）をつくる左右一対の器官です。"
+    ],
+    "point": "卵巣（卵子をつくる）→ 卵管（受精）→ 子宮（胎子が育つ）→ 子宮頸 → 腟。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / Reproductive System（図と同じ教科書）",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/Reproductive_System",
+      "note": "The cervix separates the uterus from the vagina"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-hissu-008"
+   ]
+  },
+  {
+   "id": "fig-rp-cervix",
+   "genre": "fig",
+   "level": 2,
+   "fig": "repro",
+   "examName": "図で覚える",
+   "section": "雌犬の生殖器",
+   "no": 46,
+   "stem": "図は雌犬の生殖器である。⑤はどれか。",
+   "choices": [
+    "腟",
+    "卵巣",
+    "外尿道口",
+    "卵管",
+    "子宮頸"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：Female repro system labelled.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AFemale_repro_system_labelled.JPG"
+   },
+   "explanation": {
+    "summary": "図の⑤は、図の作者が cervix（子宮頸）とラベルを付けた部分です。子宮頸は子宮と腟（産道）を隔てる部分です（図と同じ教科書）。",
+    "choices": [
+     "正答ではありません。腟は図の⑥です。",
+     "正答ではありません。卵巣は図の③です。",
+     "正答ではありません。外尿道口は図の⑦です。",
+     "正答ではありません。卵管は図の②です。",
+     "正答。⑤は子宮頸。子宮と腟のあいだを隔てる部分です。"
+    ],
+    "point": "子宮 →（子宮頸）→ 腟 → 外陰部。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / Reproductive System（図と同じ教科書）",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/Reproductive_System",
+      "note": "The cervix separates the uterus from the vagina"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": []
+  },
+  {
+   "id": "fig-rp-oviduct",
+   "genre": "fig",
+   "level": 2,
+   "fig": "repro",
+   "examName": "図で覚える",
+   "section": "雌犬の生殖器",
+   "no": 47,
+   "stem": "図は雌犬の生殖器である。受精が行われ、受精卵を子宮へ運ぶ管はどれか。",
+   "choices": [
+    "⑧",
+    "⑥",
+    "⑤",
+    "②",
+    "③"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Female repro system labelled.JPG",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY-SA 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AFemale_repro_system_labelled.JPG"
+   },
+   "explanation": {
+    "summary": "卵管は、図の作者が fallopian tube とラベルを付けた管です。卵管は受精が行われる場で、受精卵を子宮へ運びます（図と同じ教科書）。",
+    "choices": [
+     "正答ではありません。⑧は外陰部です。",
+     "正答ではありません。⑥は腟です。",
+     "正答ではありません。⑤は子宮頸です。",
+     "正答。卵管は卵巣と子宮のあいだにある管で、ここで受精が行われます。",
+     "正答ではありません。③は卵巣です。"
+    ],
+    "point": "受精の場＝卵管。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / Reproductive System（図と同じ教科書）",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/Reproductive_System",
+      "note": "The cervix separates the uterus from the vagina"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y2-hissu-008"
+   ]
+  },
+  {
+   "id": "fig-rm-abomasum",
+   "genre": "fig",
+   "level": 2,
+   "fig": "rumen",
+   "examName": "図で覚える",
+   "section": "反芻動物（牛など）の胃（模式図）",
+   "no": 48,
+   "stem": "図は反芻動物（牛など）の胃の模式図である。③はどれか。",
+   "choices": [
+    "第一胃",
+    "第二胃",
+    "第三胃",
+    "第四胃",
+    "第五胃"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals The rumen.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_rumen.jpg"
+   },
+   "explanation": {
+    "summary": "図の③は、図の作者が abomasum（第四胃）とラベルを付けた部分です。反芻動物の胃は4つの部分に分かれ、最も大きいのが rumen（第一胃）、内面が蜂の巣状の reticulum（第二胃）、ひだのある omasum（第三胃）、最後が abomasum（第四胃）で、第四胃は筋肉の壁で食物を混ぜ胃液を分泌する「本当の胃」です（図と同じ教科書）。選択肢は過去問（国家試験第4回 実地12）と同じです。",
+    "choices": [
+     "正答ではありません。第一胃は図の⑥です。",
+     "正答ではありません。第二胃は図の⑤です。",
+     "正答ではありません。第三胃は図の②です。",
+     "正答。③は第四胃。胃液が分泌される「本当の胃」です。",
+     "正答ではありません。反芻動物の胃は4つの部分に分かれていて、第五胃はありません。"
+    ],
+    "point": "第一胃・第二胃＝発酵槽（微生物が発酵）、第三胃＝ひだ、第四胃＝胃液を出す本当の胃。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / The Gut and Digestion（図と同じ教科書）",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/The_Gut_and_Digestion",
+      "note": "It is divided into four parts."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-012",
+    "k4-ippan-029"
+   ]
+  },
+  {
+   "id": "fig-rm-rumen",
+   "genre": "fig",
+   "level": 2,
+   "fig": "rumen",
+   "examName": "図で覚える",
+   "section": "反芻動物（牛など）の胃（模式図）",
+   "no": 49,
+   "stem": "図は反芻動物（牛など）の胃の模式図である。第一胃はどれか。",
+   "choices": [
+    "①",
+    "⑥",
+    "⑤",
+    "②",
+    "③"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：Anatomy and physiology of animals The rumen.jpg",
+    "publisher": "Ruth Lawson（Otago Polytechnic）／CC BY 3.0（英語ラベルを番号に置き換えて改変）",
+    "url": "https://commons.wikimedia.org/wiki/File%3AAnatomy_and_physiology_of_animals_The_rumen.jpg"
+   },
+   "explanation": {
+    "summary": "第一胃は、図の作者が rumen とラベルを付けた最も大きな部分です。飲み込まれた草は第一胃と第二胃に入り、ここが反芻胃の主な発酵槽で、細菌や単細胞の微生物が発酵を行います（図と同じ教科書）。牛では第一胃が腹腔の左半分をすべて占めます。",
+    "choices": [
+     "正答ではありません。①は食道です。",
+     "正答。第一胃は4つの部分のうち最も大きく、第二胃とともに発酵槽の役目をします。",
+     "正答ではありません。⑤は第二胃です。",
+     "正答ではありません。②は第三胃です。",
+     "正答ではありません。③は第四胃です。"
+    ],
+    "point": "第一胃（最大・発酵）、第二胃（蜂の巣状）、第三胃（ひだ）、第四胃（本当の胃）。",
+    "refs": [
+     {
+      "title": "Wikibooks: Anatomy and Physiology of Animals / The Gut and Digestion（図と同じ教科書）",
+      "url": "https://en.wikibooks.org/wiki/Anatomy_and_Physiology_of_Animals/The_Gut_and_Digestion",
+      "note": "It is divided into four parts."
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-ippan-029",
+    "k4-jitti-012"
+   ]
+  },
+  {
+   "id": "fig-br3-olf",
+   "genre": "fig",
+   "level": 2,
+   "fig": "brain3",
+   "examName": "図で覚える",
+   "section": "犬の脳の底面（Sisson の獣医解剖学書 Fig.539）",
+   "no": 50,
+   "stem": "図は犬の脳を底面から見たところである。aはどれか。",
+   "choices": [
+    "延髄",
+    "橋",
+    "視神経",
+    "嗅球",
+    "灰白隆起と漏斗"
+   ],
+   "answer": [
+    4
+   ],
+   "source": {
+    "title": "図：A text-book of veterinary anatomy (Page 724) BHL18587848.jpg",
+    "publisher": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_724%29_BHL18587848.jpg"
+   },
+   "explanation": {
+    "summary": "図のaは、原典の凡例で Olfactory bulb（嗅球）とされている部分です。鼻の嗅覚上皮からの軸索（嗅神経）は、前頭葉の底面にある嗅球につながります（OpenStax、ヒトの資料）。図でも脳の底面のいちばん前にあります。過去問（国家試験第3回 実地5）でも、底面から見た図で嗅球が問われています。",
+    "choices": [
+     "正答ではありません。延髄は図の10です。",
+     "正答ではありません。橋は図の9です。",
+     "正答ではありません。視神経は図のbです。",
+     "正答。aは嗅球。脳の底面のいちばん前にあり、嗅覚の神経（嗅索）がつながります。",
+     "正答ではありません。灰白隆起と漏斗は図の4です。"
+    ],
+    "point": "脳の底面：前から 嗅球 → 視神経（視交叉）→ 下垂体（灰白隆起・漏斗）→ 橋 → 延髄。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 14.1 Sensory Perception（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+      "note": "connect to the olfactory bulb on the ventral surface of the frontal lobe"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-005"
+   ]
+  },
+  {
+   "id": "fig-br3-medulla",
+   "genre": "fig",
+   "level": 2,
+   "fig": "brain3",
+   "examName": "図で覚える",
+   "section": "犬の脳の底面（Sisson の獣医解剖学書 Fig.539）",
+   "no": 51,
+   "stem": "図は犬の脳を底面から見たところである。延髄はどれか。",
+   "choices": [
+    "b",
+    "11",
+    "10",
+    "12",
+    "9"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：A text-book of veterinary anatomy (Page 724) BHL18587848.jpg",
+    "publisher": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_724%29_BHL18587848.jpg"
+   },
+   "explanation": {
+    "summary": "延髄は、原典の凡例で 10（medulla oblongata）とされている部分です。橋（9）のすぐ尾側にあり、橋とともに心臓血管系と呼吸の調節にかかわります（OpenStax、ヒトの資料）。",
+    "choices": [
+     "正答ではありません。bは視神経です。",
+     "正答ではありません。11は小脳です。",
+     "正答。延髄は橋の後ろ（尾側）にあり、脊髄につながる部分です。",
+     "正答ではありません。12は大脳脚です。",
+     "正答ではありません。9は橋です。"
+    ],
+    "point": "延髄＝呼吸・心臓血管の中枢。底面図では橋のすぐ後ろ。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 13.2 The Central Nervous System（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+      "note": "The pons and the medulla regulate several crucial functions"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k2-jitti-005",
+    "k1-ippan-008"
+   ]
+  },
+  {
+   "id": "fig-ms-trapezius",
+   "genre": "fig",
+   "level": 2,
+   "fig": "muscles",
+   "examName": "図で覚える",
+   "section": "犬の浅層の筋（Sisson の獣医解剖学書 Fig.230）",
+   "no": 52,
+   "stem": "図は犬の浅層の筋である。e・fで示す筋はどれか。",
+   "choices": [
+    "腓腹筋",
+    "上腕三頭筋（長頭）",
+    "前脛骨筋",
+    "広背筋",
+    "僧帽筋"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：A text-book of veterinary anatomy (Page 319) BHL18587443.jpg",
+    "publisher": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_319%29_BHL18587443.jpg"
+   },
+   "explanation": {
+    "summary": "図のe・fは、原典の凡例で trapezius（僧帽筋）とされている筋です。僧帽筋は、肩甲骨（肩帯）の位置を保つ筋のうち背側にある筋の一つです（OpenStax、ヒトの資料）。選択肢は過去問（国家試験第4回 実地5）と同じ筋で、図にはどれも記号が付いています（o 上腕三頭筋の長頭、i 広背筋、29 前脛骨筋、33 腓腹筋）。",
+    "choices": [
+     "正答ではありません。腓腹筋は図の33です。",
+     "正答ではありません。上腕三頭筋（長頭）は図のoです。",
+     "正答ではありません。前脛骨筋は図の29です。",
+     "正答ではありません。広背筋は図のiです。",
+     "正答。e・fは僧帽筋。図では首から背中にかけて広がり、肩甲骨の位置を保つ筋の一つです。"
+    ],
+    "point": "僧帽筋（首〜背中・肩甲骨）、広背筋（背中〜上腕）、上腕三頭筋（上腕の後ろ・肘を伸ばす）、前脛骨筋・腓腹筋（後肢の下腿）。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 11.5 Muscles of the Pectoral Girdle and Upper Limbs（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+      "note": "The posterior muscles include the trapezius"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k4-jitti-005",
+    "k4-ippan-005"
+   ]
+  },
+  {
+   "id": "fig-ms-jugular",
+   "genre": "fig",
+   "level": 2,
+   "fig": "muscles",
+   "examName": "図で覚える",
+   "section": "犬の浅層の筋（Sisson の獣医解剖学書 Fig.230）",
+   "no": 53,
+   "stem": "図は犬の浅層の筋である。25の血管はどれか。",
+   "choices": [
+    "橈側皮静脈",
+    "頸静脈",
+    "外側伏在静脈",
+    "大腿静脈",
+    "後大静脈"
+   ],
+   "answer": [
+    2
+   ],
+   "source": {
+    "title": "図：A text-book of veterinary anatomy (Page 319) BHL18587443.jpg",
+    "publisher": "Septimus Sisson『A text-book of veterinary anatomy』（図の原典は Ellenberger）／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3AA_text-book_of_veterinary_anatomy_%28Page_319%29_BHL18587443.jpg"
+   },
+   "explanation": {
+    "summary": "図の25は、原典の凡例で jugular vein（頸静脈）とされている血管です。犬の代表的な採血部位は外頸静脈・橈側皮静脈（cephalic vein）・外側伏在静脈で、外頸静脈は最もよく使われる採血部位の一つです（バージニア工科大学の犬・猫の採血手順書）。",
+    "choices": [
+     "正答ではありません。cephalic vein のことで、これも犬の代表的な採血部位です（この図には記号がありません）。",
+     "正答。25は頸静脈。犬・猫で最もよく使われる採血部位の一つです。",
+     "正答ではありません。これも犬の代表的な採血部位です（この図には記号がありません）。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "犬の採血部位：外頸静脈・橈側皮静脈・外側伏在静脈（猫は内側伏在静脈も）。",
+    "refs": [
+     {
+      "title": "Virginia Tech SOP: Venipuncture in Dogs and Cats",
+      "url": "https://www.research.vt.edu/content/dam/ouv_vt_edu/sops/small-animal/sop-dogs-and-cats-venipuncture.pdf",
+      "note": "Common venipuncture sites in the dog"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y1-jitti-025",
+    "k1-jitti-029"
+   ]
+  },
+  {
+   "id": "fig-pl-amnion",
+   "genre": "fig",
+   "level": 2,
+   "fig": "placenta",
+   "examName": "図で覚える",
+   "section": "犬の胎子と胎膜（Railliet 1895）",
+   "no": 54,
+   "stem": "図は犬の胎子と胎膜である。dはどれか。",
+   "choices": [
+    "帯状胎盤",
+    "尿膜",
+    "絨毛膜",
+    "臍帯",
+    "羊膜"
+   ],
+   "answer": [
+    5
+   ],
+   "source": {
+    "title": "図：PlacZonaireRailliet1895MeyCh.jpg",
+    "publisher": "Alcide Railliet／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3APlacZonaireRailliet1895MeyCh.jpg"
+   },
+   "explanation": {
+    "summary": "図のdは、原典の凡例で amnios（羊膜、外側の膜をすかして見えている）とされている膜です。羊膜は胎子を包む胚体外膜の一つで、中を満たす羊水に浮かぶことで胎子は外傷から守られます（OpenStax、ヒトの資料）。図のcは chorion（絨毛膜）、a・bは placenta zonaire（帯状胎盤）です。",
+    "choices": [
+     "正答ではありません。帯状胎盤は図のa・bです。",
+     "正答ではありません。",
+     "正答ではありません。絨毛膜は図のcです。",
+     "正答ではありません。",
+     "正答。dは羊膜。胎子を包む膜で、中は羊水で満たされています。"
+    ],
+    "point": "胚体外膜＝羊膜・卵黄嚢・尿膜・絨毛膜。羊膜の中は羊水。",
+    "refs": [
+     {
+      "title": "OpenStax Anatomy and Physiology 2e 28.2 Embryonic Development（ヒトの資料）",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
+      "note": "the amnion, the yolk sac, the allantois, and the chorion"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "y3-jitti-007"
+   ]
+  },
+  {
+   "id": "fig-pl-zonary",
+   "genre": "fig",
+   "level": 2,
+   "fig": "placenta",
+   "examName": "図で覚える",
+   "section": "犬の胎子と胎膜（Railliet 1895）",
+   "no": 55,
+   "stem": "図は犬の胎子と胎膜である。a・bで示す胎盤の型はどれか。",
+   "choices": [
+    "散在胎盤",
+    "盤状胎盤",
+    "帯状胎盤",
+    "叢毛胎盤",
+    "多胎盤"
+   ],
+   "answer": [
+    3
+   ],
+   "source": {
+    "title": "図：PlacZonaireRailliet1895MeyCh.jpg",
+    "publisher": "Alcide Railliet／Public domain（図を切り抜き、図中の記号に色の丸を重ねて表示（記号の意味は原典の凡例による））",
+    "url": "https://commons.wikimedia.org/wiki/File%3APlacZonaireRailliet1895MeyCh.jpg"
+   },
+   "explanation": {
+    "summary": "図のa・bは、原典の凡例で placenta zonaire（帯状胎盤）とされている部分です。帯状胎盤は胎子を取り巻く完全または不完全な帯の形をした胎盤で、犬・猫などの食肉類にみられます。散在（diffuse）型は馬・豚、cotyledonary 型は反芻動物、盤状は霊長類やげっ歯類です（コロラド州立大学の教材）。選択肢は過去問（国家試験第3回 実地8）と同じです。",
+    "choices": [
+     "正答ではありません。馬や豚の型です。",
+     "正答ではありません。霊長類（ヒト）やげっ歯類の型です。",
+     "正答。犬の胎盤は、胎子を帯のようにぐるりと取り巻く帯状胎盤です。",
+     "正答ではありません。",
+     "正答ではありません。"
+    ],
+    "point": "犬・猫＝帯状胎盤、馬・豚＝散在胎盤、ヒト・げっ歯類＝盤状胎盤。",
+    "refs": [
+     {
+      "title": "Colorado State University: Placental Structure and Classification",
+      "url": "https://vivo.colostate.edu/hbooks/pathphys/reprod/placenta/structure.html",
+      "note": "Zonary: ... Seen in carnivores like dogs and cats"
+     }
+    ],
+    "checked": "2026-10-04"
+   },
+   "related": [
+    "k3-jitti-008"
    ]
   }
  ]
